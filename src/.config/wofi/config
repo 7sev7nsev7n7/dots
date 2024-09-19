@@ -1,0 +1,6 @@
+show=drun
+insensitive=true
+matching=contains
+width=15%
+location=0
+term=kitty

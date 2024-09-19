@@ -1,0 +1,23 @@
+# REMEMBER THIS FILE GETS OVERWRITTEN
+# change config over at ~/.config/wal/templates
+
+indicator
+clock
+show-failed-attempts
+ignore-empty-password
+font=monospace
+fade-in=5
+color=09080E66
+key-hl-color=f0c4c6ff
+inside-color=09080Edd
+ring-color=B66784ff
+text-color=f0c4c6ff
+inside-ver-color=00000000
+ring-ver-color=6D385Bda
+text-ver-color=6D385Bff
+ring-clear-color=f0c4c6da
+inside-clear-color=09080Edd
+text-clear-color=B66784ff
+ring-wrong-color=bb0000ff
+inside-wrong-color=00000000
+text-wrong-color=bb0000ff

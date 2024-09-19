@@ -1,0 +1,7 @@
+! REMEMBER THIS FILE GETS OVERWRITTEN
+! change config over at ~/.config/wal/templates
+
+Nsxiv*background: {background}
+Nsxiv*foreground: {color6}
+Sxiv*background: {background}
+Sxiv*foreground: {color6}
