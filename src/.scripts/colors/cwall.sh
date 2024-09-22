@@ -11,21 +11,27 @@ wal -sni "$file"
 
 # reload multiple items that require config updates
 $path/keyboard.sh 0
-
 pkill -SIGUSR1 kitty
-
 pywal-discord -t universal &
 pywalfox update &
-
 gsettings set org.gnome.desktop.interface gtk-theme Adawaita && gsettings set org.gnome.desktop.interface gtk-theme Universal &
 
-cp ~/.cache/wal/colors-swaylock ~/.config/swaylock/config
+# check if files are softlinked, create softlinks otherwise
+sources=(~/.cache/wal/colors-swaylock ~/.cache/wal/dunstrc ~/.cache/wal/Xresources) # source configuration file
+destinations=(~/.config/swaylock/config ~/.config/dunst/dunstrc ~/.Xresources) # destination configuration file
 
-cp ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc
+for i in $(seq 0 $((${#sources[@]}-1))); do
+	if [ -h ${destinations[$i]} ]; then 
+		if [ "$(readlink ${destinations[$i]})" == "${sources[$i]}" ]; then
+			continue
+		else :
+		fi
+	else :
+	fi
+	rm ${destinations[$i]}; ln -s ${sources[$i]} ${destinations[$i]}; echo "done!"
+done
+
 pkill dunst
-$(dunst &>/dev/null) &
-
-cp ~/.cache/wal/Xresources ~/.Xresources
 $(xrdb -load  ~/.Xresources)&
 
 hyprctl reload
