@@ -29,8 +29,9 @@ echo "changing mode to $mode"
 # check if arguments are valid and change color in desired mode
 case $mode in # if $mode is found in one of lists
 	'static'|'breathe'|'pulse')
+		col=5 # wal color to use for keyboard
 		if [[ -z $color ]]; then # if color argument is not found, use wallpaper color 
-			color=$(sed '7q;d' ~/.cache/wal/colors | sed -e 's/#//')
+			color=$(sed "$col q;d" ~/.cache/wal/colors | sed -e 's/#//')
 		fi
 		asusctl led-mode $mode -c $color
 		echo 'done'
