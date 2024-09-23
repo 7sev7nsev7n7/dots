@@ -117,10 +117,16 @@ button:hover {
   font-weight: bold;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging {
   color: mix(mix(@color6, #00ff00, 0.4), #000000, 0.8);
   background-color: mix(@color6, #00ff00, 0.4);
   border-top: 4px solid mix(@color6, #00ff00, 0.4);
+}
+
+#battery.plugged {
+  color: mix(mix(@color6, #00ff00, 0.4), #ffffff, 0.4);
+  background-color: mix(@background, #008800, 0.4);
+  /* border-top: 4px solid mix(@color6, #00ff00, 0.4); */
 }
 
 @keyframes blink {
