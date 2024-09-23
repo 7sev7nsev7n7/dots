@@ -126,7 +126,7 @@ button:hover {
 #battery.plugged {
   color: mix(mix(@color6, #00ff00, 0.4), #ffffff, 0.4);
   background-color: mix(@background, #008800, 0.4);
-  /* border-top: 4px solid mix(@color6, #00ff00, 0.4); */
+  border-top: 4px solid mix(@color6, #00ff00, 0.4);
 }
 
 @keyframes blink {
