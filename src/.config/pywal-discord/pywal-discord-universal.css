@@ -3,7 +3,8 @@
 */
 
 * {
-    font-family: "monospace";
+    font-family: "Iosevka";
+		font-weight: normal;
 }
 
 /* friends page */
@@ -65,7 +66,7 @@ html.newBrand {
   --text-positive: var(--color2);
   --header-primary: var(--color6);
   --header-secondary: var(--color4);
-  --text-normal: var(--color6);
+  --text-normal: var(--foreground);
   --text-muted: var(--color4);
   --text-link: var(--color12);
   --channels-default: var(--color6);

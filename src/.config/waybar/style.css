@@ -1,7 +1,9 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "Noto Sans Mono", "Font Awesome 6 Free";
-  font-size: 16px;
+  font-family: "Iosevka Fixed";
+	font-style: normal;
+	font-weight: bold;
+  font-size: 11pt;
   border-radius: 2px;
 }
 
@@ -90,7 +92,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad, 
 #custom-notifications {
-  border-top: 4px solid @color6;
+  border-top: 4px solid @color4;
   margin: 0px 4px;
   /* background: alpha(@background, 1); */
   background-color: mix(@background, #000000, 0.3);
@@ -102,6 +104,7 @@ button:hover {
 /* per-module configurations */
 #custom-notifications {
   background: @color4;
+	color: @background;
 }
 
 #custom-notifications.0 {
