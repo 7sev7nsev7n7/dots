@@ -4,7 +4,7 @@ simple dotfiles for hyprland setup. i refuse to make an installation script (for
 
 just make sure to copy the files to their appropriate directories and you should be good to go. consider `/src` the home directory.
 
-<img src="/assets/dotdemo.webp" width="960">
+<img src="/assets/demo.webp" width="960">
 
 necessary dependancies for complete setup
 
