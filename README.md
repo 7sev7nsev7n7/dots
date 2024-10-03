@@ -20,3 +20,4 @@ necessary dependancies for complete setup
 - backlight_control (self-explanatory)
 - pipewire/pipewire-pulse + wireplumber 
 - gtk3/4
+- Iosevka fonts
