@@ -24,11 +24,11 @@ for i in $(seq 0 $((${#sources[@]}-1))); do
 	if [ -h ${destinations[$i]} ]; then 
 		if [ "$(readlink ${destinations[$i]})" == "${sources[$i]}" ]; then
 			continue
-		else :
+		else
+			rm ${destinations[$i]}
 		fi
-	else :
 	fi
-	rm ${destinations[$i]}; ln -s ${sources[$i]} ${destinations[$i]}; echo "done!"
+	ln -s ${sources[$i]} ${destinations[$i]}; echo "created softlink from ${sources[$i]} at ${destinations[$i]}"
 done
 
 pkill dunst
