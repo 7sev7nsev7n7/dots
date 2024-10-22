@@ -11,7 +11,7 @@
       "transition-duration": 200,
       "transition-left-to-right": false,
     },
-    "modules": ["battery","temperature","custom/turbo","cpu","memory","backlight"]
+    "modules": ["battery","temperature","custom/turbo","cpu","memory","backlight","battery#keyboard"]
   },
   /* # Modules */
   "hyprland/workspaces": {
@@ -31,6 +31,7 @@
     "exec": "~/.config/waybar/scripts/greet.sh",
     "interval": "once",
     "on-click": "~/.config/waybar/scripts/greet.sh",
+		"escape" : true,
   },
   "custom/turbo": {
     "format": "Mode: {icon}",
@@ -106,6 +107,20 @@
     "format-plugged": " {capacity}%",
     "format-full": " {icon}{capacity}%",
     "format-alt": "{icon}{time}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "battery#keyboard": {
+		"bat": "hid-dc:2c:26:f9:32:9c-battery",
+    "interval": 1,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}% (keyboard)",
+    "format-charging": " {capacity}% (keyboard)",
+    "format-plugged": " {capacity}% (keyboard)",
+    "format-full": " {icon}{capacity}% (keyboard)",
+    "format-alt": "{icon}{time} (keyboard)",
     "format-icons": ["", "", "", "", ""]
   },
   "network": {
