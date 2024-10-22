@@ -116,11 +116,11 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon} {capacity}% (keyboard)",
-    "format-charging": " {capacity}% (keyboard)",
-    "format-plugged": " {capacity}% (keyboard)",
-    "format-full": " {icon}{capacity}% (keyboard)",
-    "format-alt": "{icon}{time} (keyboard)",
+    "format": " {icon} {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-full": "  {icon}{capacity}%",
+    "format-alt": " {icon}{time}",
     "format-icons": ["", "", "", "", ""]
   },
   "network": {
