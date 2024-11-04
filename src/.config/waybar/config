@@ -1,35 +1,28 @@
 {    
   /* # General */
   "layer": "top",
-  "modules-left": ["custom/greet",], 
-  "modules-center": ["custom/notifications","tray","hyprland/workspaces"],
-  "modules-right": ["network","group/stats","clock"],
+	"position": "top",
+	"exclusive": true,
+	"reload_style_on_change": true,
+  "modules-left": ["custom/greet","hyprland/language",], 
+  "modules-center": ["custom/notifications","hyprland/workspaces","hyprland/window"],
+  "modules-right": ["network","group/hardware","clock"],
   /* # Groups */
-  "group/stats": {
+  "group/hardware": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 200,
+      "transition-duration": 100,
       "transition-left-to-right": false,
     },
     "modules": ["battery","temperature","custom/turbo","cpu","memory","backlight","battery#keyboard"]
   },
   /* # Modules */
-  "hyprland/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": true,
-    "warp-on-scroll": false,
-    "format": "{name}{icon}",
-    "format-icons": {
-        "urgent": "",
-        "default": ""
-    }
-  },
   "custom/greet": {
     "format": " {}",
     "return-type": "json",
     "tooltip": true,
     "exec": "~/.config/waybar/scripts/greet.sh",
-    "interval": "once",
+    "interval": 60,
     "on-click": "~/.config/waybar/scripts/greet.sh",
 		"escape" : true,
   },
@@ -55,11 +48,26 @@
       "true": "",
     },
   },
-  "tray": {
-    "icon-size": 24,
-    "spacing": 10,
-    "show-passive-items": true,
+  "hyprland/workspaces": {
+    "all-outputs": false,
+    "format": "{name}{icon}",
+    "format-icons": {
+        "urgent": "",
+        "default": ""
+    }
   },
+	"hyprland/window": {
+		"format": "{title}",
+		"icon": true,
+		"separate-outputs": true,
+		"rewrite": {
+			"(.*) — .*": "$1",
+			"(.*) - .*": "$1",
+		},
+	},
+	"hyprland/language": {
+		"format": " {}",
+	},
   "clock": {
 		"timezone": "Mexico/General",
     "tooltip-format": "<span><big><b>{:%A %d}</b></big><small>\n{calendar}</small></span>",
