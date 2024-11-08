@@ -4,7 +4,7 @@
 	"position": "top",
 	"exclusive": true,
 	"reload_style_on_change": true,
-  "modules-left": ["custom/greet","hyprland/language",], 
+  "modules-left": ["custom/greet","hyprland/language","hyprland/submap",], 
   "modules-center": ["custom/notifications","hyprland/workspaces","hyprland/window"],
   "modules-right": ["network","group/hardware","clock"],
   /* # Groups */
@@ -68,6 +68,9 @@
 	},
 	"hyprland/language": {
 		"format": " {}",
+	},
+	"hyprland/submap": {
+		"format": "{}",
 	},
   "clock": {
 		"timezone": "Mexico/General",
