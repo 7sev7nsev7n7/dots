@@ -109,7 +109,8 @@ button:hover {
 	color: @background;
 }
 
-#custom-notifications.0 {
+#custom-notifications.0,
+window#waybar.empty #window {
   font-size: 0px;
   margin: 0px;
   padding: 0px;
