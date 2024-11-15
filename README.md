@@ -6,7 +6,7 @@ just make sure to copy the files to their appropriate directories and you should
 
 ## NOTE
 
-some configuration files (specifically `dunst` and `swaylock` will only work after an initial loading of said configurations via `wal`)
+some configuration files (specifically `dunst` and `swaylock`) will only work after an initial loading of said configurations via `wal`)
 
 <img src="/assets/demo.webp" width="960">
 
