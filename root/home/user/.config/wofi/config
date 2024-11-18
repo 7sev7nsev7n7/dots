@@ -2,5 +2,5 @@ show=drun
 insensitive=true
 matching=contains
 width=15%
-location=0
+location=7
 term=kitty
