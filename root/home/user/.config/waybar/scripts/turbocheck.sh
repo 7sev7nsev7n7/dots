@@ -11,7 +11,7 @@ elif [[ $turbo == 2 ]]; then
 fi
 
 if [[ "$turbo" != "$(cat $curfile)" ]]; then
-	dunstify -a System "Changed performance mode to $tt"  &
+	dunstify -a "$HOSTNAME" "Changed performance mode to $tt"  &
 fi
 echo $turbo > $curfile
 echo {\"alt\": \"$turbo\", \"tooltip\": \"$tt mode\",}
