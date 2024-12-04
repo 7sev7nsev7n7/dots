@@ -25,3 +25,5 @@ necessary dependancies for complete setup
 - pipewire/pipewire-pulse + wireplumber 
 - gtk3/4
 - Iosevka fonts
+
+you can supply your own wallpapers if you desire
