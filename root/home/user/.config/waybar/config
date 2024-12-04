@@ -1,5 +1,6 @@
 {    
   /* # General */
+	"height": 36,
   "layer": "top",
 	"position": "top",
 	"exclusive": true,
