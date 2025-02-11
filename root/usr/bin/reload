@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+clear
+tput setaf 4
+cat /usr/share/ascii/arch
+tput sgr0
