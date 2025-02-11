@@ -7,7 +7,7 @@ file=$1
 
 # set wallpaper and color scheme
 $(swww img "$file" --transition-step 90 --transition-duration 1 --transition-type grow --transition-fps 144 &> /dev/null)
-wal -sni "$file"
+wal -snti "$file"
 
 # reload multiple items that require config updates
 $path/keyboard.sh 0
