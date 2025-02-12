@@ -1,0 +1,81 @@
+{
+	"name": "Vimium C",
+	"@time": "2/12/2025, 10:15:46 AM",
+	"time": 1739376946929,
+	"environment": {
+		"extension": "1.99.997",
+		"platform": "linux",
+		"firefox": 135
+	},
+	"autoDarkMode": 1,
+	"exclusionRules": [
+		{
+			"passKeys": "^ < <a-m> <s-esc> > ? B J K O T X f t ",
+			"pattern": ":https://pony.town/"
+		},
+		{
+			"passKeys": "<a-k> ",
+			"pattern": ":https://web.whatsapp.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://diep.io/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://vim-adventures.com/"
+		},
+		{
+			"passKeys": "- - < > a a b c t ",
+			"pattern": ":https://web.whatsapp.com/"
+		}
+	],
+	"filterLinkHints": true,
+	"grabBackFocus": true,
+	"keyLayout": 26,
+	"keyMappings": [
+		"#!no-check",
+		"map M Marks.activate",
+		"map : passNextKey",
+		"map gI LinkHints.activateEdit",
+		"map s LinkHints.activateFocus",
+		"map <c-h> visitPreviousTab",
+		"map <c-s-backspace> zoomReset",
+		"map <c-*> zoomIn",
+		"map <a-i> LinkHints.activateOpenImage",
+		"map <a-s-i> LinkHints.activateDownloadImage",
+		"map <a-j> scrollPxDown",
+		"map <a-k> scrollPxUp",
+		"map <s-esc> LinkHints.unhoverLast",
+		"map Yy copyCurrentTitle",
+		"map <a-f> LinkHints.activateDownloadLink",
+		"unmap <a-n>",
+		""
+	],
+	"keyboard": [
+		300,
+		50
+	],
+	"keyupTime": 60,
+	"localeEncoding": "",
+	"searchEngines": [
+		"a\\:|Arch Wiki: https://wiki.archlinux.org/index.php?search=%s",
+		"ap\\:|Arch Package Search: https://archlinux.org/packages/?sort=&q=%s",
+		"aur\\:| AUR Search: https://aur.archlinux.org/packages?K=%s",
+		"w\\:|Wikipedia: https://en.wikipedia.org/wiki/Special:Search?go=Go&search=%s",
+		"y\\:|Youtube: https://www.youtube.com/results?search_query=%s",
+		"g\\:|Google: https://www.google.com/search?q=%s",
+		"gh\\:|Github: https://github.com/search?q=%s",
+		"img\\:|Google Images: https://www.google.com/search?udm=2&q=%s",
+		"r/|Subreddit: https://reddit.com/r/%s",
+		"ud\\:|Urban Dictionary: https://www.urbandictionary.com/define.php?term=%s",
+		"gs\\:|Google Scholar: https://scholar.google.com/scholar?hl=en&q=%s",
+		"man\\:|Arch Man Pages: https://man.archlinux.org/search?q=%s",
+		""
+	],
+	"showActionIcon": false,
+	"showInIncognito": true,
+	"vimSync": true,
+	"ignoreKeyboardLayout": 1,
+	"ignoreCapsLock": 2
+}

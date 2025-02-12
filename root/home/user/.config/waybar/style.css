@@ -7,9 +7,9 @@
   border-radius: 2px;
 }
 
-/*@define-color @color4;*/
+/*@define-color @color3;*/
 span.colored {
-  color: @color4;
+  color: @color3;
 }
 
 window#waybar {
@@ -95,7 +95,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad, 
 #custom-notifications {
-  border-top: 4px solid @color4;
+  border-top: 4px solid @color3;
   margin: 0px 4px;
   /* background: alpha(@background, 1); */
   background-color: mix(@background, #000000, 0.3);
@@ -106,7 +106,7 @@ button:hover {
 
 /* per-module configurations */
 #custom-notifications {
-  background: @color4;
+  background: @color3;
 	color: @background;
 }
 

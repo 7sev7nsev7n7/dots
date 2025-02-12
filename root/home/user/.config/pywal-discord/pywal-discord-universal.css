@@ -27,7 +27,7 @@ element {
   --lightbg: linear-gradient(rgba(255, 255, 255, 0.03),rgba(255, 255, 255, 0.03)),var(--background);
   --darkbg: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1)),var(--background);
   --bdfdb-blurple: var(--color2);
-  --brand-500: var(--color4); /* replace blurple */
+  --brand-500: var(--color3); /* replace blurple */
 }
 
 html.newBrand {
@@ -65,9 +65,9 @@ html.newBrand {
   --brand-experiment: var(--color1);
   --text-positive: var(--color2);
   --header-primary: var(--color6);
-  --header-secondary: var(--color4);
+  --header-secondary: var(--color3);
   --text-normal: var(--foreground);
-  --text-muted: var(--color4);
+  --text-muted: var(--color3);
   --text-link: var(--color12);
   --channels-default: var(--color6);
   --interactive-normal: var(--foreground);
@@ -78,7 +78,7 @@ html.newBrand {
   --background-secondary: transparent;  /* color-mix(in srgb, var(--background) 30%, transparent); */
   --background-secondary-alt: transparent; /* var(--background); */
   --background-tertiary: color-mix(in srgb, var(--background) 20%, transparent); /* originally var(--background) */
-  --background-accent: var(--color4);
+  --background-accent: var(--color3);
   --background-floating: var(--background);
   --background-mobile-primary: var(--background);
   --background-mobile-secondary: var(--color8);
@@ -114,17 +114,17 @@ html.newBrand {
   --scrollbar-auto-track: rgba(255, 255, 255, 0.06);
   --scrollbar-thin-track: rgba(255, 255, 255, 0.06);
   --text-positive: var(--color2);
-  --text-warning: var(--color4);
+  --text-warning: var(--color3);
   --text-danger: var(--color1);
   --info-positive-background: rgba(59, 165, 92, 0.8);
   --info-positive-foreground: var(--color2);
   --info-warning-background: rgba(250, 166, 26, 0.8);
-  --info-warning-foreground: var(--color4);
+  --info-warning-foreground: var(--color3);
   --info-danger-background: rgba(237, 66, 69, 0.8);
   --info-danger-foreground: var(--color1);
   --status-positive-background: var(--color2);
   --status-positive-text: var(--text);
-  --status-warning-background: var(--color4);
+  --status-warning-background: var(--color3);
   --status-danger-background: var(--color1);
 }
 
@@ -204,7 +204,7 @@ html.newBrand {
 
 .reaction-1hd86g.reactionMe-wv5HKu {
   background-color: var(--background);
-  border-color: var(--color4);
+  border-color: var(--color3);
 }
 
 /*
@@ -225,7 +225,7 @@ html.newBrand {
 
 .lookFilled-1Gx00P.colorYellow-2JqYwt {
   color: var(--text);
-  background-color: var(--color4);
+  background-color: var(--color3);
 }
 
 /* End rebranding gross yuck */
