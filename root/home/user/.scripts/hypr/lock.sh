@@ -7,7 +7,7 @@ if [[ $cur -eq 0 ]]; then
 	hyprctl dispatch workspace name:~
 	pkill -SIGUSR1 waybar
 	dunstctl set-paused true
-	hyprctl dispatch submap disable
+	hyprctl dispatch submap locked
 	swaylock
 	pkill -SIGUSR2 waybar
 	hyprctl dispatch workspace previous
