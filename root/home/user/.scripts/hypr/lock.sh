@@ -7,11 +7,11 @@ if [[ $cur -eq 0 ]]; then
 	hyprctl dispatch workspace name:~
 	pkill -SIGUSR1 waybar
 	dunstctl set-paused true
-	hyprctl dispatch submap locked
+	#hyprctl dispatch submap locked
 	swaylock
 	pkill -SIGUSR2 waybar
 	hyprctl dispatch workspace previous
-	hyprctl dispatch submap reset
+	#hyprctl dispatch submap reset
 	dunstctl set-paused false
 	dunstify -a "System" "Notifications" "Resumed Notifications"	
 	echo "0" > $file
