@@ -35,10 +35,10 @@ case $mode in # if $mode is found in one of lists
 		if [[ -z $color ]]; then # if color argument is not found, use wallpaper color 
 			color=$(sed "$col q;d" ~/.cache/wal/colors | sed -e 's/#//')
 		fi
-		asusctl -k ${pows[$pow]} led-mode $mode -c $color
+		asusctl -k ${pows[$pow]} aura $mode -c $color
 		;;
 	'rainbow-cycle')
-		asusctl -k ${pows[$pow]} led-mode $mode
+		asusctl -k ${pows[$pow]} aura $mode
 		;;
 	*)
 		echo 'not found'
