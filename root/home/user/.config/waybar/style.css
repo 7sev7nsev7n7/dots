@@ -1,6 +1,6 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "Iosevka Fixed";
+  font-family: "Iosevka Fixed", "Font Awesome 6 Free"; 
 	font-style: normal;
 	font-weight: bold;
   font-size: 11pt;
