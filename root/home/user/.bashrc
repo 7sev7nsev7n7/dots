@@ -26,6 +26,7 @@ makepdf() { pandoc --highlight-style tango $* && mupdf $_; }
 
 # Functions (are better than aliases ngl)
 wallpaper() { ~/.scripts/colors/cwall.sh "$@";}
+wallpaperchoose() { ~/.scripts/colors/cwallchoose.sh "$@";}
 
 # shitty shits
 hawk() { if [ "$1" == "tuah" ]; then echo 'spit on that thang!'; else echo 'bash: hawk: command not found'; fi }
