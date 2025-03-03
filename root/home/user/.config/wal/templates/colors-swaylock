@@ -5,14 +5,16 @@ indicator
 clock
 show-failed-attempts
 ignore-empty-password
-font=Iosevka
+font=Noto Sans
 fade-in=5
-indicator-x-position=1820
-indicator-y-position=980
+indicator-x-position=1720
+indicator-y-position=880
+indicator-radius=100
+indicator-thickness=20
 color={background.strip}44
-key-hl-color={foreground.strip}ff
+key-hl-color={foreground.strip}33
 inside-color={background.strip}88
-ring-color={background.strip}ff
+ring-color={background.strip}aa
 text-color={color4.strip}ff
 inside-ver-color=00000000
 ring-ver-color={color1.strip}da
@@ -23,3 +25,4 @@ text-clear-color={color5.strip}ff
 ring-wrong-color=bb0000ff
 inside-wrong-color=00000000
 text-wrong-color=bb0000ff
+line-color=00000000
