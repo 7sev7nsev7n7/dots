@@ -73,7 +73,8 @@ button:hover {
 /* per-module configurations */
 #custom-notifications {
 	color: @background;
-  background: @color3;
+  background: linear-gradient(alpha(@color3, 0.9), alpha(@foreground, 0.8));
+	border-top: 4px solid alpha(@color3, 0.9);
 }
 
 #custom-notifications.0,
