@@ -3,71 +3,38 @@
   font-family: "Noto Sans", "Font Awesome 6 Free"; 
 	font-style: normal;
 	font-weight: bold;
-  font-size: 11pt;
-  border-radius: 2px;
-}
-
-/*@define-color @color3;*/
-span.colored {
-  color: @color3;
+  font-size: 10pt;
 }
 
 window#waybar {
   color: @foreground;
-  background-color: alpha(@theme_base_color, 0.7);
-}
-
-window#waybar.hidden {
-  opacity: 0.2;
-}
-
-#waybar.empty #window {
-  background-color: @theme_base_color;
-  opacity: 0.2
-}
-
-#workspaces {
-}
-
-#window {
-  margin: 4px;
-  background-color: rgba(0,0,0,0.0);
-  font-size:14px;
-  font-weight: bold;
+  background: alpha(@theme_base_color, 0.5);
+	margin: 8px 8px;
 }
 
 button {
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
-  border: none;
-  border-radius: 2px;
-  color: #ff0000;
+  border-radius: 16px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
+	border: 1px solid @color4;
 }
 
 #workspaces button {
   padding: 0 4px;
-  background-color: @background;
-  color:#f9f9f9;
-}
-
-#workspaces button:hover {
-  background-color: @background;
-  color: @color6;
+  background: @background;
+  color: @foreground;
 }
 
 #workspaces button.active {
-  background-color: @color6;
+  background: @color3;
   color: @background;
 }
 
 #workspaces button.urgent {
-  background-color: @color6;
+  background: mix(@color3, @background, 0.5);
   color: @background
 }
 
@@ -95,56 +62,42 @@ button:hover {
 #idle_inhibitor,
 #scratchpad, 
 #custom-notifications {
+  background: linear-gradient(@color3, alpha(@background, 0.3) 50%);
+	background-color: alpha(@background, 0.3);
   border-top: 4px solid @color3;
-  margin: 0px 4px;
-  /* background: alpha(@background, 1); */
-  background-color: mix(@background, #000000, 0.3);
-  opacity: 1;
+  border-radius: 16px;
+  margin: 8px 4px;
   padding: 4px 8px;
-  border-radius: 4px;
 }
 
 /* per-module configurations */
 #custom-notifications {
-  background: @color3;
 	color: @background;
+  background: @color3;
 }
 
 #custom-notifications.0,
 window#waybar.empty #window {
-  font-size: 0px;
+	opacity: 0;
   margin: 0px;
   padding: 0px;
-  background-color: transparent;
-  border-top: transparent;
-}
-
-#clock {
-  font-size:14px;
-  font-weight: bold;
 }
 
 #battery.charging {
-  color: mix(mix(@color6, #00ff00, 0.4), #000000, 0.8);
-  background-color: mix(@color6, #00ff00, 0.4);
+  color: mix(mix(@color3, #00ff00, 0.4), #000000, 0.8);
+  background: mix(@color3, #00ff00, 0.4);
   border-top: 4px solid mix(@color6, #00ff00, 0.4);
 }
 
 #battery.plugged {
-  color: mix(mix(@color6, #00ff00, 0.4), #ffffff, 0.4);
-  background-color: mix(@background, #008800, 0.4);
-  border-top: 4px solid mix(@color6, #00ff00, 0.4);
-}
-
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: #000000;
-  }
+  color: mix(mix(@color3, #00ff00, 0.4), #ffffff, 0.4);
+  background: linear-gradient(alpha(mix(@color3, #00ff00, 0.5), 0.8), mix(@background, #008800, 0.4) 90%);
+	background-color: alpha(#00ff00, 0.3);
+  border-top: 4px solid alpha(mix(@color3, #00ff00, 0.5), 0.8);
 }
 
 #battery.warning:not(.charging) {
-  background-color: #f53c3c;
+  background: #f53c3c;
   color: #ffffff;
   animation-name: blink;
   animation-duration: 0.5s;
@@ -154,7 +107,7 @@ window#waybar.empty #window {
 }
 
 #battery.critical:not(.charging) {
-  background-color: #f53c3c;
+  background: #f53c3c;
   color: #ffffff;
   animation-name: blink;
   animation-duration: 0.5s;
@@ -163,16 +116,19 @@ window#waybar.empty #window {
   animation-direction: alternate;
 }
 
-label:focus {
-  background-color: #000000;
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 #network.disconnected {
-  background-color: @color6;
+  background: @color3;
 }
 
 #temperature.critical {
-  background-color: #eb4d4b;
+  background: #eb4d4b;
 }
 
 #tray > .passive {
@@ -181,5 +137,5 @@ label:focus {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: @color6;
+  background: @color3;
 }
