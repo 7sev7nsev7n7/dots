@@ -8,9 +8,7 @@ just make sure to copy the files to their appropriate directories and you should
 
 some configuration files (specifically `dunst` and `swaylock`) will only work after an initial loading of said configurations via `wal`
 
-<video width="960" autoplay>
-    <source src="/assets/demo.webm" type="video/webm">
-</video>
+<img src="/assets/demo.webm" width=960>
 
 necessary dependancies for complete setup
 
