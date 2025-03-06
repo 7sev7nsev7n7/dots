@@ -3,17 +3,17 @@
 */
 
 * {
-    font-family: "Noto Sans";
-		font-weight: normal;
+	font-family: "Noto Sans";
+	font-weight: normal;
 }
 
 /* friends page */
 .peopleList-2VBrVI, .inner-2pOSmK {
-    background: var(--darkbg);
+	background: var(--darkbg);
 }
 
 .peopleColumn-1wMU14{
-    background: var(--color0);
+	background: var(--color0);
 }
 
 element {
@@ -22,29 +22,25 @@ element {
 
 /* end element */
 :root {
-  /* Yeah, I know lightbg is actually darker than darkbg but whatever
-     * change & pull it if you wish */
-  --lightbg: linear-gradient(rgba(255, 255, 255, 0.03),rgba(255, 255, 255, 0.03)),var(--background);
   --darkbg: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1)),var(--background);
   --bdfdb-blurple: var(--color2);
   --brand-500: var(--color4); /* replace blurple */
 }
 
 html.newBrand {
+  --brand-experiment: var(--color1);
   --brand-experiment-100: var(--text);
   --brand-experiment-130: var(--text);
   --brand-experiment-160: var(--text);
   --brand-experiment-200: var(--text);
   --brand-experiment-230: var(--text);
   --brand-experiment-260: var(--text);
-  --brand-experiment: var(--color1);
   --brand-experiment-300: var(--color1);
   --brand-experiment-330: var(--color1);
   --brand-experiment-360: var(--color1);
   --brand-experiment-400: var(--color1);
   --brand-experiment-430: var(--color1);
   --brand-experiment-460: var(--color1);
-  --brand-experiment: var(--color1);
   --brand-experiment-500: var(--color1);
   --brand-experiment-530: var(--color1);
   --brand-experiment-560: var(--color1);
@@ -61,106 +57,116 @@ html.newBrand {
 }
 
 .theme-dark {
-  --focus-primary: var(--color4);
-  --brand-experiment: var(--color1);
-  --text-positive: var(--color2);
-  --header-primary: var(--color6);
-  --header-secondary: var(--color3);
-  --text-normal: var(--foreground);
-  --text-muted: var(--color3);
-  --text-link: var(--color12);
-  --channels-default: var(--color4);
-  --interactive-normal: var(--foreground);
-  --interactive-hover: var(--foreground);
-  --interactive-active: color-mix(in srgb, var(--color6) 30%, rgb(225,225,225));
-  --interactive-muted: color-mix(in srgb, var(--color6) 50%, transparent);
-  --background-primary: color-mix(in srgb, var(--background) 10%, transparent); /* remember to switch this back to var(--background) */
-  --background-secondary: transparent;  /* color-mix(in srgb, var(--background) 30%, transparent); */
-  --background-secondary-alt: transparent; /* var(--background); */
-  --background-tertiary: color-mix(in srgb, var(--background) 50%, transparent); /* var(--background) */
-  --background-accent: var(--color3);
-  --background-floating: var(--background);
-  --background-mobile-primary: var(--background);
-  --background-mobile-secondary: var(--color8);
-  --background-modifier-hover: rgba(79, 84, 92, 0.8);
-  --background-modifier-active: rgba(79, 84, 92, 0.24);
-  --background-modifier-selected: rgba(79, 84, 92, 0.32);
-  --background-modifier-accent: hsla(0, 0%, 100%, 0.4);
-  --background-mentioned: color-mix(in srgb, var(--foreground) 20%, transparent); /* rgba(250, 166, 26, 0.10); */
-  --background-mentioned-hover: color-mix(in srgb, var(--foreground) 10%, transparent); /* rgba(250, 166, 26, 0.08); */
-  --background-message-hover: color-mix(in srgb, var(--background) 50%, transparent); /* rgba(4, 4, 5, 0.2); */
-  --elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.8);
-  --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.8), 0 1.5px 0 rgba(6, 6, 7, 0.8),
-    0 2px 0 rgba(4, 4, 5, 0.8);
-  --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.8);
-  --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.8);
-  --logo-primary: #fff;
-  --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-  --channeltextarea-background: color-mix(in srgb, var(--background) 50%, transparent);
-  --activity-card-background: var(--background);
-  --textbox-markdown-syntax: var(--foreground);
-  --deprecated-card-bg: rgba(32, 34, 37, 0.6);
-  --deprecated-card-editable-bg: rgba(32, 34, 37, 0.8);
-  --deprecated-store-bg: transparent; /* #36393f; */
-  --deprecated-quickswitcher-input-background: var(--color8);
-  --deprecated-quickswitcher-input-placeholder: var(--color7);
-  --deprecated-text-input-bg: rgba(0, 0, 0, 0.8);
-  --deprecated-text-input-border: rgba(0, 0, 0, 0.3);
-  --deprecated-text-input-border-hover: #040405;
-  --deprecated-text-input-border-disabled: #202225;
-  --deprecated-text-input-prefix: var(--foreground); /* #dcddde; */
-  --scrollbar-thin-thumb: var(--color6);
-  --scrollbar-auto-thumb: var(--color6);
-  --scrollbar-auto-track: rgba(255, 255, 255, 0.06);
-  --scrollbar-thin-track: rgba(255, 255, 255, 0.06);
-  --text-positive: var(--color2);
-  --text-warning: var(--color3);
-  --text-danger: var(--color1);
-  --info-positive-background: rgba(59, 165, 92, 0.8);
-  --info-positive-foreground: var(--color2);
-  --info-warning-background: rgba(250, 166, 26, 0.8);
-  --info-warning-foreground: var(--color3);
-  --info-danger-background: rgba(237, 66, 69, 0.8);
-  --info-danger-foreground: var(--color1);
-  --status-positive-background: var(--color2);
-  --status-positive-text: var(--text);
-  --status-warning-background: var(--color3);
-  --status-danger-background: var(--color1);
+  --focus-primary: var(--color4); /* Focused areas like messages */
+  --brand-experiment: blue; /* Unknown */
+  --text-positive: blue; /* Unknown */
+  --header-primary: var(--color4); /* Headers like bot names and colors beside active servers */
+  --header-secondary: var(--color6); /* Statuses, channel descriptions and plus sign */
+  --text-normal: var(--foreground); /* General text */
+  --text-muted: var(--color6); /* Time stamps, search bar */
+  --text-link: var(--color6); /* Links */
+  --channels-default: var(--color3); /* General channels */
+  --interactive-normal: var(--foreground); /* Interactable buttons like reaction and pin buttons */
+  --interactive-hover: color-mix(in srgb, white, var(--foreground) 20%); /* Color when interactables are hovered */
+  --interactive-active: color-mix(in srgb, var(--color5) 80%, white); /* Color when interactables are active */
+  --interactive-muted: color-mix(in srgb, var(--color6) 50%, transparent); /* Unknown */
+  --background-primary: linear-gradient(135deg, color-mix(in srgb, var(--color4) 10%, transparent), color-mix(in srgb, var(--background) 20%, transparent)); /* Main background color, used in main chat */
+  --background-secondary: linear-gradient(135deg, color-mix(in srgb, var(--color4) 10%, transparent), transparent); /* Secondary color, used in channel bar and user list */
+  --background-secondary-alt: linear-gradient(135deg, color-mix(in srgb, var(--color4) 20%, transparent), transparent); /* User panel at bottom left */
+  --background-tertiary: color-mix(in srgb, var(--background) 60%, transparent); /* Color used as background at back of everything */
+  --background-accent: var(--color4); /* Small accents like bot data access icons */
+  --background-floating: var(--background); /* Background of floating items, such as dialog for reacting */
+  --background-mobile-primary: blue; /* Unknown */
+  --background-mobile-secondary: blue; /* Unknown */
+  --background-modifier-hover: linear-gradient(135deg, color-mix(in srgb, var(--color4) 90%, transparent), color-mix(in srgb, var(--background) 80%, transparent)); /* Hovered direct message channel */
+  --background-modifier-active: linear-gradient(135deg, color-mix(in srgb, var(--foreground) 90%, transparent), color-mix(in srgb, var(--background) 80%, transparent)); /* Clicked direct message channel */
+  --background-modifier-selected: linear-gradient(135deg, color-mix(in srgb, var(--color4) 20%, transparent), transparent); /* Active direct message channel */
+  --background-modifier-accent: color-mix(in srgb, var(--background), transparent); /* Separators at top and side, and mod view header */
+  --background-mentioned: linear-gradient(135deg, color-mix(in srgb, var(--foreground) 20%, transparent), transparent); /* Highlights for mentions */
+  --background-mentioned-hover: linear-gradient(135deg, color-mix(in srgb, var(--foreground) 80%, transparent), transparent); /* Hovered highlights for mentions */
+  --background-message-hover: linear-gradient(135deg, color-mix(in srgb, var(--color4) 20%, transparent), color-mix(in srgb, var(--background) 80%, transparent)); /* Background for hovered message */
+  --elevation-stroke: 0 0 0 1px var(--background); /* Outline for items in front of overs, such as quick emojis */
+  --elevation-low: 0 1px 0 var(--background); /* Separator for find and direct message sections */
+  --elevation-medium: 0 4px 4px var(--background); /* Shadow for elevated buttons in already elevated items */
+  --elevation-high: 0 8px 16px var(--background); /* Elevated items shadow */
+  --logo-primary: blue; /* Unknown */
+  --guild-header-text-shadow: 0 1px 1px blue; /* Unknown */
+  --channeltextarea-background: linear-gradient(135deg, color-mix(in srgb, var(--color4) 20%, transparent), transparent); /* Background for text input area */
+  --activity-card-background: color-mix(in srgb, var(--background), transparent); /* Background for activity card in friends list */
+  --textbox-markdown-syntax: var(--foreground); /* Color for ticks while typing markdown text */
+  --deprecated-card-bg: blue; /* Unknown */
+  --deprecated-card-editable-bg: blue; /* Unknown */
+  --deprecated-store-bg: blue; /* Unknown */
+  --deprecated-quickswitcher-input-background: blue; /* Unknown */
+  --deprecated-quickswitcher-input-placeholder: blue; /* Unknown */
+  --deprecated-text-input-bg: blue; /* Unknown */
+  --deprecated-text-input-border: blue; /* Unknown */
+  --deprecated-text-input-border-hover: blue; /* Unknown */
+  --deprecated-text-input-border-disabled: blue; /* Unknown */
+  --deprecated-text-input-prefix: blue; /* Unknown */
+  --text-positive: var(--color4); /* Timers for activity statuses */
+  --text-warning: var(--color6); /* Chat or server owner crown icon */
+  --text-danger: blue; /* Unknown */
+  --info-positive-background: blue; /* Unknown */
+  --info-positive-foreground: blue; /* Unknown */
+  --info-warning-background: blue; /* Unknown */
+  --info-warning-foreground: var(--foreground); /* Mention side bar highlight */
+  --info-danger-background: blue; /* Unknown */
+  --info-danger-foreground: blue; /* Unknown */
+  --status-positive-background: var(--color4); /* Add friend background */
+  --status-positive-text: var(--background); /* Add friend text */
+  --status-warning-background: blue; /* Unknown */
+  --status-danger-background: blue; /* Unknown */
+	--channel-text-area-placeholder: color-mix(in srgb, var(--foreground) 40%, transparent); /* Placeholder text for input */
+	--background-nested-floating: linear-gradient(135deg, color-mix(in srgb, var(--color4) 30%, transparent) 50%, color-mix(in srgb, var(--background) 10%, transparent)); /* Color for popups like quick reactions */
+	--status-danger: var(--color4); /* New messages divider */
+	#app-mount ::-webkit-scrollbar-thumb {
+		background-color: var(--color4); /* Scroll bar */
+	}
+	#app-mount ::-webkit-scrollbar-track { /* Scroll bar area */
+		background: linear-gradient(color-mix(in srgb, var(--color4) 10%, transparent) 70%, color-mix(in srgb, var(--background) 10%, transparent));
+	}
 }
 
 /* end .theme-dark */
 
-/* Emoji picker body background */
-.emojiPickerInExpressionPicker-3IzIcv .emojiPicker-3PwZFl {
-  background-color: var(--background);
+/* End cap for new message divider */
+.endCap__908e2 {
+	color: var(--background);
 }
 
-/* Emoji picker header background */
-.contentWrapper-SvZHNd {
-  background-color: var(--background);
+/* GIF / Sticker / Emoji picker wrapper background */
+.contentWrapper__08434{
+	background: var(--background);
+	border-radius: 32px;
+}
+
+/* Account profile popout */
+.inner_c0bea0.biteSize_c0bea0{
+	background: var(--background) !important;
 }
 
 /* Friends tab background */
 .theme-dark .container-1D34oG {
-  background-color: var(--background);
+  background-color: blue; /* Unknown */
 }
 
 /* User popout body */
 .theme-dark .body-3iLsc4,
 .theme-dark .footer-1fjuF6 {
-  background-color: var(--background);
-  opacity: 1 !important;
+  background-color: blue; /* Unknown */
+  opacity: 1 !important; /* Unknown */
 }
 
 /* User popout header */
 .theme-dark .headerNormal-T_seeN {
-  background-color: var(--background);
+  background-color: blue; /* Unknown */
 }
 
 /* Bottom part of user popout */
 .body-3ND3kc {
+  background-color: blue !important; /* Unknown */
   opacity: 1.0 !important;
-  background-color: var(--color0) !important;
 }
 
 /* User popout header when playing a game */
@@ -169,7 +175,12 @@ html.newBrand {
 .activityProfile-2bJRaP,
 .activity-1ythUs,
 .header-QKLPzZ {
-  background: var(--color1);
+  background: blue;
+}
+
+/* Discover button */
+.footer__214dc{
+	background: transparent !important;
 }
 
 /* Start rebranding gross yuck */
@@ -189,25 +200,26 @@ html.newBrand {
 }
 
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+  color: var(--text);
   background-color: var(--color1);
 }
 
 .botTagRegular-2HEhHi {
-  background: var(--color1);
   color: var(--text);
+  background: var(--color1);
 }
 
 .theme-dark .wrapper-3WhCwL {
-  background: var(--darkbg);
   color: var(--text);
+  background: var(--darkbg);
 }
 
 .reaction-1hd86g.reactionMe-wv5HKu {
-  background-color: var(--background);
+  color: var(--text);
   border-color: var(--color3);
+  background-color: var(--background);
 }
 
-/*
 .newMessagesBar_cf58b5 {
   top: 0;
   border-radius: 0 0 8px 8px;
@@ -215,7 +227,6 @@ html.newBrand {
   -webkit-box-shadow: var(--elevation-low);
   box-shadow: var(--elevation-low);
 }
-*/
 
 .rtcConnectionStatusConnected-VRZDjy,
 .rtcConnectionQualityFine-2J6i8z,
@@ -338,8 +349,7 @@ html body {
   input,
   select,
   textarea {
-    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    font-family: "Noto Sans";
     text-rendering: optimizeLegibility;
   }
 
@@ -351,8 +361,7 @@ html body {
   input,
   select,
   textarea {
-    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    font-family: "Noto Sans";
     text-rendering: optimizeLegibility;
   }
 
@@ -364,8 +373,7 @@ html body {
   input,
   select,
   textarea {
-    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    font-family: "Noto Sans";
     text-rendering: optimizeLegibility;
   }
 
@@ -400,8 +408,7 @@ html body div#app-mount.appMount-3lHmkl {
     line-height: 1;
     margin: 0;
     padding: 0;
-    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    font-family: "Noto Sans";
     overflow: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -473,7 +480,7 @@ html body div#app-mount.appMount-3lHmkl {
     border: 0;
     font-weight: inherit;
     font-style: inherit;
-    font-family: inherit;
+    font-family: "Noto Sans";
     font-size: 100%;
     vertical-align: baseline;
   }
@@ -553,7 +560,7 @@ html body div#app-mount.appMount-3lHmkl {
     border: 0;
     font-weight: inherit;
     font-style: inherit;
-    font-family: inherit;
+    font-family: "Noto Sans";
     font-size: 100%;
     vertical-align: baseline;
   }
