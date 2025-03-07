@@ -16,15 +16,15 @@ export EDITOR=vim
 #source /usr/share/nvm/init-nvm.sh
 
 # Aliases
-alias ls='ls --color=auto'
+alias ls='lsd --color=auto'
 alias grep='grep --color=auto'
 alias bd='cd ~/.programs/BetterDiscord; pnpm inject; cd -;'
 alias fucking='sudo'
 alias kys='shutdown 0'
 alias wiki='firefox ~/documents/wiki/main/main.html'
-makepdf() { pandoc --highlight-style tango $* && mupdf $_; }
 
 # Functions (are better than aliases ngl)
+makepdf() { pandoc --highlight-style tango $* && mupdf $_; }
 wallpaper() { ~/.scripts/colors/cwall.sh "$@";}
 wallpaperchoose() { ~/.scripts/colors/cwallchoose.sh "$@";}
 
