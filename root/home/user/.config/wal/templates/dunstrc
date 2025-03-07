@@ -97,7 +97,7 @@
     frame_width = 3
 
     # Defines color of the frame around the notification window.
-    frame_color = "{color6}30"
+    frame_color = "{color6}a0"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -319,6 +319,7 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "{background}30"
     foreground = "{color6}"
+    frame_color = "{color6}a0"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
@@ -326,6 +327,7 @@
 [urgency_normal]
     background = "{background}d0"
     foreground = "{color6}"
+    frame_color = "{color6}a0"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
@@ -333,7 +335,7 @@
 [urgency_critical]
     background = "{color4}"
     foreground = "{background}"
-    frame_color = "{background}"
+    frame_color = "{background}a0"
     timeout = 10
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
@@ -342,7 +344,7 @@
     appname = discord
     background = "{color4}d0"
     foreground = "{background}"
-    frame_color = "{background}"
+    frame_color = "{background}a0"
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
