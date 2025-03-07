@@ -87,7 +87,7 @@ html.newBrand {
   --background-modifier-accent: color-mix(in srgb, var(--background), transparent); /* Separators at top and side, and mod view header */
   --background-mentioned: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), transparent, color-mix(in srgb, var(--foreground) 20%, transparent)); /* Highlights for mentions */
   --background-mentioned-hover: linear-gradient(color-mix(in srgb, var(--foreground) 80%, transparent), transparent, color-mix(in srgb, var(--foreground) 80%, transparent)); /* Hovered highlights for mentions */
-  --background-message-hover: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), color-mix(in srgb, var(--background) 80%, transparent), color-mix(in srgb, var(--foreground) 20%, transparent)); /* Background for hovered message */
+  --background-message-hover: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--foreground) 20%, transparent)); /* Background for hovered message */
   --elevation-stroke: 0 0 0 1px var(--background); /* Outline for items in front of overs, such as quick emojis */
   --elevation-low: 0 1px 0 var(--background); /* Separator for find and direct message sections */
   --elevation-medium: 0 4px 4px var(--background); /* Shadow for elevated buttons in already elevated items */
