@@ -9,7 +9,7 @@
 window#waybar {
   color: @foreground;
   background: linear-gradient(alpha(@background, 0.3) 50%, alpha(mix(@color4, #000000, 0.7), 0.5) 90%);
-	background-color: alpha(@color4, 0.3);
+	background-color: alpha(@background, 0.3);
 	border-bottom: 1px solid alpha(@foreground, 0.3);
 }
 
