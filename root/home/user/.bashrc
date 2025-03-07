@@ -16,7 +16,7 @@ export EDITOR=vim
 #source /usr/share/nvm/init-nvm.sh
 
 # Aliases
-alias ls='lsd --color=auto 2'
+alias ls='lsd --color=auto'
 alias grep='grep --color=auto'
 alias bd='cd ~/.programs/BetterDiscord; pnpm inject; cd -;'
 alias fucking='sudo'
