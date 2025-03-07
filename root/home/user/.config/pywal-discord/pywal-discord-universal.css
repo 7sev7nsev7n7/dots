@@ -78,7 +78,8 @@ html.newBrand {
   --background-floating: var(--background); /* Background of floating items, such as dialog for reacting */
   --background-mobile-primary: blue; /* Unknown */
   --background-mobile-secondary: blue; /* Unknown */
-  --background-modifier-hover: linear-gradient(135deg, color-mix(in srgb, var(--color4) 90%, transparent), color-mix(in srgb, var(--background) 80%, transparent)); /* Hovered direct message channel */
+  /*--background-modifier-hover: linear-gradient(135deg, color-mix(in srgb, var(--color4) 90%, transparent), color-mix(in srgb, var(--background) 80%, transparent)); /* Hovered direct message channel */
+  --background-modifier-hover: color-mix(in srgb, var(--color4) 20%, transparent);
   --background-modifier-active: linear-gradient(135deg, color-mix(in srgb, var(--foreground) 90%, transparent), color-mix(in srgb, var(--background) 80%, transparent)); /* Clicked direct message channel */
   --background-modifier-selected: linear-gradient(135deg, color-mix(in srgb, var(--color4) 20%, transparent), transparent); /* Active direct message channel */
   --background-modifier-accent: color-mix(in srgb, var(--background), transparent); /* Separators at top and side, and mod view header */
@@ -120,6 +121,7 @@ html.newBrand {
 	--channel-text-area-placeholder: color-mix(in srgb, var(--foreground) 40%, transparent); /* Placeholder text for input */
 	--background-nested-floating: linear-gradient(135deg, color-mix(in srgb, var(--color4) 30%, transparent) 50%, color-mix(in srgb, var(--background) 10%, transparent)); /* Color for popups like quick reactions */
 	--status-danger: var(--color4); /* New messages divider */
+	--autocomplete-bg: var(--background); /* Autocompletion container background */
 	#app-mount ::-webkit-scrollbar-thumb {
 		background-color: var(--color4); /* Scroll bar */
 	}
