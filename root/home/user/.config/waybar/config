@@ -1,11 +1,11 @@
 {    
   /* # General */
-	"height": 36,
+	"height": 16,
   "layer": "top",
 	"position": "top",
 	"exclusive": true,
 	"reload_style_on_change": true,
-  "modules-left": ["custom/greet","hyprland/language","hyprland/submap",], 
+  "modules-left": ["custom/greet","hyprland/language","hyprland/submap","custom/volume",], 
   "modules-center": ["custom/notifications","hyprland/workspaces","hyprland/window"],
   "modules-right": ["network","group/hardware","clock"],
   /* # Groups */
@@ -49,6 +49,13 @@
       "true": "",
     },
   },
+	"custom/volume": {
+		"format": " {}",
+		"return-type": "json",
+		"exec": "~/.config/waybar/scripts/volume.sh",
+		"interval": 1,
+		"tooltip": false
+	},
   "hyprland/workspaces": {
     "all-outputs": false,
     "format": "{name}{icon}",

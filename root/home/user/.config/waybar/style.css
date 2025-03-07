@@ -63,7 +63,8 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #scratchpad, 
-#custom-notifications {
+#custom-notifications,
+#custom-volume {
   background: linear-gradient(@color4, alpha(@background, 0.2) 80%);
 	background-color: alpha(@background, 0.3);
   border: 1px solid alpha(@foreground, 0.6);
