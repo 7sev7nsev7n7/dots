@@ -1,5 +1,5 @@
 #window {
-	background-color: alpha(@theme_base_color,0.7);
+	background-color: alpha(@theme_base_color,0.9);
 	font-size: 16px;
 }
 

@@ -8,8 +8,9 @@
 
 window#waybar {
   color: @foreground;
-  background: linear-gradient(alpha(@color3, 0.3), alpha(@background, 0.5));
-	margin: 8px 8px;
+  background: linear-gradient(alpha(@background, 0.3) 50%, alpha(mix(@color4, #000000, 0.7), 0.5) 90%);
+	background-color: alpha(@color4, 0.3);
+	border-bottom: 1px solid alpha(@foreground, 0.3);
 }
 
 button {
@@ -24,17 +25,18 @@ button:hover {
 
 #workspaces button {
   padding: 0 4px;
-  background: @background;
+  background: transparent;
   color: @foreground;
 }
 
 #workspaces button.active {
-  background: @color3;
+  background: linear-gradient(alpha(@color4, 0.9), alpha(@foreground, 0.8));
   color: @background;
+  border: 1px solid alpha(@foreground, 0.6);
 }
 
 #workspaces button.urgent {
-  background: mix(@color3, @background, 0.5);
+  background: mix(@color4, @background, 0.5);
   color: @background
 }
 
@@ -62,19 +64,18 @@ button:hover {
 #idle_inhibitor,
 #scratchpad, 
 #custom-notifications {
-  background: linear-gradient(@color3, alpha(@background, 0.3) 50%);
+  background: linear-gradient(@color4, alpha(@background, 0.2) 80%);
 	background-color: alpha(@background, 0.3);
-  border-top: 4px solid @color3;
-  border-radius: 16px;
-  margin: 8px 4px;
-  padding: 4px 8px;
+  border: 1px solid alpha(@foreground, 0.6);
+  border-radius: 8px;
+  margin: 8px 2px;
+  padding: 4px 4px;
 }
 
 /* per-module configurations */
 #custom-notifications {
-	color: @background;
-  background: linear-gradient(alpha(@color3, 0.9), alpha(@foreground, 0.8));
-	border-top: 4px solid alpha(@color3, 0.9);
+	color: alpha(@background, 0.8);
+  background: linear-gradient(alpha(@color4, 0.9), alpha(@foreground, 0.8));
 }
 
 #custom-notifications.0,
@@ -85,16 +86,16 @@ window#waybar.empty #window {
 }
 
 #battery.charging {
-  color: mix(mix(@color3, #00ff00, 0.4), #000000, 0.8);
-  background: mix(@color3, #00ff00, 0.4);
+  color: mix(mix(@color4, #00ff00, 0.4), #000000, 0.8);
+  background: mix(@color4, #00ff00, 0.4);
   border-top: 4px solid mix(@color6, #00ff00, 0.4);
 }
 
 #battery.plugged {
-  color: mix(mix(@color3, #00ff00, 0.4), #ffffff, 0.4);
-  background: linear-gradient(alpha(mix(@color3, #00ff00, 0.5), 0.8), mix(@background, #008800, 0.4) 90%);
+  color: mix(mix(@color4, #00ff00, 0.4), #ffffff, 0.4);
+  background: linear-gradient(alpha(mix(@color4, #00ff00, 0.5), 0.8), mix(@background, #008800, 0.4) 90%);
 	background-color: alpha(#00ff00, 0.3);
-  border-top: 4px solid alpha(mix(@color3, #00ff00, 0.5), 0.8);
+  border-top: 4px solid alpha(mix(@color4, #00ff00, 0.5), 0.8);
 }
 
 #battery.warning:not(.charging) {
@@ -125,7 +126,7 @@ window#waybar.empty #window {
 }
 
 #network.disconnected {
-  background: @color3;
+  background: @color4;
 }
 
 #temperature.critical {
@@ -138,5 +139,5 @@ window#waybar.empty #window {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background: @color3;
+  background: @color4;
 }
