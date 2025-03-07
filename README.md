@@ -4,11 +4,12 @@ simple dotfiles for hyprland setup. i refuse to make an installation script (for
 
 just make sure to copy the files to their appropriate directories and you should be good to go. consider 'root' to be the root mountpoint
 
+<img src="/assets/demo.gif" width=960>
+<sub>Demo shown here may be out of date with most recent commits due to laziness</sub>
+
 ## NOTE
 
 some configuration files (specifically `dunst` and `swaylock`) will only work after an initial loading of said configurations via `wal`
-
-<img src="/assets/demo.gif" width=960>
 
 necessary dependancies for complete setup
 
@@ -23,6 +24,7 @@ necessary dependancies for complete setup
 - asusctl (hardware-specific)
 - backlight_control (self-explanatory)
 - pipewire/pipewire-pulse + wireplumber 
+- lsd (ls extension that includes icons and glyphs)
 - gtk3/4
 - Iosevka fonts
 
