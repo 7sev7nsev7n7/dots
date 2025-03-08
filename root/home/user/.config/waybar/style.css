@@ -68,11 +68,17 @@ button:hover {
 }
 
 /* per-module configurations */
-tooltip, tooltip label {
+tooltip {
+  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background-color: alpha(@background, 0.5);
+	border-radius: 8px;
+	border: 1px solid alpha(@foreground, 0.7);
+}
+
+tooltip label {
 	font-family: "Iosevka Term";
 	font-size: 12pt;
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
-	background-color: alpha(@background, 0.4);
+	color: @foreground;
 }
 
 #custom-notifications,
