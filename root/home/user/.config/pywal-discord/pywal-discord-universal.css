@@ -77,12 +77,11 @@ html.newBrand {
   --background-primary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background) 30%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Main background color, used in main chat */
   --background-secondary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background), transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Secondary color, used in channel bar and user list */
   --background-secondary-alt: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), transparent, color-mix(in srgb, var(--foreground) 20%, transparent)); /* User panel at bottom left */
-  --background-tertiary: color-mix(in srgb, var(--background) 30%, transparent); /* Color used as background at back of everything */
+  --background-tertiary: color-mix(in srgb, var(--background) 50%, transparent); /* Color used as background at back of everything */
   --background-accent: var(--foreground); /* Small accents like bot data access icons */
   --background-floating: color-mix(in srgb, var(--background) 80%, transparent); /* Background of floating items, such as dialog for reacting */
   --background-mobile-primary: blue; /* Unknown */
   --background-mobile-secondary: blue; /* Unknown */
-  /*--background-modifier-hover: linear-gradient(color-mix(in srgb, var(--foreground) 90%, transparent), color-mix(in srgb, var(--background) 80%, transparent)); /* Hovered direct message channel */
   --background-modifier-hover: color-mix(in srgb, var(--foreground) 20%, transparent); /* Hovered direct message channel modifier */
   --background-modifier-active: linear-gradient(color-mix(in srgb, var(--foreground) 90%, transparent), color-mix(in srgb, var(--background) 80%, transparent), color-mix(in srgb, var(--foreground) 90%, transparent)); /* Clicked direct message channel */
   --background-modifier-selected: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), transparent, color-mix(in srgb, var(--foreground) 20%, transparent)); /* Active direct message channel */
