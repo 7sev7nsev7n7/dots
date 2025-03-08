@@ -20,13 +20,14 @@
 }
 
 .browser-toolbar {
-	background: linear-gradient(color-mix(in srgb, var(--sidebar-background-color) 10%, transparent), color-mix(in srgb, var(--toolbar-field-background-color) 30%, transparent), color-mix(in srgb, var(--sidebar-background-color) 10%, transparent)) !important;
-	background-color: color-mix(in srgb, var(--toolbar-bgcolor) 30%, transparent) !important;
+	background: linear-gradient(color-mix(in srgb, var(--sidebar-background-color) 30%, transparent), color-mix(in srgb, var(--toolbar-field-background-color) 30%, transparent), color-mix(in srgb, var(--sidebar-background-color) 10%, transparent)) !important;
+	background-color: color-mix(in srgb, var(--toolbar-bgcolor) 80%, transparent) !important;
 }
 
 /* URL Bar Background colors */
 #urlbar-background {
 	background: linear-gradient(color-mix(in srgb, var(--sidebar-background-color) 30%, transparent), color-mix(in srgb, color-mix(in srgb, color-mix(in srgb, var(--toolbar-field-background-color) 60%, var(--toolbar-color)) 10%, transparent) 30%, transparent), color-mix(in srgb, var(--sidebar-background-color) 30%, transparent)) !important;
+	border: 1px solid color-mix(in srgb, var(--sidebar-background-color) 30%, transparent) !important;
 }
 
 /* Selected tab */
