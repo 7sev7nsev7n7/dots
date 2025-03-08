@@ -62,7 +62,7 @@ button:hover {
   background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
 	background-color: alpha(@background, 0.3);
   border: 1px solid alpha(@foreground, 0.6);
-  border-radius: 8px;
+  border-radius: 64px;
   margin: 8px 2px;
   padding: 4px 4px;
 }
