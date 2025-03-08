@@ -23,12 +23,13 @@ element {
 
 /* end element */
 :root {
-  --darkbg: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1)),var(--background);
+  /*--darkbg: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1)),var(--background);*/
   --bdfdb-blurple: var(--color2);
-  --brand-500: var(--foreground); /* replace blurple */
+  --brand-500: color-mix(in srgb, var(--background) 50%, transparent); /* replace blurple */
 }
 
 html.newBrand {
+	/*
   --brand-experiment: var(--color1);
   --brand-experiment-100: var(--text);
   --brand-experiment-130: var(--text);
@@ -55,11 +56,12 @@ html.newBrand {
   --brand-experiment-830: var(--background);
   --brand-experiment-860: var(--background);
   --brand-experiment-900: var(--background);
+	*/
 }
 
 .theme-dark {
-	--bg-brand: var(--color4); /* Discord logo at top left */
-  --focus-primary: var(--foreground); /* Focused areas like messages */
+	--bg-brand: var(--color4); /* Discord logo at top left while hovered */
+  --focus-primary: color-mix(in srgb, var(--foreground) 50%, transparent); /* Focused areas like messages */
   --brand-experiment: blue; /* Unknown */
   --text-positive: blue; /* Unknown */
   --header-primary: var(--foreground); /* Headers like bot names and colors beside active servers */
@@ -67,13 +69,13 @@ html.newBrand {
   --text-normal: var(--foreground); /* General text */
   --text-muted: var(--color6); /* Time stamps, search bar */
   --text-link: var(--color6); /* Links */
-  --channels-default: var(--color3); /* General channels */
+  --channels-default: var(--color4); /* General channels */
   --interactive-normal: var(--foreground); /* Interactable buttons like reaction and pin buttons */
   --interactive-hover: color-mix(in srgb, white, var(--foreground) 20%); /* Color when interactables are hovered */
   --interactive-active: color-mix(in srgb, var(--color5) 80%, white); /* Color when interactables are active */
-  --interactive-muted: color-mix(in srgb, var(--color6) 50%, transparent); /* Unknown */
-  --background-primary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background) 20%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Main background color, used in main chat */
-  --background-secondary: linear-gradient(color-mix(in srgb, color-mix(in srgb, var(--foreground) 20%, var(--background)), transparent), color-mix(in srgb, var(--background), transparent), color-mix( in srgb, color-mix(in srgb, var(--foreground) 20%, var(--background)), transparent)); /* Secondary color, used in channel bar and user list */
+  --interactive-muted: color-mix(in srgb, var(--color6) 50%, transparent); /* Muted channel text */
+  --background-primary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background) 30%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Main background color, used in main chat */
+  --background-secondary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background), transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Secondary color, used in channel bar and user list */
   --background-secondary-alt: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), transparent, color-mix(in srgb, var(--foreground) 20%, transparent)); /* User panel at bottom left */
   --background-tertiary: color-mix(in srgb, var(--background) 30%, transparent); /* Color used as background at back of everything */
   --background-accent: var(--foreground); /* Small accents like bot data access icons */
