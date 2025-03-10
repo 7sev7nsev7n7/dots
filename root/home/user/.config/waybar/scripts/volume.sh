@@ -1,3 +1,7 @@
 #~/bin/bash
-out="$(pamixer --get-volume)"
+if [ "$(pamixer --get-mute)" == "false" ]; then
+	out=" $(pamixer --get-volume)"
+else
+	out=""
+fi
 echo {\"text\": \"$out\"}
