@@ -5,7 +5,7 @@
 	"position": "top",
 	"exclusive": true,
 	"reload_style_on_change": true,
-  "modules-left": ["custom/greet","hyprland/language","hyprland/submap","custom/volume",], 
+  "modules-left": ["custom/greet","hyprland/language","hyprland/submap","group/volume",], 
   "modules-center": ["custom/notifications","hyprland/workspaces","hyprland/window"],
   "modules-right": ["network","group/hardware","clock"],
   /* # Groups */
@@ -17,6 +17,14 @@
     },
     "modules": ["battery","temperature","custom/turbo","cpu","memory","backlight",]
   },
+	"group/volume": {
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 100,
+			"transition-left-to-right": true,
+		},
+		"modules": ["custom/volume", "custom/nowplaying"]
+	},
   /* # Modules */
   "custom/greet": {
     "format": " {}",
@@ -53,6 +61,13 @@
 		"format": " {}",
 		"return-type": "json",
 		"exec": "~/.config/waybar/scripts/volume.sh",
+		"interval": 1,
+		"tooltip": false
+	},
+	"custom/nowplaying": {
+		"format": "{}",
+		"return-type": "json",
+		"exec": "~/.config/waybar/scripts/nowplaying.sh",
 		"interval": 1,
 		"tooltip": false
 	},
