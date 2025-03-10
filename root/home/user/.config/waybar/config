@@ -31,7 +31,7 @@
     "return-type": "json",
     "tooltip": true,
     "exec": "~/.config/waybar/scripts/greet.sh",
-    "interval": 60,
+    "interval": "once",
     "on-click": "~/.config/waybar/scripts/greet.sh",
 		"escape" : true,
   },
