@@ -51,7 +51,7 @@ menupopup, menuseparator, button, search-textbox {
 
 /* Override the default appearance of buttons and textboxes to match the pywalfox theme */
 button, search-textbox, menuseparator {
-  background-color: var(--pywalfox-darker-background) !important;
+  background-color: inherit !important;
 }
 
 /* Separators in dropwdown menus */
