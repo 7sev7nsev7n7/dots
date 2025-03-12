@@ -69,7 +69,7 @@ html.newBrand {
   --text-normal: var(--foreground); /* General text */
   --text-muted: var(--color6); /* Time stamps, search bar */
   --text-link: var(--color6); /* Links */
-  --channels-default: var(--color4); /* General channels */
+  --channels-default: color-mix(in srgb, var(--foreground), var(--color6)); /* General channels */
   --interactive-normal: var(--foreground); /* Interactable buttons like reaction and pin buttons */
   --interactive-hover: color-mix(in srgb, white, var(--foreground) 20%); /* Color when interactables are hovered */
   --interactive-active: color-mix(in srgb, var(--color5) 80%, white); /* Color when interactables are active */
@@ -77,7 +77,7 @@ html.newBrand {
   --background-primary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background) 30%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Main background color, used in main chat */
   --background-secondary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background), transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Secondary color, used in channel bar and user list */
   --background-secondary-alt: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), transparent, color-mix(in srgb, var(--foreground) 20%, transparent)); /* User panel at bottom left */
-  --background-tertiary: color-mix(in srgb, var(--background) 50%, transparent); /* Color used as background at back of everything */
+  --background-tertiary: color-mix(in srgb, var(--background) 30%, transparent); /* Color used as background at back of everything */
   --background-accent: var(--foreground); /* Small accents like bot data access icons */
   --background-floating: color-mix(in srgb, var(--background) 80%, transparent); /* Background of floating items, such as dialog for reacting */
   --background-mobile-primary: blue; /* Unknown */
