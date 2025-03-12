@@ -572,9 +572,9 @@ flowbox headerbar.selection-mode headerbar button.subtitle:visited,
 headerbar.selection-mode headerbar flowbox flowboxchild.subtitle:link,
 headerbar.selection-mode headerbar flowbox button.subtitle:link,
 headerbar.selection-mode headerbar flowbox button.subtitle:visited, label:disabled selection, label:backdrop selection {
-  /*background-color: @theme_selected_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
-	background-color: alpha(@background, 0.3);
+  background-color: @theme_selected_bg_color_breeze;
+  /*background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));*/
+	/*background-color: alpha(@background, 0.3);*/
   border-radius: 0px; }
   .sidebar row:selected, .sidebar:selected,
   headerbar.selection-mode .sidebar.subtitle:link,
@@ -628,7 +628,7 @@ headerbar.selection-mode headerbar flowbox button.subtitle:visited, label:disabl
   headerbar.selection-mode headerbar flowbox flowboxchild.subtitle:link,
   headerbar.selection-mode headerbar flowbox button.subtitle:link,
   headerbar.selection-mode headerbar flowbox button.subtitle:visited, label:disabled selection, label:backdrop selection {
-    color: @foreground; }
+    color: @background; }
     .sidebar:disabled:selected,
     headerbar.selection-mode .sidebar.subtitle:disabled:link,
     headerbar.selection-mode button.sidebar.subtitle:disabled:visited, row:disabled:selected, spinbutton:not(.vertical) selection:disabled:focus, spinbutton:not(.vertical) selection:disabled,
