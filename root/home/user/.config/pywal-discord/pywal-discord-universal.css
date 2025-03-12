@@ -120,7 +120,7 @@ html.newBrand {
   --status-positive-background: var(--foreground); /* Add friend background */
   --status-positive-text: var(--background); /* Add friend text */
   --status-warning-background: blue; /* Unknown */
-  --status-danger-background: blue; /* Unknown */
+  --status-danger-background: color-mix(in srgb, var(--color4) 50%, transparent); /* Shop "new" notification bubble */
 	--channel-text-area-placeholder: color-mix(in srgb, var(--foreground) 40%, transparent); /* Placeholder text for input */
 	--background-nested-floating: linear-gradient(color-mix(in srgb, var(--foreground) 30%, transparent) 50%, color-mix(in srgb, var(--background) 10%, transparent)); /* Color for popups like quick reactions */
 	--status-danger: var(--foreground); /* New messages divider */
