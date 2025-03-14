@@ -14,9 +14,19 @@
 	background: transparent !important;
 }
 
+/* Main browser content background */
+#browser, #tabbrowser-tabpanels {
+  :root[lwtheme] & {
+		background-image: none !important;
+		background: linear-gradient(color-mix(in srgb, var(--sidebar-background-color) 30%, transparent), color-mix(in srgb, var(--toolbar-field-background-color) 30%, transparent), color-mix(in srgb, var(--sidebar-background-color) 10%, transparent)) !important;
+	}
+}
+
+
 /* Main browser toolbox colors */
 .browser-toolbox-background {
 	background-color: transparent !important;
+	background-image: none !important;
 }
 
 .browser-toolbar {
