@@ -91,9 +91,7 @@ tooltip label {
 
 #custom-notifications.0,
 window#waybar.empty #window {
-	opacity: 0;
-  margin: 0px;
-  padding: 0px;
+	display: none;
 }
 
 #battery.plugged,
