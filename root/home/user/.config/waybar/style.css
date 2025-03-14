@@ -62,7 +62,7 @@ button:hover {
 #custom-nowplaying {
   background: linear-gradient(alpha(mix(@foreground, @color3, 0.5), 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(mix(@foreground, @color3, 0.5), 0.5));
 	background-color: alpha(@background, 0.3);
-  border: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.6);
+  border: 1px solid alpha(@foreground, 0.8);
   border-radius: 64px;
   margin: 8px 2px;
   padding: 4px 4px;
