@@ -85,7 +85,7 @@ tooltip label {
 #custom-notifications,
 #workspaces button.active {
 	color: alpha(@background, 0.8);
-	background: linear-gradient(alpha(@color4, 0.9), alpha(mix(@foreground, @color3, 0.5), 0.8));
+	background: linear-gradient(alpha(@color4, 0.9), alpha(@foreground, 0.8));
 	border: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.6);
 }
 
