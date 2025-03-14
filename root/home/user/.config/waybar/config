@@ -61,7 +61,8 @@
 		"return-type": "json",
 		"exec": "~/.config/waybar/scripts/nowplaying.sh",
 		"interval": 1,
-		"tooltip": false
+		"tooltip": false,
+		"escape": true
 	},
   "hyprland/workspaces": {
     "all-outputs": false,
