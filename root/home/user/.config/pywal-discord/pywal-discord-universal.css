@@ -23,9 +23,9 @@ element {
 
 /* end element */
 :root {
-  /*--darkbg: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1)),var(--background);*/
+  /*--darkbg: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1)),color-mix(in srgb, var(--background) 70%, var(--color3));*/
   --bdfdb-blurple: var(--color2);
-  --brand-500: color-mix(in srgb, var(--background) 50%, transparent); /* replace blurple */
+  --brand-500: color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)) 50%, transparent); /* replace blurple */
 }
 
 html.newBrand {
@@ -52,10 +52,10 @@ html.newBrand {
   --brand-experiment-700: var(--color8);
   --brand-experiment-730: var(--color8);
   --brand-experiment-760: var(--color8);
-  --brand-experiment-800: var(--background);
-  --brand-experiment-830: var(--background);
-  --brand-experiment-860: var(--background);
-  --brand-experiment-900: var(--background);
+  --brand-experiment-800: color-mix(in srgb, var(--background) 70%, var(--color3));
+  --brand-experiment-830: color-mix(in srgb, var(--background) 70%, var(--color3));
+  --brand-experiment-860: color-mix(in srgb, var(--background) 70%, var(--color3));
+  --brand-experiment-900: color-mix(in srgb, var(--background) 70%, var(--color3));
 	*/
 }
 
@@ -74,29 +74,29 @@ html.newBrand {
   --interactive-hover: color-mix(in srgb, white, var(--foreground) 20%); /* Color when interactables are hovered */
   --interactive-active: color-mix(in srgb, var(--color5) 80%, white); /* Color when interactables are active */
   --interactive-muted: color-mix(in srgb, var(--color6) 50%, transparent); /* Muted channel text */
-  --background-primary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background) 30%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Main background color, used in main chat */
-  --background-secondary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background), transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Secondary color, used in channel bar and user list */
+  --background-primary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)) 30%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Main background color, used in main chat */
+  --background-secondary: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)), transparent), color-mix(in srgb, var(--foreground) 10%, transparent)); /* Secondary color, used in channel bar and user list */
   --background-secondary-alt: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), transparent, color-mix(in srgb, var(--foreground) 20%, transparent)); /* User panel at bottom left */
-  --background-tertiary: color-mix(in srgb, var(--background) 30%, transparent); /* Color used as background at back of everything */
+  --background-tertiary: color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)) 30%, transparent); /* Color used as background at back of everything */
   --background-accent: var(--foreground); /* Small accents like bot data access icons */
-  --background-floating: color-mix(in srgb, var(--background) 80%, transparent); /* Background of floating items, such as dialog for reacting */
+  --background-floating: color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)) 80%, transparent); /* Background of floating items, such as dialog for reacting */
   --background-mobile-primary: blue; /* Unknown */
   --background-mobile-secondary: blue; /* Unknown */
   --background-modifier-hover: color-mix(in srgb, var(--foreground) 20%, transparent); /* Hovered direct message channel modifier */
-  --background-modifier-active: linear-gradient(color-mix(in srgb, var(--foreground) 90%, transparent), color-mix(in srgb, var(--background) 80%, transparent), color-mix(in srgb, var(--foreground) 90%, transparent)); /* Clicked direct message channel */
+  --background-modifier-active: linear-gradient(color-mix(in srgb, var(--foreground) 90%, transparent), color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)) 80%, transparent), color-mix(in srgb, var(--foreground) 90%, transparent)); /* Clicked direct message channel */
   --background-modifier-selected: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), transparent, color-mix(in srgb, var(--foreground) 20%, transparent)); /* Active direct message channel */
-  --background-modifier-accent: color-mix(in srgb, var(--background), transparent); /* Separators at top and side, and mod view header */
+  --background-modifier-accent: color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)), transparent); /* Separators at top and side, and mod view header */
   --background-mentioned: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), transparent, color-mix(in srgb, var(--foreground) 20%, transparent)); /* Highlights for mentions */
   --background-mentioned-hover: linear-gradient(color-mix(in srgb, var(--foreground) 80%, transparent), transparent, color-mix(in srgb, var(--foreground) 80%, transparent)); /* Hovered highlights for mentions */
   --background-message-hover: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--foreground) 20%, transparent)); /* Background for hovered message */
-  --elevation-stroke: 0 0 0 1px var(--background); /* Outline for items in front of overs, such as quick emojis */
-  --elevation-low: 0 1px 0 var(--background); /* Separator for find and direct message sections */
-  --elevation-medium: 0 4px 4px var(--background); /* Shadow for elevated buttons in already elevated items */
-  --elevation-high: 0 8px 16px var(--background); /* Elevated items shadow */
+  --elevation-stroke: 0 0 0 1px color-mix(in srgb, var(--background) 70%, var(--color3)); /* Outline for items in front of overs, such as quick emojis */
+  --elevation-low: 0 1px 0 color-mix(in srgb, var(--background) 70%, var(--color3)); /* Separator for find and direct message sections */
+  --elevation-medium: 0 4px 4px color-mix(in srgb, var(--background) 70%, var(--color3)); /* Shadow for elevated buttons in already elevated items */
+  --elevation-high: 0 8px 16px color-mix(in srgb, var(--background) 70%, var(--color3)); /* Elevated items shadow */
   --logo-primary: blue; /* Unknown */
   --guild-header-text-shadow: 0 1px 1px blue; /* Unknown */
   --channeltextarea-background: linear-gradient(color-mix(in srgb, var(--foreground) 20%, transparent), transparent, color-mix(in srgb, var(--foreground) 20%, transparent)); /* Background for text input area */
-  --activity-card-background: color-mix(in srgb, var(--background), transparent); /* Background for activity card in friends list */
+  --activity-card-background: color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)), transparent); /* Background for activity card in friends list */
   --textbox-markdown-syntax: var(--foreground); /* Color for ticks while typing markdown text */
   --deprecated-card-bg: blue; /* Unknown */
   --deprecated-card-editable-bg: blue; /* Unknown */
@@ -118,18 +118,18 @@ html.newBrand {
   --info-danger-background: blue; /* Unknown */
   --info-danger-foreground: blue; /* Unknown */
   --status-positive-background: var(--foreground); /* Add friend background */
-  --status-positive-text: var(--background); /* Add friend text */
+  --status-positive-text: color-mix(in srgb, var(--background) 70%, var(--color3)); /* Add friend text */
   --status-warning-background: blue; /* Unknown */
   --status-danger-background: color-mix(in srgb, var(--color4) 50%, transparent); /* Shop "new" notification bubble */
 	--channel-text-area-placeholder: color-mix(in srgb, var(--foreground) 40%, transparent); /* Placeholder text for input */
-	--background-nested-floating: linear-gradient(color-mix(in srgb, var(--foreground) 30%, transparent) 50%, color-mix(in srgb, var(--background) 10%, transparent)); /* Color for popups like quick reactions */
+	--background-nested-floating: linear-gradient(color-mix(in srgb, var(--foreground) 30%, transparent) 50%, color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)) 10%, transparent)); /* Color for popups like quick reactions */
 	--status-danger: var(--foreground); /* New messages divider */
-	--autocomplete-bg: var(--background); /* Autocompletion container background */
+	--autocomplete-bg: color-mix(in srgb, var(--background) 70%, var(--color3)); /* Autocompletion container background */
 	#app-mount ::-webkit-scrollbar-thumb {
-		background: linear-gradient(color-mix(in srgb, var(--foreground) 30%, transparent), color-mix(in srgb, var(--background) 20%, transparent), color-mix(in srgb, var(--foreground) 30%, transparent));	/* Scroll bar */
+		background: linear-gradient(color-mix(in srgb, var(--foreground) 30%, transparent), color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)) 20%, transparent), color-mix(in srgb, var(--foreground) 30%, transparent));	/* Scroll bar */
 	}
 	#app-mount ::-webkit-scrollbar-track { /* Scroll bar area */
-		background: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, var(--background) 10%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent));
+		background: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent), color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)) 10%, transparent), color-mix(in srgb, var(--foreground) 10%, transparent));
 	}
 }
 
@@ -137,18 +137,18 @@ html.newBrand {
 
 /* End cap for new message divider */
 .endCap__908e2 {
-	color: var(--background);
+	color: color-mix(in srgb, var(--background) 70%, var(--color3));
 }
 
 /* GIF / Sticker / Emoji picker wrapper background */
 .contentWrapper__08434{
-	background: var(--background);
+	background: color-mix(in srgb, var(--background) 70%, var(--color3));
 	border-radius: 32px;
 }
 
 /* Account profile popout */
 .inner_c0bea0.biteSize_c0bea0{
-	background: var(--background) !important;
+	background: color-mix(in srgb, var(--background) 70%, var(--color3)) !important;
 }
 
 /* Friends tab background */
@@ -230,7 +230,7 @@ html.newBrand {
 .reaction-1hd86g.reactionMe-wv5HKu {
   color: var(--text);
   border-color: var(--color3);
-  background-color: var(--background);
+  background-color: color-mix(in srgb, var(--background) 70%, var(--color3));
 }
 
 .newMessagesBar_cf58b5 {
