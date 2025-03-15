@@ -46,7 +46,7 @@
 .tab-background {
 	border-radius: 64px !important;
   &:is([selected], [multiselected]) {
-		background: linear-gradient(color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 50%, transparent), color-mix(in srgb, color-mix(in srgb, color-mix(in srgb, var(--toolbar-field-background-color) 60%, var(--toolbar-color)) 10%, transparent) 50%, transparent), color-mix(in srgb, var(--sidebar-background-color) 50%, transparent)) !important;
+		background: linear-gradient(color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 50%, transparent), color-mix(in srgb, color-mix(in srgb, color-mix(in srgb, var(--toolbar-field-background-color) 60%, var(--toolbar-color)) 10%, transparent) 50%, transparent), color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 50%, transparent)) !important;
 		background-color: color-mix(in srgb, var(--toolbar-field-background-color) 40%, transparent) !important;
 	}
 }
