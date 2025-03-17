@@ -17,14 +17,13 @@ button {
   border-radius: 16px;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
 	border: 1px solid @color4;
 }
 
 #workspaces button {
-  padding: 0 4px;
+  padding: 0 0.2rem;
   background: transparent;
   color: mix(@foreground, @color3, 0.5);
 }
@@ -62,10 +61,10 @@ button:hover {
 #custom-nowplaying {
   background: linear-gradient(alpha(mix(@foreground, @color3, 0.5), 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(mix(@foreground, @color3, 0.5), 0.5));
 	background-color: alpha(@background, 0.3);
-  border: 1px solid alpha(@foreground, 0.8);
-  border-radius: 64px;
+  border: 1px solid alpha(@foreground, 0.6);
+  border-radius: 16px;
   margin: 8px 2px;
-  padding: 4px 4px;
+  padding: 0px 4px;
 }
 
 /* per-module configurations */
@@ -87,6 +86,11 @@ tooltip label {
 	color: alpha(@background, 0.8);
 	background: linear-gradient(alpha(@color4, 0.9), alpha(@foreground, 0.8));
 	border: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.6);
+}
+
+#workspaces button.active {
+	transition: all 0.3s cubic-bezier(0.10,0.5,0.075,1.00);
+	min-width: 1rem;
 }
 
 #custom-notifications.0,
