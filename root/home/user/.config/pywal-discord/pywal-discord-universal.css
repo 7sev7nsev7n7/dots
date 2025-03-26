@@ -70,7 +70,8 @@ html.newBrand {
   --text-normal: var(--foreground); /* General text */
   --text-muted: var(--color6); /* Time stamps, search bar */
   --text-link: var(--color6); /* Links */
-  --channels-default: color-mix(in srgb, var(--foreground), var(--color6)); /* General channels */
+  --channels-default: color-mix(in srgb, var(--foreground), var(--color6)) !important; /* General channels text color */
+  --channel-icon: var(--foreground) !important; /* Channel hashtag color */
   --interactive-normal: var(--foreground); /* Interactable buttons like reaction and pin buttons */
   --interactive-hover: color-mix(in srgb, white, var(--foreground) 20%); /* Color when interactables are hovered */
   --interactive-active: color-mix(in srgb, var(--color5) 80%, white); /* Color when interactables are active */
