@@ -1,16 +1,25 @@
+" color scheme
 colorscheme vimper
+" source main configurations
 source /usr/share/nvim/archlinux.lua
-set number
-set notermguicolors
-set tabstop=2
-set shiftwidth=2
-set modelines=0
-set guicursor=a:blinkon100
-set bri
-set briopt+=sbr
-let &showbreak='  >'
-set cpoptions+=n
-set linebreak
+
+" setting options
+set breakindent
+set breakindentopt+=sbr
 set clipboard+=unnamedplus
-set cul
-set culopt=number
+set cpoptions+=n
+set cursorline
+set cursorlineopt=number
+set guicursor=a:blinkon100
+set linebreak
+set modelines=0
+set notermguicolors
+set number
+set relativenumber
+set shiftwidth=2
+let &showbreak='>'
+set statuscolumn=%l\ %r\ 
+set tabstop=8
+
+" mapping commands
+map <C-C> :set cursorcolumn! 
