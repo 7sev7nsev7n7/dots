@@ -33,9 +33,9 @@
     "tooltip": true,
     "interval": 1,
     "format-icons": {
-      "0": "",
-      "1": "",
-      "2": "",
+      "Balanced": "",
+      "Performance": "",
+      "Quiet": "",
     },
   },
   "custom/notifications": {
