@@ -1,0 +1,108 @@
+{
+	"name": "Vimium C",
+	"@time": "3/30/2025, 6:22:47 PM",
+	"time": 1743380567010,
+	"environment": {
+		"extension": "1.99.997",
+		"platform": "linux",
+		"firefox": 136
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "^ < <a-m> <s-esc> > ? B J K O T X f t ",
+			"pattern": ":https://pony.town/"
+		},
+		{
+			"passKeys": "<a-k> ",
+			"pattern": ":https://web.whatsapp.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://diep.io/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://vim-adventures.com/"
+		},
+		{
+			"passKeys": "- - < > a a b c t ",
+			"pattern": ":https://web.whatsapp.com/"
+		}
+	],
+	"filterLinkHints": true,
+	"grabBackFocus": true,
+	"keyLayout": 26,
+	"keyMappings": [
+		"#!no-check",
+		"map M Marks.activate",
+		"map : passNextKey",
+		"map gI LinkHints.activateEdit",
+		"map s LinkHints.activateFocus",
+		"map <c-h> visitPreviousTab",
+		"map <c-s-backspace> zoomReset",
+		"map <c-*> zoomIn",
+		"map <a-i> LinkHints.activateOpenImage",
+		"map <a-s-i> LinkHints.activateDownloadImage",
+		"map <a-j> scrollPxDown",
+		"map <a-k> scrollPxUp",
+		"map <s-esc> LinkHints.unhoverLast",
+		"map Yy copyCurrentTitle",
+		"map <a-f> LinkHints.activateDownloadLink",
+		"map gh openUrl url=\"https://github.com/7sev7nsev7n7\" reuse=\"current\"",
+		"unmap <a-n>",
+		""
+	],
+	"keyboard": [
+		300,
+		50
+	],
+	"keyupTime": 60,
+	"localeEncoding": "",
+	"searchEngines": [
+		"a\\:|Arch Wiki: https://wiki.archlinux.org/index.php?search=%s",
+		"ap\\:|Arch Package Search: https://archlinux.org/packages/?sort=&q=%s",
+		"aur\\:| AUR Search: https://aur.archlinux.org/packages?K=%s",
+		"w\\:|Wikipedia: https://en.wikipedia.org/wiki/Special:Search?go=Go&search=%s",
+		"y\\:|Youtube: https://www.youtube.com/results?search_query=%s",
+		"g\\:|Google: https://www.google.com/search?q=%s",
+		"gh\\:|Github: https://github.com/search?q=%s",
+		"img\\:|Google Images: https://www.google.com/search?udm=2&q=%s",
+		"r/|Subreddit: https://reddit.com/r/%s",
+		"ud\\:|Urban Dictionary: https://www.urbandictionary.com/define.php?term=%s",
+		"gs\\:|Google Scholar: https://scholar.google.com/scholar?hl=en&q=%s",
+		"man\\:|Arch Man Pages: https://man.archlinux.org/search?q=%s",
+		"mc\\:|Minecraft Wiki: https://minecraft.wiki/w/Special:Search?search=%s",
+		""
+	],
+	"showActionIcon": false,
+	"showInIncognito": true,
+	"userDefinedCss": [
+		"/* #ui */",
+		"* {",
+		"font-family: Noto Sans;",
+		"font-size: 16px;",
+		"}",
+		"",
+		"/* #omni */",
+		"* {",
+		"font-family: Noto Sans;",
+		"}",
+		"",
+		"/* #find */",
+		"",
+		"/* #find:host */",
+		"",
+		"/* #find:selection */",
+		""
+	],
+	"vimSync": true,
+	"vomnibarOptions": {
+		"actions": "",
+		"maxMatches": 10,
+		"queryInterval": 333,
+		"sizes": "77,3,44,0.8",
+		"styles": "dark"
+	},
+	"ignoreKeyboardLayout": 1,
+	"ignoreCapsLock": 2
+}
