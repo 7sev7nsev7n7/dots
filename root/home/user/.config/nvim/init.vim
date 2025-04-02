@@ -1,5 +1,6 @@
 " color scheme
 colorscheme vimper
+
 " source main configurations
 source /usr/share/nvim/archlinux.lua
 
