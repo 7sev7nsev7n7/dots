@@ -28,7 +28,7 @@ hi('Conceal',      { fg = 'LightGrey', bg = 'DarkGrey', ctermfg = 'LightGrey', c
 hi('Cursor',       {})
 hi('lCursor',      {})
 hi('DiffText',     { bg = 'Red', bold = true,           ctermbg = 'Red', cterm = { bold = true } })
-hi('ErrorMsg',     { fg = 'White', bg = 'Red',          ctermfg = 'White', ctermbg = 'DarkRed' })
+hi('ErrorMsg',     { fg = 'Black', bg = 'White',          ctermfg = 'Black', ctermbg = 'White' })
 hi('IncSearch',    { reverse = true,                    cterm = { reverse = true } })
 hi('ModeMsg',      { bold = true,                       cterm = { bold = true } })
 hi('NonText',      { fg = 'Blue', bold = true,          ctermfg = 'Blue' })
