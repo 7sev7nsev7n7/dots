@@ -2,5 +2,5 @@
 
 while true; do
 	xrdb ~/.Xresources
-	sleep 3
+	sleep 10
 done

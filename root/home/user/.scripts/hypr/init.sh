@@ -9,9 +9,9 @@
 # first workspace
 sleep 1
 hyprctl dispatch exec kitty btop
-sleep 0.1
+sleep 0.3
 hyprctl dispatch exec kitty ranger
-sleep 0.1
+sleep 0.3
 hyprctl dispatch exec kitty
 
 # second workspace
