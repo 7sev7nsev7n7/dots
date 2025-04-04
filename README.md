@@ -18,7 +18,7 @@ necessary dependancies for complete setup
 - kitty (terminal emulator)
 - swaylock-effects (lock screen)
 - dunst (notifications daemon)
-- pywal (wallpaper color palette generator)
+- pywal16 (wallpaper color palette generator)
 - pywal-fox (for firefox browser)
 - waybar (top/status bar)
 - asusctl (hardware-specific)

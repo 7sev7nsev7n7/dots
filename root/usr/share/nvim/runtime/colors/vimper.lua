@@ -28,7 +28,7 @@ hi('Conceal',      { fg = 'LightGrey', bg = 'DarkGrey', ctermfg = 'LightGrey', c
 hi('Cursor',       {})
 hi('lCursor',      {})
 hi('DiffText',     { bg = 'Red', bold = true,           ctermbg = 'Red', cterm = { bold = true } })
-hi('ErrorMsg',     { fg = 'Black', bg = 'White',          ctermfg = 'Black', ctermbg = 'White' })
+hi('ErrorMsg',     { fg = 'Black', bg = 'Red',          ctermfg = 'Black', ctermbg = 'Red' })
 hi('IncSearch',    { reverse = true,                    cterm = { reverse = true } })
 hi('ModeMsg',      { bold = true,                       cterm = { bold = true } })
 hi('NonText',      { fg = 'Blue', bold = true,          ctermfg = 'Blue' })
@@ -69,7 +69,7 @@ hi('RedrawDebugNormal',    { reverse = true,             cterm = { reverse = tru
 hi('RedrawDebugClear',     { bg = 'Yellow',              ctermbg = 'Yellow' })
 hi('RedrawDebugComposed',  { bg = 'Green',               ctermbg = 'Green' })
 hi('RedrawDebugRecompose', { bg = 'Red',                 ctermbg = 'Red' })
-hi('Error',                { fg = 'White', bg = 'Red',   ctermfg = 'White', ctermbg = 'Red' })
+hi('Error',                { fg = 'Black', bg = 'Red',   ctermfg = 'Black', ctermbg = 'Red' })
 hi('Todo',                 { fg = 'Blue', bg = 'Yellow', ctermfg = 'Black', ctermbg = 'Yellow' })
 
 hi('String',         { link = 'Constant' })
