@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 clear
-tput setaf 4
+tput setaf 12
 cat /usr/share/ascii/arch
 tput sgr0
