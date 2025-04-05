@@ -53,7 +53,7 @@
 
 .tab-content {
   &:is([selected], [multiselected]) {
-    color: color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) !important;
+    /* color: color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) !important; */
   }
 }
 
