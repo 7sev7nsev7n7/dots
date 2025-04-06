@@ -318,7 +318,7 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "{background}30"
-    foreground = "{color6}"
+    foreground = "{foreground}"
     frame_color = "{color6}a0"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
@@ -326,7 +326,7 @@
 
 [urgency_normal]
     background = "{background}d0"
-    foreground = "{color6}"
+    foreground = "{foreground}"
     frame_color = "{color6}a0"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
@@ -343,7 +343,7 @@
 [discord]
     appname = discord
     background = "{color4}d0"
-    foreground = "{background}"
+    foreground = "{foreground}"
     frame_color = "{background}a0"
 
 # Every section that isn't one of the above is interpreted as a rules to
