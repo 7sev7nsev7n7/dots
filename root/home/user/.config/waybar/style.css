@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  color: mix(@foreground, @color3, 0.5);
+  color: mix(@foreground, @color3, 0.2);
   background: linear-gradient(alpha(mix(@foreground, @color3, 0.5), 0.1), alpha(@background, 0.3), alpha(mix(@foreground, @color3, 0.5), 0.1));
 	background-color: alpha(@background, 0.3);
 	border-bottom: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.3);
@@ -72,22 +72,22 @@ button:hover {
 /* per-module configurations */
 tooltip {
   background: linear-gradient(alpha(mix(@foreground, @color3, 0.5), 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(mix(@foreground, @color3, 0.5), 0.5));
-	background-color: alpha(@background, 0.5);
-	border-radius: 8px;
-	border: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.7);
+  background-color: alpha(@background, 0.5);
+  border-radius: 8px;
+  border: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.7);
 }
 
 tooltip label {
-	font-family: "Iosevka Term";
-	font-size: 12pt;
-	color: mix(@foreground, @color3, 0.5);
+  font-family: "Iosevka Term";
+  font-size: 12pt;
+  color: mix(@foreground, @color3, 0.2);
 }
 
 #custom-notifications,
 #workspaces button.active {
-	color: alpha(@background, 0.8);
-	background: linear-gradient(alpha(@color4, 0.9), alpha(@foreground, 0.8));
-	border: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.6);
+  color: alpha(@background, 0.8);
+  background: linear-gradient(alpha(@color4, 0.9), alpha(@foreground, 0.8));
+  border: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.6);
 }
 
 #workspaces button.active {
