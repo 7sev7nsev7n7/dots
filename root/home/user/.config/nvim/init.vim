@@ -10,10 +10,9 @@ set breakindentopt+=sbr
 set clipboard+=unnamedplus
 set cpoptions+=n
 set cursorline
-set cursorlineopt=number
-set guicursor=a:blinkon100
+set cursorlineopt=both
+set guicursor=a:blinkwait0-blinkoff200-blinkon200
 set linebreak
-set modelines=0
 set notermguicolors
 set number
 set relativenumber
@@ -21,6 +20,8 @@ set shiftwidth=2
 let &showbreak='>'
 set statuscolumn=%l\ %r\ 
 set tabstop=8
+set ignorecase
+set smartcase
 
 " mapping commands
 map <C-C> :set cursorcolumn! 
