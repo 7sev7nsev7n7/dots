@@ -25,6 +25,7 @@ alias wiki=' 2>/dev/null firefox ~/documents/wiki/main/main.html'
 alias laravel='~/.config/composer/vendor/bin/laravel'
 alias diff='diff --color=always'
 alias wl-copy='2>/dev/null wl-copy'
+alias sudo='sudo -E'
 
 # Functions (are better than aliases ngl)
 wallpaper() { ~/.scripts/colors/cwall.sh "$@";}
