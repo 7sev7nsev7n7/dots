@@ -48,21 +48,21 @@
       "true": "",
     },
   },
-	"custom/volume": {
-		"format": "{}",
-		"return-type": "json",
-		"exec": "~/.config/waybar/scripts/volume.sh",
-		"interval": 1,
-		"tooltip": false
-	},
-	"custom/nowplaying": {
-		"format": "{}",
-		"return-type": "json",
-		"exec": "~/.config/waybar/scripts/nowplaying.sh",
-		"interval": 1,
-		"tooltip": false,
-		"escape": true
-	},
+  "custom/volume": {
+	  "format": "{}",
+	  "return-type": "json",
+	  "exec": "~/.config/waybar/scripts/volume.sh",
+	  "interval": 1,
+	  "tooltip": false
+  },
+  "custom/nowplaying": {
+	  "format": "{}",
+	  "return-type": "json",
+	  "exec": "~/.config/waybar/scripts/nowplaying.sh",
+	  "interval": 1,
+	  "tooltip": false,
+	  "escape": true,
+  },
   "hyprland/workspaces": {
     "all-outputs": false,
     "format": "{name}{icon}",
