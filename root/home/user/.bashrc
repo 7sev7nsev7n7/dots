@@ -8,12 +8,7 @@
 # environment variables
 export QT_QPA_PLATFORMTHEME=qt5ct
 export EDITOR=vim
-
-# nvm init
-# source /usr/share/nvm/init-nvm.sh
-
-# NVM
-#source /usr/share/nvm/init-nvm.sh
+export PATH="$PATH:/home/7sev7nsev7n7/.dotnet/tools"
 
 # Aliases
 alias ls='lsd --color=auto'
@@ -21,11 +16,10 @@ alias grep='grep --color=auto'
 alias bd='cd ~/.programs/BetterDiscord; pnpm inject; cd -;'
 alias fucking='sudo'
 alias kys='shutdown 0'
-alias wiki=' 2>/dev/null firefox ~/documents/wiki/main/main.html'
-alias laravel='~/.config/composer/vendor/bin/laravel'
 alias diff='diff --color=always'
 alias wl-copy='2>/dev/null wl-copy'
 alias sudo='sudo -E'
+alias less='less --use-color'
 
 # Functions (are better than aliases ngl)
 wallpaper() { ~/.scripts/colors/cwall.sh "$@";}
