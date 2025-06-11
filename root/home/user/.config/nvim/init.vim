@@ -24,7 +24,7 @@ set shiftround
 set shiftwidth=2
 let &showbreak='>'
 set smartcase
-set statuscolumn=%l\ \|\ 
+set statuscolumn=%l\ \│\ 
 set statusline=%#ErrorMsg#%(%h%w%m%r%)%#TermCursor#\ %f\ \|\ %{FileType()}%=%.(%l,%v%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
