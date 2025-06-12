@@ -33,7 +33,7 @@ hi('IncSearch',    { reverse = true,                    cterm = { reverse = true
 hi('ModeMsg',      { bold = true,                       cterm = { bold = true } })
 hi('NonText',      { fg = 'Blue', bold = true,          ctermfg = 'Blue' })
 hi('PmenuSbar',    { bg = 'Grey',                       ctermbg = 'Grey' })
-hi('StatusLine',   { bg = 'Black', fg = 'Cyan', bold = true,       ctermbg = 'Black', ctermfg = 'Cyan', cterm = {  bold = true }})
+hi('StatusLine',   { bg = 'Cyan',fg = 'Black', bold = true,       ctermbg = 'Cyan', ctermfg = 'Black', cterm = { bold = true }})
 hi('StatusLineNC', { reverse = true,                    cterm = { reverse = true } })
 hi('TabLineFill',  { reverse = true,                    cterm = { reverse = true } })
 hi('TabLineSel',   { bold = true,                       cterm = { bold = true } })
