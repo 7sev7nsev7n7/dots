@@ -23,9 +23,10 @@ set relativenumber
 set shiftround
 set shiftwidth=2
 let &showbreak='>'
+set showcmdloc=statusline
 set smartcase
 set statuscolumn=%l\ \│\ 
-set statusline=%#NonText#%(%h%w%m%r%)%#StatusLine#\ %f%{FileType()}%=%.(%l,%v%)\ \|\ %P\ (%L)
+set statusline=%#NonText#%(%w%m%r%)%#ColorColumn#\ %f%{%FileType()%}%=%S%=%.(%l,%v%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
 set titlestring=%t\ %m
@@ -35,6 +36,6 @@ map <C-C> :set cursorcolumn!
 
 " functions
 func! FileType() abort
-  return (&filetype=="") ? "" : " [".&filetype."]"
+  return (&filetype=="") ? "" : " [%Y]"
 endfunc
 
