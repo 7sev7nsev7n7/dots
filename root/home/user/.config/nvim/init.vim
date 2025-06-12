@@ -26,7 +26,7 @@ let &showbreak='>'
 set showcmdloc=statusline
 set smartcase
 set statuscolumn=%l\ \│\ 
-set statusline=%#NonText#%(%w%m%r%)%#ColorColumn#\ %f%{%FileType()%}%=%S%=%.(%l,%v%)\ \|\ %P\ (%L)
+set statusline=%#NonText#%(%w%m%r%)%#StatusLine#\ %f%{%FileType()%}%=%S%=%.(%l,%v%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
 set titlestring=%t\ %m
