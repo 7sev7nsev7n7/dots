@@ -3,6 +3,7 @@
   "layer": "top",
 	"position": "top",
 	"exclusive": true,
+  "fixed-center": false,
 	"reload_style_on_change": true,
   "modules-left": ["custom/greet","hyprland/language","hyprland/submap", "custom/volume", "custom/nowplaying", ], 
   "modules-center": ["custom/notifications","hyprland/workspaces","hyprland/window"],
