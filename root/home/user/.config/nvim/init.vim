@@ -6,9 +6,10 @@ source /usr/share/nvim/archlinux.lua
 
 " setting options
 set breakindent
+set breakindentopt+=list:1
 set clipboard+=unnamedplus
 set cursorline
-set cursorlineopt=screenline
+set cursorlineopt=both
 set expandtab
 set fillchars=eob:\ 
 set guicursor=a:blinkwait0-blinkoff200-blinkon200
