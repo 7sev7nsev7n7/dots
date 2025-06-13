@@ -6,11 +6,9 @@ source /usr/share/nvim/archlinux.lua
 
 " setting options
 set breakindent
-set breakindentopt+=sbr
 set clipboard+=unnamedplus
-set cpoptions+=n
 set cursorline
-set cursorlineopt=both
+set cursorlineopt=screenline
 set expandtab
 set fillchars=eob:\ 
 set guicursor=a:blinkwait0-blinkoff200-blinkon200
@@ -22,10 +20,10 @@ set notermguicolors
 set relativenumber
 set shiftround
 set shiftwidth=2
-let &showbreak='>'
+let &showbreak='│ '
 set showcmdloc=statusline
 set smartcase
-set statuscolumn=%l\ \│\ 
+set statuscolumn=%l\ %=\│\ 
 set statusline=%#StatusLineNC#%(%w%m%r%)%#StatusLine#\ %f%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%v%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
@@ -33,8 +31,8 @@ set titlestring=%t\ %m
 set nowrap
 
 " mapping commands
-map <C-C> :set cursorcolumn!  
-map <A-w> :set wrap!  
+map <C-C> :set cursorcolumn! 
+map <A-w> :set wrap! 
 
 " functions
 func! FileType() abort

@@ -211,7 +211,7 @@ hi('CursorLine',   { bg = 'Grey',                             cterm = { underlin
 hi('CursorLineNr', { fg = 'Yellow', bold = true,                ctermfg = 'Yellow', cterm = { underline = true } })
 hi('DiffAdd',      { bg = 'DarkBlue',                           ctermbg = 'DarkBlue' })
 hi('DiffChange',   { bg = 'DarkMagenta',                        ctermbg = 'DarkMagenta' })
-hi('DiffDelete',   { fg = 'Blue', bg = 'DarkCyan', bold = true, ctermfg = 'Blue', ctermbg = 'DarkCyan' })
+hi('DiffDelete',   { fg = 'Blue', bg = 8, bold = true, ctermfg = 'Blue', ctermbg = 8 })
 hi('Directory',    { fg = 'Cyan',                               ctermfg = 'LightCyan' })
 hi('FoldColumn',   { fg = 'Cyan', bg = 'Grey',                  ctermfg = 'Cyan', ctermbg = 'DarkGrey' })
 hi('Folded',       { fg = 'Cyan', bg = 'DarkGrey',              ctermfg = 'Cyan', ctermbg = 'DarkGrey' })
