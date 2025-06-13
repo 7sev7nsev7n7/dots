@@ -32,10 +32,10 @@ set title
 set titlestring=%t\ %m
 
 " mapping commands
-map <C-C> :set cursorcolumn! 
+map <C-C> :set cursorcolumn!  
+map <A-w> :set wrap!  
 
 " functions
 func! FileType() abort
   return (&filetype=="") ? "" : " [%Y]"
 endfunc
-
