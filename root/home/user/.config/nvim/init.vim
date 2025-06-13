@@ -26,10 +26,11 @@ let &showbreak='>'
 set showcmdloc=statusline
 set smartcase
 set statuscolumn=%l\ \│\ 
-set statusline=%#StatusLineNC#%(%w%m%r%)%#StatusLine#\ %f%{%FileType()%}%=%S%=%.(%l,%v%)\ \|\ %P\ (%L)
+set statusline=%#StatusLineNC#%(%w%m%r%)%#StatusLine#\ %f%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%v%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
 set titlestring=%t\ %m
+set nowrap
 
 " mapping commands
 map <C-C> :set cursorcolumn!  
@@ -38,4 +39,8 @@ map <A-w> :set wrap!
 " functions
 func! FileType() abort
   return (&filetype=="") ? "" : " [%Y]"
+endfunc
+
+func! Wrap() abort
+  return (&wrap) ? " [WRAP]" : ""
 endfunc
