@@ -31,7 +31,7 @@ hi('DiffText',     { bg = 'Red', bold = true,           ctermbg = 'Red', cterm =
 hi('ErrorMsg',     { fg = 'Black', bg = 'Red',          ctermfg = 'Black', ctermbg = 'Red' })
 hi('IncSearch',    { reverse = true,                    cterm = { reverse = true } })
 hi('ModeMsg',      { bold = true,                       cterm = { bold = true } })
-hi('NonText',      { fg = 'Blue', bold = true,          ctermfg = 'Blue' })
+hi('NonText',      { fg = 'DarkMagenta', bold = true,          ctermfg = 'DarkMagenta' })
 hi('PmenuSbar',    { bg = 'Grey',                       ctermbg = 'Grey' })
 hi('StatusLine',   { bg = 'Cyan',fg = 'Black', bold = true,       ctermbg = 'Cyan', ctermfg = 'Black', cterm = { bold = true }})
 hi('StatusLineNC', { reverse = true,                    cterm = { reverse = true } })
