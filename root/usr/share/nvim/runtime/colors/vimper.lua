@@ -217,7 +217,6 @@ hi('FoldColumn',   { fg = 'Cyan', bg = 'Grey',                  ctermfg = 'Cyan'
 hi('Folded',       { fg = 'Cyan', bg = 'DarkGrey',              ctermfg = 'Cyan', ctermbg = 'DarkGrey' })
 hi('LineNr',       { fg = 'DarkGrey',                             ctermfg = 'DarkGrey' })
 hi('MatchParen',   { bg = 'Yellow',                           ctermbg = 'Yellow' })
-hi('MsgArea',      { bg = 'Gray', fg = 'Black',                 ctermbg = 'Gray', ctermfg = 'Black' })
 hi('MoreMsg',      { fg = 'Red', bold = true,              ctermfg = 'Red' })
 hi('Pmenu',        { bg = 'Magenta',                            ctermfg = 'Black', ctermbg = 'Magenta' })
 hi('PmenuSel',     { bg = 'DarkGrey',                           ctermfg = 'DarkGrey', ctermbg = 'Black' })

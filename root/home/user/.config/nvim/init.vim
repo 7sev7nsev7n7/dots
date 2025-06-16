@@ -8,7 +8,6 @@ source /usr/share/nvim/archlinux.lua
 set breakindent
 set breakindentopt+=list:1
 set clipboard+=unnamedplus
-set cmdheight=0
 set cursorline
 set cursorlineopt=number
 set expandtab
@@ -25,6 +24,7 @@ set shiftwidth=2
 set shortmess+=I
 let &showbreak='│ '
 set showcmdloc=statusline
+set noshowmode
 set smartcase
 set statuscolumn=%l\ %=\│\ 
 set statusline=%#StatusLineNC#%(%w%m%r%)%*\ %{GetMode()}\ %f%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
