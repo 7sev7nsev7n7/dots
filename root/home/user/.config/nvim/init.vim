@@ -22,12 +22,12 @@ set relativenumber
 set shiftround
 set shiftwidth=2
 set shortmess+=I
-let &showbreak='│ '
+set showbreak=│
 set showcmdloc=statusline
 set noshowmode
 set smartcase
 set statuscolumn=%l\ %=\│\ 
-set statusline=%#StatusLineNC#%(%w%m%r%)%*\ %{GetMode()}\ %f%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
+set statusline=%#StatusLineNC#%(%w%m%r%)%*\ %f\ %{GetMode()}%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
 set titlestring=%t\ %m
