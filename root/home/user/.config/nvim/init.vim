@@ -9,7 +9,7 @@ set breakindent
 set breakindentopt+=list:1
 set clipboard+=unnamedplus
 set cursorline
-set cursorlineopt=both
+set cursorlineopt=number
 set expandtab
 set fillchars=eob:\ 
 set guicursor=a:blinkwait0-blinkoff200-blinkon200
@@ -21,6 +21,7 @@ set notermguicolors
 set relativenumber
 set shiftround
 set shiftwidth=2
+set shortmess+=I
 let &showbreak='│ '
 set showcmdloc=statusline
 set smartcase
