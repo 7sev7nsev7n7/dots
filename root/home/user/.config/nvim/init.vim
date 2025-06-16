@@ -8,6 +8,7 @@ source /usr/share/nvim/archlinux.lua
 set breakindent
 set breakindentopt+=list:1
 set clipboard+=unnamedplus
+set cmdheight=0
 set cursorline
 set cursorlineopt=number
 set expandtab
@@ -26,7 +27,7 @@ let &showbreak='│ '
 set showcmdloc=statusline
 set smartcase
 set statuscolumn=%l\ %=\│\ 
-set statusline=%#StatusLineNC#%(%w%m%r%)%#StatusLine#\ %f%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%v%)\ \|\ %P\ (%L)
+set statusline=%#StatusLineNC#%(%w%m%r%)%*\ %{GetMode()}\ %f%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
 set titlestring=%t\ %m
@@ -43,4 +44,10 @@ endfunc
 
 func! Wrap() abort
   return (&wrap) ? " [WRAP]" : ""
+endfunc
+
+func! GetMode() abort
+  let current_mode = nvim_get_mode().mode
+  let modes = { "n": "NORMAL", "no": "NORMAL", "v": "VISUAL", "V": "VISUAL LINE", "": "VISUAL BLOCK", "s": "SELECT", "S": "SELECT BLOCK", "i": "INSERT", "ic": "INSERT", "R": "REPLACE", "Rv": "VISUAL REPLACE", "c": "COMMAND", "cv": "VIM EX", "ce": "EX", "r": "PROMPT", "rm": "MOAR", "r?": "CONFIRM", "!": "SHELL", "t": "TERMINAL" }
+  return "[".modes[current_mode]."]"
 endfunc
