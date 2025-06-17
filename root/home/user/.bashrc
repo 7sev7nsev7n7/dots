@@ -11,7 +11,7 @@ export EDITOR=vim
 export PATH="$PATH:/home/7sev7nsev7n7/.dotnet/tools"
 
 # Aliases
-alias ls='lsd --color=auto'
+alias ls='lsd --color=auto -F'
 alias grep='grep --color=auto'
 alias bd='cd ~/.programs/BetterDiscord; pnpm inject; cd -;'
 alias fucking='sudo'
