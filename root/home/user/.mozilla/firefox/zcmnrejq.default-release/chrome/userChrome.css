@@ -46,7 +46,7 @@
   border-radius: 4px !important;
   &:is([selected], [multiselected]) {
     background: none;
-		background-color: color-mix(in srgb, var(--sidebar-background-color) 40%, transparent) !important;
+		background-color: color-mix(in srgb, var(--sidebar-background-color) 80%, transparent) !important;
 	}
 }
 
