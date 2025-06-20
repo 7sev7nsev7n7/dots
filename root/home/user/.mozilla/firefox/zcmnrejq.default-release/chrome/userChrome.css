@@ -22,7 +22,6 @@
 	}
 }
 
-
 /* Main browser toolbox colors */
 .browser-toolbox-background {
 	background-color: transparent !important;
@@ -44,9 +43,10 @@
 /* Selected tab */
 .tab-background {
   border-radius: 4px !important;
+	background-color: color-mix(in srgb, color-mix(in srgb, var(--tab-selected-bgcolor) 20%, var(--tabpanel-background-color)) 80%, transparent) !important;
   &:is([selected], [multiselected]) {
     background: none;
-		background-color: color-mix(in srgb, var(--sidebar-background-color) 80%, transparent) !important;
+		background-color: color-mix(in srgb, var(--tab-selected-bgcolor) 80%, transparent) !important;
 	}
 }
 
