@@ -18,7 +18,6 @@
 #browser, #tabbrowser-tabpanels {
   :root[lwtheme] & {
 		background-image: none !important;
-		/*background: linear-gradient(color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 30%, transparent), color-mix(in srgb, var(--toolbar-field-background-color) 30%, transparent), color-mix(in srgb, var(--sidebar-background-color) 10%, transparent)) !important;*/
 		background: color-mix(in srgb, var(--toolbar-field-background-color), transparent) !important;
 	}
 }
@@ -31,23 +30,23 @@
 }
 
 .browser-toolbar {
-	background: linear-gradient(color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 30%, transparent), color-mix(in srgb, var(--toolbar-field-background-color) 30%, transparent), color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 30%, transparent)) !important;
-	background-color: color-mix(in srgb, var(--toolbar-bgcolor) 30%, transparent) !important;
+  background: none;
+	background-color: color-mix(in srgb, var(--toolbar-bgcolor) 50%, transparent) !important;
 }
 
 /* URL Bar Background colors */
 #urlbar-background {
-	background: linear-gradient(color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 30%, transparent), color-mix(in srgb, color-mix(in srgb, color-mix(in srgb, var(--toolbar-field-background-color) 60%, var(--toolbar-color)) 10%, transparent) 30%, transparent), color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 30%, transparent)) !important;
-	background-color: color-mix(in srgb, color-mix(var(--toolbar-field-background-color), var(--toolbar-field-focus-color)) 40%, transparent) !important;
+  background: none;
+	background-color: color-mix(in srgb, color-mix(var(--toolbar-field-background-color), var(--toolbar-field-focus-color)) 80%, transparent) !important;
 	border: 1px solid color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 30%, transparent) !important;
 }
 
 /* Selected tab */
 .tab-background {
-	border-radius: 64px !important;
+  border-radius: 4px !important;
   &:is([selected], [multiselected]) {
-		background: linear-gradient(color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 50%, transparent), color-mix(in srgb, color-mix(in srgb, color-mix(in srgb, var(--toolbar-field-background-color) 60%, var(--toolbar-color)) 10%, transparent) 50%, transparent), color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 50%, transparent)) !important;
-		background-color: color-mix(in srgb, var(--toolbar-field-background-color) 40%, transparent) !important;
+    background: none;
+		background-color: color-mix(in srgb, var(--sidebar-background-color) 40%, transparent) !important;
 	}
 }
 

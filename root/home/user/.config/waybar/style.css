@@ -10,13 +10,12 @@
 
 window#waybar {
   color: mix(@foreground, @color3, 0.2);
-  background: linear-gradient(alpha(mix(@foreground, @color3, 0.5), 0.1), alpha(@background, 0.3), alpha(mix(@foreground, @color3, 0.5), 0.1));
-	background-color: alpha(@background, 0.3);
-	border-bottom: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.3);
+  background: none;
+	background-color: alpha(mix(@background, @color3, 0.3), 0.3);
 }
 
 button {
-  border-radius: 16px;
+  border-radius: 4px;
 }
 
 button:hover {
@@ -61,20 +60,18 @@ button:hover {
 #custom-notifications,
 #custom-volume,
 #custom-nowplaying {
-  background: linear-gradient(alpha(mix(@foreground, @color3, 0.5), 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(mix(@foreground, @color3, 0.5), 0.5));
-	background-color: alpha(@background, 0.3);
-  border: 1px solid alpha(@foreground, 0.6);
-  border-radius: 16px;
+  background: none;
+	background-color: mix(@color3, alpha(@background, 0.2), 0.6);
+  border-radius: 4px;
   margin: 8px 2px;
   padding: 0px 4px;
 }
 
 /* per-module configurations */
 tooltip {
-  background: linear-gradient(alpha(mix(@foreground, @color3, 0.5), 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(mix(@foreground, @color3, 0.5), 0.5));
-  background-color: alpha(@background, 0.5);
+  background: none;
+  background-color: alpha(mix(@background, @color3, 0.2), 0.8);
   border-radius: 8px;
-  border: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.7);
 }
 
 tooltip label {
@@ -86,8 +83,7 @@ tooltip label {
 #custom-notifications,
 #workspaces button.active {
   color: alpha(@background, 0.8);
-  background: linear-gradient(alpha(@color4, 0.9), alpha(@foreground, 0.8));
-  border: 1px solid alpha(mix(@foreground, @color3, 0.5), 0.6);
+  background: mix(alpha(@color3, 0.8), @foreground, 0.3);
 }
 
 #workspaces button.active {
@@ -104,10 +100,8 @@ window#waybar.empty #window {
 
 #battery.plugged,
 #battery.charging {
-  color: mix(mix(@color4, #00ff00, 0.4), #ffffff, 0.4);
-  background: linear-gradient(alpha(mix(@color4, #00ff00, 0.5), 0.8), mix(@background, #008800, 0.4), alpha(mix(@color4, #00ff00, 0.5), 0.8));
-	background-color: alpha(#00ff00, 0.3);
-  border-top: 4px solid alpha(mix(@color4, #00ff00, 0.5), 0.8);
+  color: mix(mix(@color4, #00ff00, 0.4), black, 0.6);
+	background-color: mix(@color4, alpha(#00ff00, 0.8), 0.7);
 }
 
 #battery.warning:not(.charging) {
