@@ -1,4 +1,6 @@
-# Dotfiles for Hyprland
+# Dotfiles for Hyprland - Flat branch
+
+***This branch hosts flatter styling choices, and could optionally be merged into main at a later date***
 
 simple dotfiles for hyprland setup. i refuse to make an installation script (for the time being)
 

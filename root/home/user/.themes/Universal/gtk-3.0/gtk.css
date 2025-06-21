@@ -224,7 +224,7 @@ button:visited {
 .background {
   color: @foreground;
   /*background-color: @theme_bg_color_breeze; */
-  background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+  background: @color3;
 	background-color: alpha(@background, 0.8);
 }
   .background:backdrop, label:backdrop selection.background {
@@ -232,7 +232,7 @@ button:visited {
     -gtk-icon-shadow: none;
     color: @theme_unfocused_fg_color_breeze;
     /*background-color: @theme_unfocused_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
 	}
 
@@ -248,22 +248,22 @@ button:disabled:visited, label:disabled selection {
 
 .gtkstyle-fallback {
   /*background-color: @theme_bg_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+	background: @color3;
 	background-color: alpha(@background, 0.8);
   color: @theme_fg_color_breeze; }
   .gtkstyle-fallback:hover {
     /*background-color: shade(@theme_bg_color_breeze,1.1);*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
     color: @theme_fg_color_breeze; }
   .gtkstyle-fallback:active {
     /*background-color: shade(@theme_bg_color_breeze,0.9);*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
     color: @theme_fg_color_breeze; }
   .gtkstyle-fallback:disabled, label:disabled selection.gtkstyle-fallback {
     /*background-color: @insensitive_fg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
     color: @insensitive_fg_color_breeze; }
   .gtkstyle-fallback:selected,
@@ -271,7 +271,7 @@ button:disabled:visited, label:disabled selection {
   headerbar.selection-mode button.subtitle:link,
   headerbar.selection-mode button.subtitle:visited {
     /*background-color: @theme_selected_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
     color: @theme_selected_fg_color_breeze; }
 
@@ -280,7 +280,7 @@ textview text,
 .view {
   color: @theme_text_color_breeze;
   /*background-color: @theme_base_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+	background: @color3;
 	background-color: alpha(@background, 0.8);
 }
   .view text:backdrop,
@@ -289,7 +289,7 @@ textview text,
   label:backdrop selection.view {
     color: @theme_unfocused_text_color_breeze;
     /*background-color: @theme_unfocused_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
 	}
   .view text:disabled,
@@ -335,13 +335,13 @@ textview text,
 
 textview border {
   /*background-color: @theme_base_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+	background: @color3;
 	background-color: alpha(@background, 0.8);
   background-image: image(@borders_breeze);
   background-repeat: no-repeat; }
   textview border:backdrop {
     /*background-color: @theme_unfocused_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
 	}
   textview border.bottom {
@@ -363,7 +363,7 @@ treeview.view rubberband,
 flowbox rubberband {
   border: 1px solid @theme_selected_bg_color_breeze;
   /*background-color: alpha(@theme_selected_bg_color_breeze,0.8);*/
-	background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+	background: @color3;
 	background-color: alpha(@background, 0.8);
 }
   .rubberband:backdrop, label:backdrop selection.rubberband,
@@ -371,7 +371,7 @@ flowbox rubberband {
   treeview.view rubberband:backdrop {
     border-color: @theme_unfocused_selected_bg_color_breeze;
     /*background-color: alpha(@theme_unfocused_selected_bg_color_breeze,0.8);*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
 	}
 
@@ -400,7 +400,7 @@ label.separator {
 
 label selection {
   /*background-color: @theme_selected_bg_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+	background: @color3;
 	background-color: alpha(@background, 0.8);
   color: @theme_selected_fg_color_breeze; }
 
@@ -423,7 +423,7 @@ headerbar .subtitle, label.separator {
   color: @theme_fg_color_breeze;
   border: 1px solid @borders_breeze;
   /*background-color: alpha(@theme_bg_color_breeze,0.8);*/
-	background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+	background: @color3;
 	background-color: alpha(@background, 0.8);
   background-clip: padding-box;
   box-shadow: none;
@@ -434,7 +434,7 @@ headerbar .subtitle, label.separator {
   label:backdrop selection.osd {
     color: @theme_unfocused_text_color_breeze;
     /*background-color: alpha(@theme_unfocused_bg_color_breeze,0.8);*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
     -gtk-icon-shadow: none; }
 
@@ -491,7 +491,7 @@ headerbar.selection-mode headerbar flowbox flowboxchild.subtitle:link,
 headerbar.selection-mode headerbar flowbox button.subtitle:link,
 headerbar.selection-mode headerbar flowbox button.subtitle:visited, label:disabled selection, label:backdrop selection {
   /*background-color: @theme_selected_bg_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+	background: @color3;
 	background-color: alpha(@background, 0.8);
   color: @theme_selected_fg_color_breeze; }
   .sidebar:hover:selected,
@@ -507,7 +507,7 @@ headerbar.selection-mode headerbar flowbox button.subtitle:visited, label:disabl
   textview text selection:hover:focus,
   textview text selection:hover, flowbox flowboxchild:hover:selected, label:disabled selection:hover, label:backdrop selection:hover {
     /*background-color: @theme_hovering_selected_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
     color: @theme_fg_color_breeze; }
   .sidebar:backdrop:selected,
@@ -516,7 +516,7 @@ headerbar.selection-mode headerbar flowbox button.subtitle:visited, label:disabl
   entry selection:backdrop:focus,
   entry selection:backdrop {
     /*background-color: @theme_unfocused_selected_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+		background: @color3;
 		background-color: alpha(@background, 0.8);
     color: @theme_unfocused_base_color_breeze; }
 
@@ -573,7 +573,7 @@ headerbar.selection-mode headerbar flowbox flowboxchild.subtitle:link,
 headerbar.selection-mode headerbar flowbox button.subtitle:link,
 headerbar.selection-mode headerbar flowbox button.subtitle:visited, label:disabled selection, label:backdrop selection {
   background-color: mix(@theme_selected_bg_color_breeze, @foreground, 0.5);
-  /*background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));*/
+  /*background: @foreground;*/
 	/*background-color: alpha(@background, 0.3);*/
   border-radius: 0px; }
   .sidebar row:selected, .sidebar:selected,
@@ -669,21 +669,21 @@ button {
   -gtk-icon-shadow: none;
   color: @theme_button_foreground_normal_breeze;
   border-color: @borders_breeze;
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
   
   button.suggested-action.osd, popover.background.touch-selection button.suggested-action, popover.background.magnifier button.suggested-action,
   button.suggested-action {
     /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
   
   button.destructive-action.osd, popover.background.touch-selection button.destructive-action, popover.background.magnifier button.destructive-action,
   button.destructive-action {
     /*background-color: alpha(@error_color_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
   
@@ -691,14 +691,14 @@ button {
   button:backdrop {
     box-shadow: none;
     /*background: @theme_button_background_normal_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   
   button.osd:checked, popover.background.touch-selection button:checked, popover.background.magnifier button:checked,
   button:checked {
     /*background: alpha(@theme_button_foreground_normal_breeze,0.125);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     box-shadow: none; }
   
@@ -708,7 +708,7 @@ button {
     popover.background.touch-selection button:hover:not(:checked):not(:active), popover.background.magnifier button:hover:not(:checked):not(:active),
     button:hover:not(:checked):not(:active) {
       /*background: @theme_button_background_normal_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   
@@ -716,7 +716,7 @@ button {
   button:active {
     box-shadow: none;
     /*background: alpha(@theme_button_decoration_hover_breeze,0.333);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   
@@ -730,7 +730,7 @@ button {
     color: @theme_button_foreground_insensitive_breeze;
     border-color: @insensitive_borders_breeze;
     /*background: @theme_button_background_insensitive_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
     popover.background.touch-selection button:disabled:active, popover.background.magnifier button:disabled:active,
@@ -743,7 +743,7 @@ button {
     border-color: transparent;
     /*background: transparent;*/
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-image: none;
     box-shadow: none;
@@ -753,20 +753,20 @@ button {
     popover.background.touch-selection button.suggested-action, popover.background.magnifier button.suggested-action,
     button.flat.suggested-action {
       /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     popover.background.touch-selection button.destructive-action, popover.background.magnifier button.destructive-action,
     button.flat.destructive-action {
       /*background-color: alpha(@error_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     popover.background.touch-selection button.flat:checked, popover.background.magnifier button.flat:checked,
     button.flat:checked {
       border-color: mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.3);
       /*background-color: alpha(@theme_button_foreground_normal_breeze,0.125);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     popover.background.touch-selection button.flat:hover, popover.background.magnifier button.flat:hover,
@@ -780,7 +780,7 @@ button {
     button.flat:active {
       border-color: @theme_button_decoration_hover_breeze;
       /*background-color: alpha(@theme_button_decoration_hover_breeze,0.333);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     popover.background.touch-selection button.flat:focus, popover.background.magnifier button.flat:focus,
@@ -790,7 +790,7 @@ button {
   button.osd separator, .csd popover.background.touch-selection button separator, .csd popover.background.magnifier button separator, popover.background.touch-selection button separator, popover.background.magnifier button separator,
   button separator {
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     color: transparent; }
 
@@ -1129,7 +1129,7 @@ headerbar label:disabled selection.flat,
 label:disabled headerbar selection.flat, calendar.button:backdrop, label:backdrop selection.button, calendar.button:active, calendar.button:hover, calendar.button {
   border-color: transparent;
   /*background-color: transparent;*/
-	background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background: @foreground;
 	background-color: alpha(@background, 0.3);
   background-image: none;
   box-shadow: none;
@@ -1149,7 +1149,7 @@ entry {
   color: @theme_text_color_breeze;
   border-color: @borders_breeze;
   /*background-color: @theme_base_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background: @foreground;
 	background-color: alpha(@background, 0.3);
   box-shadow: none; }
   spinbutton:not(.vertical) image.left,
@@ -1168,7 +1168,7 @@ entry {
     color: @theme_text_color_breeze;
     border-color: @borders_breeze;
     /*background-color: @theme_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     box-shadow: none; }
   spinbutton:focus:not(.vertical),
@@ -1179,7 +1179,7 @@ entry {
     color: @insensitive_base_fg_color_breeze;
     border-color: @insensitive_borders_breeze;
     /*background-color: @insensitive_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   spinbutton:backdrop:not(.vertical),
@@ -1187,7 +1187,7 @@ entry {
     color: @theme_unfocused_text_color_breeze;
     border-color: @unfocused_borders_breeze;
     /*background-color: @theme_unfocused_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   spinbutton:backdrop:disabled:not(.vertical),
@@ -1195,7 +1195,7 @@ entry {
     color: @theme_unfocused_view_text_color_breeze;
     border-color: @unfocused_insensitive_borders_breeze;
     /*background-color: @theme_unfocused_view_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   spinbutton.error:not(.vertical),
@@ -1203,14 +1203,14 @@ entry {
     color: @error_color_breeze;
     border-color: @error_color_breeze;
     /*background-color: alpha(@error_color_breeze,0.5);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
     spinbutton.error:focus:not(.vertical),
     entry.error:focus {
       border-color: @error_color_breeze;
       /*background-color: alpha(@error_color_breeze,0.5);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     spinbutton.error:selected:not(.vertical),
@@ -1220,7 +1220,7 @@ entry {
     entry.error:selected,
     entry.error:selected:focus {
       /*background-color: @error_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     spinbutton.error:backdrop:not(.vertical), label:backdrop selection.error,
@@ -1228,7 +1228,7 @@ entry {
       color: @error_color_backdrop_breeze;
       border-color: @error_color_backdrop_breeze;
       /*background-color: alpha(@error_color_backdrop_breeze,0.5);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   spinbutton.warning:not(.vertical),
@@ -1236,14 +1236,14 @@ entry {
     color: @warning_color_breeze;
     border-color: @warning_color_breeze;
     /*background-color: alpha(@warning_color_breeze,0.5);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
     spinbutton.warning:focus:not(.vertical),
     entry.warning:focus {
       border-color: @warning_color_breeze;
       /*background-color: alpha(@warning_color_breeze,0.5);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     spinbutton.warning:selected:not(.vertical),
@@ -1253,7 +1253,7 @@ entry {
     entry.warning:selected,
     entry.warning:selected:focus {
       /*background-color: @warning_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     spinbutton.warning:backdrop:not(.vertical), label:backdrop selection.warning,
@@ -1261,7 +1261,7 @@ entry {
       color: @warning_color_backdrop_breeze;
       border-color: @warning_color_backdrop_breeze;
       /*background-color: alpha(@warning_color_backdrop_breeze,0.5);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   spinbutton:not(.vertical) image,
@@ -1286,19 +1286,19 @@ entry progress {
   border-style: solid;
   background-image: none;
   /*background-color: transparent;*/
-	background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background: @foreground;
 	background-color: alpha(@background, 0.3);
   box-shadow: none; }
   spinbutton:not(.vertical) progress:backdrop,
   entry progress:backdrop {
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: @theme_unfocused_selected_bg_color_breeze; }
 
 treeview acceleditor > label {
   /*background-color: @theme_selected_bg_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -1306,7 +1306,7 @@ treeview entry.flat, treeview entry {
   border-radius: 0;
   background-image: none;
   /*background-color: @theme_base_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
   treeview entry.flat:focus, treeview entry:focus {
@@ -1317,7 +1317,7 @@ combobox > box > button.combo:not(:only-child) {
   color: @theme_text_color_breeze;
   border-color: @borders_breeze;
   /*background-color: @theme_base_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background: @foreground;
 	background-color: alpha(@background, 0.3);
   box-shadow: none; }
   combobox > box > button.combo:not(:only-child):focus {
@@ -1326,21 +1326,21 @@ combobox > box > button.combo:not(:only-child) {
     color: @insensitive_base_fg_color_breeze;
     border-color: @insensitive_borders_breeze;
     /*background-color: @insensitive_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   combobox > box > button.combo:not(:only-child):backdrop, label:backdrop combobox > box > selection:not(:only-child) {
     color: @theme_unfocused_text_color_breeze;
     border-color: @unfocused_borders_breeze;
     /*background-color: @theme_unfocused_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   combobox > box > button.combo:not(:only-child):backdrop:disabled, label:backdrop combobox > box > selection:not(:only-child):disabled, label:disabled combobox > box > selection:not(:only-child):backdrop, label:backdrop label:disabled combobox > box > selection:not(:only-child), label:disabled label:backdrop combobox > box > selection:not(:only-child) {
     color: @theme_unfocused_view_text_color_breeze;
     border-color: @unfocused_insensitive_borders_breeze;
     /*background-color: @theme_unfocused_view_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
 
@@ -1367,13 +1367,13 @@ combobox > box > button.combo:not(:only-child) {
     .app-notification button.suggested-action,
     .app-notification.frame button.suggested-action {
       /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     .app-notification button.destructive-action,
     .app-notification.frame button.destructive-action {
       /*background-color: alpha(@error_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     .app-notification button:backdrop,
@@ -1412,7 +1412,7 @@ combobox > box > button.combo:not(:only-child) {
       border-color: transparent;
       background: transparent;
       /*background-color: transparent;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       box-shadow: none;
       color: @theme_button_foreground_normal_breeze;
@@ -1421,20 +1421,20 @@ combobox > box > button.combo:not(:only-child) {
       .app-notification button.flat.suggested-action,
       .app-notification.frame button.flat.suggested-action {
         /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
       .app-notification button.flat.destructive-action,
       .app-notification.frame button.flat.destructive-action {
         /*background-color: alpha(@error_color_breeze,0.2);*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
       .app-notification button.flat:checked,
       .app-notification.frame button.flat:checked {
         border-color: mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.3);
         /*background-color: alpha(@theme_button_foreground_normal_breeze,0.125);*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
 			}
       .app-notification button.flat:hover,
@@ -1447,7 +1447,7 @@ combobox > box > button.combo:not(:only-child) {
       .app-notification.frame button.flat:active {
         border-color: @theme_button_decoration_hover_breeze;
         /*background-color: alpha(@theme_button_decoration_hover_breeze,0.333);*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
 			}
       .app-notification button.flat:focus,
@@ -1464,7 +1464,7 @@ calendar {
   color: @theme_text_color_breeze;
   border: 1px solid @borders_breeze;
   /*background-color: @theme_base_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
   calendar:selected,
@@ -1475,7 +1475,7 @@ calendar {
   headerbar.selection-mode headerbar button.subtitle:link,
   headerbar.selection-mode headerbar button.subtitle:visited {
     /*background-color: @borders_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background: @foreground;
 	background-color: alpha(@background, 0.3);
 	}
   calendar:disabled {
@@ -1505,7 +1505,7 @@ calendar {
     color: @theme_unfocused_text_color_breeze;
     border-color: @unfocused_borders_breeze;
     /*background-color: @theme_unfocused_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
 
@@ -1531,7 +1531,7 @@ radio {
   min-width: 14px;
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   /*background-color: @theme_base_color_breeze;*/
-	background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+	background: @foreground;
 	background-color: alpha(@background, 0.3);
   border: 1px solid alpha(@theme_button_foreground_normal_breeze,0.33);
   -gtk-icon-shadow: none;
@@ -1557,7 +1557,7 @@ radio {
   radio:checked {
     border-color: @theme_button_decoration_hover_breeze;
     /*background-color: alpha(@theme_button_decoration_hover_breeze,0.33);*/
-		background: linear-gradient(alpha(@foreground, 0.8), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.8));
+		background: @background;
 		background-color: alpha(@foreground, 0.6);
 	}
     check:indeterminate:backdrop, label:backdrop selection:indeterminate, check:checked:backdrop, label:backdrop selection:checked,
@@ -1581,7 +1581,7 @@ radio {
     min-height: 14px;
     min-width: 14px;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     box-shadow: none;
     -gtk-icon-shadow: none;
@@ -1733,12 +1733,12 @@ colorswatch#add-color-button {
   background: linear-gradient(180deg, mix(@theme_button_background_normal_breeze,white,0.03125) 0%, @theme_button_background_normal_breeze 50%, mix(@theme_button_background_normal_breeze,black,0.03125) 100%); }
   colorswatch#add-color-button.suggested-action {
     /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
   colorswatch#add-color-button.destructive-action {
     /*background-color: alpha(@error_color_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
   colorswatch#add-color-button:backdrop, label:backdrop selection#add-color-button {
@@ -1767,7 +1767,7 @@ colorswatch#add-color-button {
     border-color: transparent;
     background: transparent;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-image: none;
     box-shadow: none;
@@ -1776,18 +1776,18 @@ colorswatch#add-color-button {
     -gtk-icon-shadow: none; }
     colorswatch#add-color-button overlay.suggested-action {
       /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     colorswatch#add-color-button overlay.destructive-action {
       /*background-color: alpha(@error_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     colorswatch#add-color-button overlay:checked {
       border-color: mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.3);
       /*background-color: alpha(@theme_button_foreground_normal_breeze,0.125);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     colorswatch#add-color-button overlay:hover {
@@ -1797,7 +1797,7 @@ colorswatch#add-color-button {
     colorswatch#add-color-button overlay:active {
       border-color: @theme_button_decoration_hover_breeze;
       /*background-color: alpha(@theme_button_decoration_hover_breeze,0.333);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     colorswatch#add-color-button overlay:focus {
@@ -1816,13 +1816,13 @@ GtkColorButton.button {
  ***********/
 messagedialog.background {
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
 messagedialog:backdrop {
   /*background-color: @theme_unfocused_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -1830,7 +1830,7 @@ messagedialog .titlebar {
   min-height: 32px;
   /*background-color: transparent;*/
   /*background-image: linear-gradient(to bottom, shade(@theme_titlebar_background_breeze,1.2117647), @theme_titlebar_background_breeze);*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   box-shadow: none; }
 
@@ -1842,13 +1842,13 @@ messagedialog button {
 
 filechooser .search-bar {
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border-color: @theme_bg_color_breeze;
   box-shadow: none; }
   filechooser .search-bar:backdrop, filechooser label:backdrop selection.search-bar, label:backdrop filechooser selection.search-bar {
     /*background-color: @theme_unfocused_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: @theme_unfocused_bg_color_breeze;
     color: @theme_unfocused_text_color_breeze; }
@@ -1860,7 +1860,7 @@ filechooser .dialog-action-box {
 
 filechooser #pathbarbox {
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border-bottom: 1px solid @borders_breeze; }
 
@@ -1877,14 +1877,14 @@ headerbar {
   color: @theme_titlebar_foreground_breeze;
   background-image: none;
   /*background-color: @theme_titlebar_background_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border-top: 1px solid lighter(@theme_titlebar_background_breeze); }
   
   headerbar:backdrop {
     background-image: none;
     /*background-color: @theme_titlebar_background_backdrop_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     color: @theme_titlebar_foreground_backdrop_breeze;
     border-top: 1px solid lighter(@theme_titlebar_background_backdrop_breeze);
@@ -1913,13 +1913,13 @@ headerbar {
     
     headerbar .linked button.suggested-action {
       /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     
     headerbar .linked button.destructive-action {
       /*background-color: alpha(@error_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     
@@ -1960,7 +1960,7 @@ headerbar {
     /*background: transparent;*/
     /*background-color: transparent;*/
     /*background-image: none;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     box-shadow: none;
     color: @theme_button_foreground_normal_breeze;
@@ -1971,20 +1971,20 @@ headerbar {
     
     headerbar button.suggested-action {
       /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     
     headerbar button.destructive-action {
       /*background-color: alpha(@error_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     
     headerbar button:checked {
       border-color: mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.3);
       /*background-color: alpha(@theme_button_foreground_normal_breeze,0.125);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     
@@ -1997,7 +1997,7 @@ headerbar {
     headerbar button:active {
       border-color: @theme_button_decoration_hover_breeze;
       /*background-color: alpha(@theme_button_decoration_hover_breeze,0.333);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     
@@ -2010,7 +2010,7 @@ headerbar {
     headerbar button:backdrop {
       background-image: none;
       /*background-color: @theme_titlebar_background_backdrop_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       color: @theme_titlebar_foreground_backdrop_breeze; }
     
@@ -2022,7 +2022,7 @@ headerbar {
     headerbar button:disabled:backdrop {
       background-image: none;
       /*background-color: @theme_titlebar_background_backdrop_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       color: @theme_titlebar_foreground_backdrop_breeze;
       border-color: transparent; }
@@ -2034,7 +2034,7 @@ headerbar {
     
     headerbar button:disabled {
       /*background-color: transparent;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       background-image: none;
       border-color: transparent;
@@ -2067,21 +2067,21 @@ headerbar {
   headerbar.selection-mode,
   headerbar.selection-mode headerbar {
     /*background-color: mix(@theme_titlebar_background,@theme_button_decoration_focus,0.5);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
     
     headerbar.selection-mode separator,
     headerbar.selection-mode headerbar separator {
       /*background-color: @theme_button_decoration_focus_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     
     headerbar.selection-mode button:not(.titlebutton),
     headerbar.selection-mode headerbar button:not(.titlebutton) {
       /*background-color: alpha(@theme_button_decoration_focus_breeze,0.5);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
       
@@ -2090,7 +2090,7 @@ headerbar {
       headerbar.selection-mode headerbar button:not(.titlebutton):active,
       headerbar.selection-mode headerbar button:not(.titlebutton):focus {
         /*background-color: @theme_button_decoration_focus_breeze;*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
 			}
     
@@ -2123,7 +2123,7 @@ infobar {
   border-style: none;
   border-bottom: 1px solid @borders_breeze;
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   background-image: none; }
   infobar:backdrop {
@@ -2135,7 +2135,7 @@ infobar {
 .error {
   /*background-color: @theme_bg_color_breeze;*/
   /*background-image: none;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   color: @warning_color_breeze;
   text-shadow: none; }
@@ -2147,7 +2147,7 @@ infobar {
   .error:backdrop,
   label:backdrop selection.error {
     /*background-color: @theme_unfocused_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     color: @warning_color_backdrop_breeze; }
   .info button,
@@ -2157,7 +2157,7 @@ infobar {
     box-shadow: none;
     background-image: none;
     /*background-color: alpha(@warning_color_breeze,0.5);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: alpha(@warning_color_breeze,0.5);
     color: @theme_button_foreground_normal_breeze; }
@@ -2166,7 +2166,7 @@ infobar {
     .warning button:hover,
     .error button:hover {
       /*background-color: alpha(@warning_color_breeze,0.25);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: @warning_color_breeze; }
     .info button:active, .info button:checked,
@@ -2177,7 +2177,7 @@ infobar {
     .error button:active,
     .error button:checked {
       /*background-color: @warning_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       color: @theme_bg_color_breeze;
       border-color: @warning_color_breeze; }
@@ -2186,7 +2186,7 @@ infobar {
     .warning button:disabled,
     .error button:disabled {
       /*background-color: alpha(@warning_color_insensitive_breeze,0.5);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: alpha(@warning_color_insensitive_breeze,0.5);
       color: @theme_button_foreground_insensitive_breeze; }
@@ -2195,7 +2195,7 @@ infobar {
     .warning button:backdrop,
     .error button:backdrop {
       /*background-color: alpha(@warning_color_backdrop_breeze,0.5);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: alpha(@warning_color_backdrop_breeze,0.5);
       color: @theme_button_foreground_backdrop_breeze; }
@@ -2207,7 +2207,7 @@ infobar {
       .error button:backdrop:active,
       .error button:backdrop:checked {
         /*background-color: @warning_color_backdrop_breeze;*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         color: @theme_unfocused_bg_color_breeze;
         border-color: @warning_color_backdrop_breeze; }
@@ -2216,7 +2216,7 @@ infobar {
       .warning button:backdrop:disabled,
       .error button:backdrop:disabled {
         /*background-color: alpha(@warning_color_insensitive_backdrop_breeze,0.5);*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         border-color: alpha(@warning_color_insensitive_backdrop_breeze,0.5);
         color: @theme_button_foreground_backdrop_insensitive_breeze; }
@@ -2228,7 +2228,7 @@ infobar {
       .error button:backdrop:disabled:active,
       .error button:backdrop:disabled:checked {
         /*background-color: @warning_color_insensitive_backdrop_breeze;*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         color: @insensitive_unfocused_bg_color_breeze;
         border-color: @warning_color_insensitive_backdrop_breeze; }
@@ -2640,7 +2640,7 @@ button:visited {
 list {
   color: @theme_fg_color_breeze;
   /*background: @theme_base_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.1), alpha(@background, 0.3), alpha(@foreground, 0.1));
+  background: @color3;
 	background-color: alpha(@background, 0.3);
   border-radius: 3px; }
   list.content {
@@ -2651,14 +2651,14 @@ list {
 
 row.activatable.has-open-popup, row.activatable:hover {
   /*background-color: @theme_selected_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
 row.activatable:active {
   box-shadow: none;
   /*background-color: @theme_selected_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -2667,7 +2667,7 @@ headerbar.selection-mode .activatable.subtitle:active:link,
 headerbar.selection-mode button.activatable.subtitle:active:visited {
   box-shadow: none;
   /*background-color: @theme_selected_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -2677,13 +2677,13 @@ headerbar.selection-mode button.activatable.has-open-popup.subtitle:visited, row
 headerbar.selection-mode .activatable.subtitle:hover:link,
 headerbar.selection-mode button.activatable.subtitle:hover:visited {
   /*background-color: @theme_selected_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
 row.activatable:selected:backdrop {
   /*background-color: @theme_unfocused_selected_bg_color_alt_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -2698,14 +2698,14 @@ menubar,
   border-style: none;
 	border-radius: 16px;
   /*background-color: @theme_header_background_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
   menubar:backdrop,
   .menubar:backdrop,
   label:backdrop selection.menubar {
     /*background-color: @theme_header_background_backdrop_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   menubar > menuitem,
@@ -2715,7 +2715,7 @@ menubar,
     menubar > menuitem:hover,
     .menubar > menuitem:hover {
       /*background-color: @theme_button_decoration_focus_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       color: @theme_button_foreground_active_breeze; }
     menubar > menuitem:disabled,
@@ -2725,13 +2725,13 @@ menubar,
       menubar > menuitem:disabled:backdrop,
       .menubar > menuitem:disabled:backdrop {
         /*background-color: @theme_unfocused_bg_color_breeze;*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         color: @insensitive_unfocused_fg_color_breeze; }
     menubar > menuitem:backdrop,
     .menubar > menuitem:backdrop {
       /*background-color: @theme_unfocused_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       color: @theme_unfocused_fg_color_breeze; }
 
@@ -2739,7 +2739,7 @@ menu,
 .menu {
   padding: 1mm;
   /*background-color: mix(@theme_bg_color_breeze,@theme_base_color_breeze,0.3);*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border-radius: 0.75mm; }
   menu separator,
@@ -2756,7 +2756,7 @@ menu,
     menu menuitem:hover,
     .menu menuitem:hover {
       /*background-color: alpha(@theme_selected_bg_color_breeze,0.3);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border: 1px solid @theme_button_decoration_focus_breeze;
       border-radius: 0.75mm; }
@@ -2771,7 +2771,7 @@ menu,
     .menu menuitem:backdrop:hover {
       color: @theme_unfocused_fg_color_breeze;
       /*background-color: @theme_unfocused_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     menu menuitem arrow,
@@ -2792,7 +2792,7 @@ menu,
     min-width: 4mm;
     padding: 1mm;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-radius: 0; }
     menu > arrow.top,
@@ -2814,14 +2814,14 @@ menu,
     menu > arrow:backdrop,
     .menu > arrow:backdrop {
       /*background-color: @theme_unfocused_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     menu > arrow:disabled,
     .menu > arrow:disabled {
       color: transparent;
       /*background-color: transparent;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: transparent; }
 
@@ -2858,7 +2858,7 @@ popover.background radiobutton.button {
   popover.background checkbutton.button:hover,
   popover.background radiobutton.button:hover {
     /*background-color: alpha(@theme_selected_bg_color_breeze,0.3);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border: 1px solid @theme_button_decoration_focus_breeze;
     border-radius: 4px; }
@@ -2874,7 +2874,7 @@ popover.background radiobutton.button {
   popover.background checkbutton.button:selected,
   popover.background radiobutton.button:selected {
     /*background-color: @theme_button_decoration_focus_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     color: @theme_button_foreground_active_breeze; }
   modelbutton.flat:backdrop, popover.background checkbutton.flat:backdrop,
@@ -2931,7 +2931,7 @@ popover.background {
   padding: 0px;
   border-radius: 0.75mm;
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   box-shadow: 0px 0px 2mm rgba(0, 0, 0, 0.25), 0px 0.25mm 1mm rgba(0, 0, 0, 0.15); }
   popover.background:backdrop, label:backdrop selection.background {
@@ -2941,7 +2941,7 @@ popover.background {
   popover.background > toolbar {
     border-style: none;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   .csd popover.background.touch-selection, .csd popover.background.magnifier, popover.background.touch-selection, popover.background.magnifier {
@@ -3006,7 +3006,7 @@ scrolledwindow junction {
   border-color: transparent;
   /*background-color: transparent;*/
   /*background-image: none;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -3039,7 +3039,7 @@ paned > separator {
   border-style: none;
   /*background-color: transparent;*/
   /*background-image: image(@borders_breeze);*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   background-size: 1px 1px; }
   paned > separator:backdrop {
@@ -3049,13 +3049,13 @@ paned > separator {
     min-height: 5px;
     /*background-color: @theme_bg_color_breeze;*/
     /*background-image: image(@borders_breeze), image(@borders_breeze);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-size: 1px 1px, 1px 1px; }
     paned > separator.wide:backdrop, label:backdrop paned > selection.wide {
       /*background-color: @theme_unfocused_bg_color_breeze;*/
       /*background-image: image(@unfocused_borders_breeze), image(@unfocused_borders_breeze);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
 
@@ -3119,7 +3119,7 @@ notebook > header {
   padding: 0px;
   border: none;
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
   notebook > header.top {
@@ -3140,7 +3140,7 @@ notebook > header {
       box-shadow: inset -1px 0 @unfocused_borders_breeze; }
   notebook > header:backdrop {
     /*background-color: @theme_unfocused_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   notebook > header tabs {
@@ -3152,7 +3152,7 @@ notebook > header {
     border-bottom: none;
     border-top: 3px solid transparent;
     /*background-color: alpha(@theme_fg_color_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-radius: 0; }
     notebook > header.top > tabs > tab:first-child {
@@ -3162,7 +3162,7 @@ notebook > header {
     notebook > header.top > tabs > tab:hover, notebook > header.top > tabs > tab.prelight-page {
       transition: 0.15s;
       /*background-color: alpha(@theme_selected_bg_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     notebook > header.top > tabs > tab > label {
@@ -3183,7 +3183,7 @@ notebook > header {
       border-top-color: @theme_selected_bg_color_breeze;
       border-radius: 3px 3px 0px 0px;
       /*background-color: @theme_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   notebook > header.top > tabs arrow.down ~ tab:checked:nth-child(2) {
@@ -3198,7 +3198,7 @@ notebook > header {
     border-top: none;
     border-bottom: 3px solid transparent;
     /*background-color: alpha(@theme_fg_color_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-radius: 0; }
     notebook > header.bottom > tabs > tab:first-child {
@@ -3208,7 +3208,7 @@ notebook > header {
     notebook > header.bottom > tabs > tab:hover, notebook > header.bottom > tabs > tab.prelight-page {
       transition: 0.15s;
       /*background-color: alpha(@theme_selected_bg_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     notebook > header.bottom > tabs > tab > label {
@@ -3229,7 +3229,7 @@ notebook > header {
       border-bottom-color: @theme_selected_bg_color_breeze;
       border-radius: 0px 0px 3px 3px;
       /*background-color: @theme_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   notebook > header.bottom > tabs arrow.down ~ tab:checked:nth-child(2) {
@@ -3244,7 +3244,7 @@ notebook > header {
     border-right: none;
     border-left: 3px solid transparent;
     /*background-color: alpha(@theme_fg_color_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-radius: 0; }
     notebook > header.left > tabs > tab:first-child {
@@ -3254,7 +3254,7 @@ notebook > header {
     notebook > header.left > tabs > tab:hover, notebook > header.left > tabs > tab.prelight-page {
       transition: 0.15s;
       /*background-color: alpha(@theme_selected_bg_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     notebook > header.left > tabs > tab > label {
@@ -3275,7 +3275,7 @@ notebook > header {
       border-left-color: @theme_selected_bg_color_breeze;
       border-radius: 3px 0px 0px 3px;
       /*background-color: @theme_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   notebook > header.left > tabs arrow.down ~ tab:checked:nth-child(2) {
@@ -3290,7 +3290,7 @@ notebook > header {
     border-left: none;
     border-right: 3px solid transparent;
     /*background-color: alpha(@theme_fg_color_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-radius: 0; }
     notebook > header.right > tabs > tab:first-child {
@@ -3300,7 +3300,7 @@ notebook > header {
     notebook > header.right > tabs > tab:hover, notebook > header.right > tabs > tab.prelight-page {
       transition: 0.15s;
       /*background-color: alpha(@theme_selected_bg_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     notebook > header.right > tabs > tab > label {
@@ -3321,7 +3321,7 @@ notebook > header {
       border-right-color: @theme_selected_bg_color_breeze;
       border-radius: 0px 3px 3px 0px;
       /*background-color: @theme_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   notebook > header.right > tabs arrow.down ~ tab:checked:nth-child(2) {
@@ -3334,7 +3334,7 @@ notebook > header {
     border-style: solid;
     border-color: transparent;
     /*background-color: @theme_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-clip: padding-box;
     border-right-width: 1px;
@@ -3346,14 +3346,14 @@ notebook > header {
       box-shadow: inset 0px -3px 0px 0px @theme_selected_bg_color_breeze, inset -3px 0px 0px 0px @theme_bg_color_breeze; }
       notebook > header.top > tabs > tab.reorderable-page:checked:backdrop, label:backdrop notebook > header.top > tabs > selection:checked {
         /*background-color: @theme_unfocused_bg_color_breeze;*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         border-color: transparent;
         border-right-color: @unfocused_borders_breeze;
         box-shadow: none; }
     notebook > header.top > tabs > tab.reorderable-page:backdrop, label:backdrop notebook > header.top > tabs > selection.reorderable-page {
       /*background-color: @theme_unfocused_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-right-color: @unfocused_borders_breeze;
       box-shadow: none; }
@@ -3362,7 +3362,7 @@ notebook > header {
     border-style: solid;
     border-color: transparent;
     /*background-color: @theme_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-clip: padding-box;
     border-right-width: 1px;
@@ -3374,14 +3374,14 @@ notebook > header {
       box-shadow: inset 0px -3px 0px 0px @theme_selected_bg_color_breeze, inset -3px 0px 0px 0px @theme_bg_color_breeze; }
       notebook > header.bottom > tabs > tab.reorderable-page:checked:backdrop, label:backdrop notebook > header.bottom > tabs > selection:checked {
         /*background-color: @theme_unfocused_bg_color_breeze;*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         border-color: transparent;
         border-right-color: @unfocused_borders_breeze;
         box-shadow: none; }
     notebook > header.bottom > tabs > tab.reorderable-page:backdrop, label:backdrop notebook > header.bottom > tabs > selection.reorderable-page {
       /*background-color: @theme_unfocused_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-right-color: @unfocused_borders_breeze;
       box-shadow: none; }
@@ -3390,7 +3390,7 @@ notebook > header {
     border-style: solid;
     border-color: transparent;
     /*background-color: @theme_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-clip: padding-box;
     border-bottom-width: 1px;
@@ -3402,14 +3402,14 @@ notebook > header {
       box-shadow: inset 0px -3px 0px 0px @theme_selected_bg_color_breeze, inset 0px -3px 0px 0px @theme_bg_color_breeze; }
       notebook > header.left > tabs > tab.reorderable-page:checked:backdrop, label:backdrop notebook > header.left > tabs > selection:checked {
         /*background-color: @theme_unfocused_bg_color_breeze;*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         border-color: transparent;
         border-bottom-color: @unfocused_borders_breeze;
         box-shadow: none; }
     notebook > header.left > tabs > tab.reorderable-page:backdrop, label:backdrop notebook > header.left > tabs > selection.reorderable-page {
       /*background-color: @theme_unfocused_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-bottom-color: @unfocused_borders_breeze;
       box-shadow: none; }
@@ -3418,7 +3418,7 @@ notebook > header {
     border-style: solid;
     border-color: transparent;
     /*background-color: @theme_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-clip: padding-box;
     border-bottom-width: 1px;
@@ -3430,14 +3430,14 @@ notebook > header {
       box-shadow: inset 0px -3px 0px 0px @theme_selected_bg_color_breeze, inset 0px -3px 0px 0px @theme_bg_color_breeze; }
       notebook > header.right > tabs > tab.reorderable-page:checked:backdrop, label:backdrop notebook > header.right > tabs > selection:checked {
         /*background-color: @theme_unfocused_bg_color_breeze;*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         border-color: transparent;
         border-bottom-color: @unfocused_borders_breeze;
         box-shadow: none; }
     notebook > header.right > tabs > tab.reorderable-page:backdrop, label:backdrop notebook > header.right > tabs > selection.reorderable-page {
       /*background-color: @theme_unfocused_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-bottom-color: @unfocused_borders_breeze;
       box-shadow: none; }
@@ -3471,7 +3471,7 @@ notebook > header {
     border-color: transparent;
     background: transparent;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-image: none;
     box-shadow: none;
@@ -3483,18 +3483,18 @@ notebook > header {
     border-radius: 0; }
     notebook > header > tabs > arrow.suggested-action {
       /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     notebook > header > tabs > arrow.destructive-action {
       /*background-color: alpha(@error_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     notebook > header > tabs > arrow:checked {
       border-color: mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.3);
       /*background-color: alpha(@theme_button_foreground_normal_breeze,0.125);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     notebook > header > tabs > arrow:hover {
@@ -3504,7 +3504,7 @@ notebook > header {
     notebook > header > tabs > arrow:active {
       border-color: @theme_button_decoration_hover_breeze;
       /*background-color: alpha(@theme_button_decoration_hover_breeze,0.333);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     notebook > header > tabs > arrow:focus {
@@ -3513,7 +3513,7 @@ notebook > header {
       background-clip: padding-box;
       background-image: none;
       /*background-color: rgba(255, 255, 255, 0.3);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: transparent;
       box-shadow: none; }
@@ -3531,7 +3531,7 @@ notebook > header {
 
 notebook > stack:not(:only-child) {
   /*background-color: transparent;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border-style: solid;
   border-color: @borders_breeze;
@@ -3546,7 +3546,7 @@ scrolledwindow undershoot {
  ************/
 .path-bar {
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border-bottom: 1px solid @borders_breeze; }
 
@@ -3561,12 +3561,12 @@ scrolledwindow undershoot {
   color: @theme_fg_color_breeze; }
   .path-bar button.suggested-action {
     /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
   .path-bar button.destructive-action {
     /*background-color: alpha(@error_color_breeze,0.2);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
   .path-bar button:backdrop {
@@ -3583,7 +3583,8 @@ scrolledwindow undershoot {
     box-shadow: none;
     background: alpha(@theme_button_decoration_hover_breeze,0.333); }
   .path-bar button:focus {
-    border-color: @theme_button_decoration_focus_breeze; }
+    border-color: @color3;
+    background: alpha(@foreground, 0.2); }
   .path-bar button:disabled {
     box-shadow: none;
     color: @theme_button_foreground_insensitive_breeze;
@@ -3595,8 +3596,8 @@ scrolledwindow undershoot {
     border-color: @theme_button_decoration_hover_breeze; }
   .path-bar button:active, .path-bar button:checked {
     /*background-color: @borders_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
-		background-color: alpha(@background, 0.3);
+		background: @color3;
+    color: @background;
     font-weight: normal; }
   .path-bar button.text-button, .path-bar button.image-button, .path-bar button {
     padding-left: 4px;
@@ -3644,7 +3645,7 @@ progressbar {
     border-color: @theme_unfocused_selected_bg_color_breeze; }
   progressbar.osd {
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
 
@@ -3652,7 +3653,7 @@ treeview.view.progressbar {
   border: 0px solid transparent;
   border-radius: 0.75mm;
   /*background-color: @theme_selected_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   color: @theme_selected_fg_color_breeze;
   background-image: none; }
@@ -3660,20 +3661,20 @@ treeview.view.progressbar {
   headerbar.selection-mode .progressbar.subtitle:link,
   headerbar.selection-mode button.progressbar.subtitle:visited {
     /*background-color: alpha(@theme_selected_bg_color_breeze,0.25);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
 
 treeview.view.trough {
   /*background-color: mix(@theme_bg_color_breeze,@theme_fg_color_breeze,0.7);*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
   treeview.view.trough:selected:focus, treeview.view.trough:selected,
   headerbar.selection-mode .trough.subtitle:link,
   headerbar.selection-mode button.trough.subtitle:visited {
     /*background-color: alpha(@theme_selected_fg_color_breeze,0.3);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
 
@@ -3694,14 +3695,14 @@ levelbar trough {
   color: @theme_text_color_breeze;
   border-color: @borders_breeze;
   /*background-color: @theme_base_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   box-shadow: none; }
   levelbar trough:backdrop {
     color: @theme_unfocused_text_color_breeze;
     border-color: @unfocused_borders_breeze;
     /*background-color: @theme_unfocused_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
 
@@ -3781,29 +3782,29 @@ scale {
       border-style: solid;
       border-radius: 50%;
       /*background-color: @theme_button_background_insensitive_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       opacity: 1;
       border-color: @insensitive_borders_breeze; }
       scale slider:disabled:backdrop {
         /*background-color: alpha(@theme_button_background_backdrop_insensitive_breeze,100);*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         border-color: @unfocused_insensitive_borders_breeze; }
     scale slider:active {
       box-shadow: none;
       /*background-color: @theme_button_background_normal_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
       scale slider:active:backdrop, scale label:backdrop selection:active, label:backdrop scale selection:active {
         /*background-color: @theme_button_background_normal_breeze;*/
-				background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+				background: @foreground;
 				background-color: alpha(@background, 0.3);
         border-color: @theme_button_decoration_focus_backdrop_breeze; }
     scale slider:backdrop {
       /*background-color: @theme_button_background_backdrop_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: @unfocused_borders_breeze; }
   scale trough {
@@ -3877,7 +3878,7 @@ scrollbar {
   -GtkScrollbar-has-backward-stepper: false;
   -GtkScrollbar-has-forward-stepper: false;
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border-width: 0px;
   border-color: @theme_bg_color_breeze;
@@ -3910,7 +3911,7 @@ scrollbar {
     border-radius: 0px;
     background-image: none;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     color: transparent;
     box-shadow: none; }
@@ -3918,20 +3919,20 @@ scrollbar {
       border: none;
       background-image: none;
       /*background-color: @theme_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       color: transparent; }
     scrollbar button:active, scrollbar button:active:hover {
       border: none;
       background-image: none;
       /*background-color: @theme_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       color: transparent; }
     scrollbar button:disabled {
       border: none;
       /*background-color: @theme_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       background-image: none;
       color: transparent; }
@@ -3958,12 +3959,12 @@ scrollbar {
     min-height: 14px;
     border-radius: 8px;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border: 1px solid transparent; }
   scrollbar:hover trough {
     /*background-color: alpha(@theme_button_foreground_normal_breeze,0.1);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border: 1px solid alpha(@theme_button_foreground_normal_breeze,0.2); }
     scrollbar:hover trough slider {
@@ -4016,7 +4017,7 @@ scrollbar {
   border-radius: 0px;
   border-style: none;
   /*background-color: @theme_base_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
   .sidebar:not(separator):dir(ltr), .sidebar:not(separator).left, .sidebar:not(separator).left:dir(rtl) {
@@ -4027,7 +4028,7 @@ scrollbar {
     border-right: none; }
   .sidebar .sidebar-header > separator {
     /*background-color: mix(#2a2e32,#fcfcfc,0.07);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   .sidebar row.activatable {
@@ -4038,7 +4039,7 @@ scrollbar {
       border-left: 3px solid transparent; }
     .sidebar row.activatable:selected:backdrop {
       /*background-color: @theme_unfocused_selected_bg_color_alt_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
@@ -4046,7 +4047,7 @@ scrollbar {
 
 separator.sidebar {
   /*background-color: @borders_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -4080,7 +4081,7 @@ placessidebar row {
     border-color: transparent;
     background: transparent;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-image: none;
     box-shadow: none;
@@ -4094,18 +4095,18 @@ placessidebar row {
     padding: 0; }
     button.sidebar-button.suggested-action {
       /*background-color: alpha(@theme_button_decoration_focus_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@theme_button_decoration_focus_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     button.sidebar-button.destructive-action {
       /*background-color: alpha(@error_color_breeze,0.2);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-color: mix(@error_color_breeze,mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.333),0.5); }
     button.sidebar-button:checked {
       border-color: mix(@theme_button_background_normal_breeze,@theme_button_foreground_normal_breeze,0.3);
       /*background-color: alpha(@theme_button_foreground_normal_breeze,0.125); }*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
     button.sidebar-button:hover {
       border-color: @theme_button_decoration_hover_breeze; }
@@ -4114,7 +4115,7 @@ placessidebar row {
     button.sidebar-button:active {
       border-color: @theme_button_decoration_hover_breeze;
       /*background-color: alpha(@theme_button_decoration_hover_breeze,0.333);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     button.sidebar-button:focus {
@@ -4137,7 +4138,7 @@ placesview .server-list-button:checked > image {
 
 placesview row.activatable:hover {
   /*background-color: transparent;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -4163,14 +4164,14 @@ spinbutton:not(.vertical) {
     margin: 0;
     background: none;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border: none;
     border-radius: 0;
     box-shadow: none; }
     spinbutton:not(.vertical) entry:backdrop:disabled {
       /*background-color: transparent;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   spinbutton:not(.vertical) button {
@@ -4181,7 +4182,7 @@ spinbutton:not(.vertical) {
     color: @theme_text_color_breeze;
     background-image: none;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-style: none;
     box-shadow: none; }
@@ -4197,13 +4198,13 @@ spinbutton:not(.vertical) {
     spinbutton:not(.vertical) button:backdrop {
       color: @theme_unfocused_text_color_breeze;
       /*background-color: transparent;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     spinbutton:not(.vertical) button:backdrop:disabled {
       color: @theme_unfocused_view_text_color_breeze;
       /*background-color: transparent;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       border-style: none; }
     spinbutton:not(.vertical) button:dir(ltr):last-child {
@@ -4232,13 +4233,13 @@ spinbutton.vertical entry {
   spinbutton.vertical entry:disabled {
     color: @insensitive_base_fg_color_breeze;
     /*background-color: @insensitive_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: @insensitive_borders_breeze; }
   spinbutton.vertical entry:backdrop:disabled {
     color: @theme_unfocused_view_text_color_breeze;
     /*background-color: @theme_unfocused_view_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: @unfocused_insensitive_borders_breeze; }
 
@@ -4249,7 +4250,7 @@ spinbutton.vertical button {
   box-shadow: none;
   background-image: none;
   /*background-color: @theme_base_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   color: @theme_text_color_breeze;
   border-color: @borders_breeze; }
@@ -4257,7 +4258,7 @@ spinbutton.vertical button {
     color: @theme_view_hover_decoration_color_breeze; }
     spinbutton.vertical button:hover:not(:checked):not(:active) {
       /*background-color: @theme_base_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   spinbutton.vertical button:active {
@@ -4265,13 +4266,13 @@ spinbutton.vertical button {
   spinbutton.vertical button:disabled {
     color: @insensitive_base_fg_color_breeze;
     /*background-color: @insensitive_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: @insensitive_borders_breeze; }
   spinbutton.vertical button:backdrop:disabled {
     color: @theme_unfocused_view_text_color_breeze;
     /*background-color: @theme_unfocused_view_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-color: @unfocused_insensitive_borders_breeze; }
 
@@ -4302,13 +4303,13 @@ switch {
   border-radius: 12px;
   color: transparent;
   /*background-color: alpha(@theme_button_foreground_normal_breeze,0.05);*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border-color: alpha(@theme_button_foreground_normal_breeze,0.222);
   text-shadow: none; }
   switch:disabled {
     /*background-color: alpha(@theme_button_foreground_normal_breeze,0.03);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   switch:checked {
@@ -4350,7 +4351,7 @@ searchbar > revealer > box,
   -GtkWidget-window-dragging: true;
   padding: 4px;
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -4358,7 +4359,7 @@ toolbar {
   padding: 4px 3px 3px 4px; }
   toolbar:backdrop {
     /*background-color: @theme_unfocused_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     box-shadow: none; }
   toolbar button {
@@ -4373,7 +4374,7 @@ toolbar {
     margin: 3px; }
   .osd toolbar {
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   toolbar.osd {
@@ -4381,13 +4382,13 @@ toolbar {
     border: none;
     border-radius: 0.75mm;
     /*background-color: @theme_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
     toolbar.osd:backdrop, label:backdrop selection.osd {
       border-color: @unfocused_borders_breeze;
       /*background-color: @theme_unfocused_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       box-shadow: none; }
     toolbar.osd.left, toolbar.osd.right, toolbar.osd.top, toolbar.osd.bottom {
@@ -4409,7 +4410,7 @@ searchbar > revealer > box,
   border-color: @borders_breeze;
   text-shadow: none;
   /*background-color: @theme_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
 
@@ -4426,17 +4427,17 @@ tooltip {
   border: 1px solid @tooltip_border_breeze; }
   tooltip.background {
     /*background-color: @tooltip_background_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     background-clip: padding-box; }
   tooltip.window-frame.csd {
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     box-shadow: none; }
   tooltip decoration {
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
 
@@ -4444,7 +4445,7 @@ tooltip *, tooltip button:link,
 tooltip button:visited {
   padding: 0px;
   /*background-color: transparent;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   color: @tooltip_text_breeze; }
 
@@ -4465,7 +4466,7 @@ treeview.view {
     border-radius: 0; }
   treeview.view:hover {
     /*background-color: alpha(@theme_selected_bg_color_breeze,0.3);*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-left-color: @theme_fg_color_breeze;
     border-top-color: @theme_fg_color_breeze; }
@@ -4473,13 +4474,13 @@ treeview.view {
   headerbar.selection-mode .view.subtitle:link,
   headerbar.selection-mode button.view.subtitle:visited {
     /*background-color: @theme_selected_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-left-color: @theme_selected_fg_color_breeze;
     border-top-color: @theme_selected_fg_color_breeze; }
   treeview.view:backdrop:selected {
     /*background-color: @theme_unfocused_selected_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-left-color: @theme_unfocused_selected_fg_color_breeze;
     border-top-color: @theme_unfocused_selected_fg_color_breeze; }
@@ -4524,20 +4525,20 @@ treeview.view {
   treeview.view header button {
     color: @theme_button_foreground_normal_breeze;
     /*background-color: @theme_button_background_normal_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     text-shadow: none;
     box-shadow: none; }
     treeview.view header button:hover {
       color: @theme_button_foreground_normal_breeze;
       /*background-color: alpha(@theme_button_decoration_hover_breeze,0.5);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       box-shadow: none; }
     treeview.view header button:active {
       color: @theme_button_foreground_normal_breeze;
       /*background-color: alpha(@theme_button_decoration_hover_breeze,0.5);*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
   treeview.view header button:last-child:backdrop, treeview.view header label:backdrop selection:last-child, label:backdrop treeview.view header selection:last-child, treeview.view header button:last-child {
@@ -4555,7 +4556,7 @@ treeview.view {
     color: @theme_selected_fg_color_breeze;
     background-image: none;
     /*background-color: @theme_selected_bg_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border-style: none;
     border-radius: 0;
@@ -4798,30 +4799,30 @@ window .titlebar.selection-mode button.titlebutton {
 hdydialer button {
   font-weight: lighter;
   /*background-color: transparent;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border: 0;
   box-shadow: none; }
   hdydialer button:backdrop {
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   hdydialer button:focus {
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border: none; }
 
 hdyviewswitcher > button {
   border: 0;
   /*background-color: transparent;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
   hdyviewswitcher > button:backdrop:hover, hdyviewswitcher > button:hover, hdyviewswitcher > button:active, hdyviewswitcher > button:hover:focus, hdyviewswitcher > button:active:focus, hdyviewswitcher > button:checked, hdyviewswitcher > button:checked:hover {
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   hdyviewswitcher > button:checked, hdyviewswitcher > button:checked:backdrop, label:backdrop hdyviewswitcher > selection:checked {
@@ -4829,7 +4830,7 @@ hdyviewswitcher > button {
     border-left: 0;
     border-right: 0;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
     hdyviewswitcher > button:checked > stack, hdyviewswitcher > button:checked:backdrop > stack, label:backdrop hdyviewswitcher > selection:checked > stack {
@@ -4854,7 +4855,7 @@ viewswitcher {
   margin: 0;
   padding: 0;
   /*background-color: transparent;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
 }
   viewswitcher button {
@@ -4862,7 +4863,7 @@ viewswitcher {
     margin: 0;
     padding: 0;
     /*background-color: transparent;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     border: 0;
     box-shadow: none; }
@@ -4886,12 +4887,12 @@ viewswitcher {
           padding-left: 7px; }
     viewswitcher button:backdrop, viewswitcher button:active, viewswitcher button:active:focus, viewswitcher button:checked:hover, viewswitcher button:checked:focus:hover, viewswitcher button:backdrop:checked:hover, viewswitcher button:focus {
       /*background-color: transparent;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     viewswitcher button:hover, viewswitcher button:focus:hover, viewswitcher button:backdrop:hover, viewswitcher button:backdrop:focus:hover {
       /*background-color: @insensitive_borders_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
     viewswitcher button:checked, viewswitcher button:checked:backdrop, viewswitcher label:backdrop selection:checked, label:backdrop viewswitcher selection:checked,
@@ -4900,7 +4901,7 @@ viewswitcher {
       border-left: 0;
       border-right: 0;
       /*background-color: transparent;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
 		}
       viewswitcher button:checked > stack, viewswitcher button:checked:backdrop > stack, viewswitcher label:backdrop selection:checked > stack, label:backdrop viewswitcher selection:checked > stack,
@@ -4938,14 +4939,14 @@ window.unified {
 
 assistant .sidebar {
   /*background-color: @theme_base_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   color: @theme_text_color_breeze;
   border-top: 1px solid @borders_breeze;
   border-right: 1px solid @borders_breeze; }
   assistant .sidebar:backdrop, assistant label:backdrop selection.sidebar, label:backdrop assistant selection.sidebar {
     /*background-color: @theme_unfocused_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
     color: @theme_unfocused_text_color_breeze;
     border-color: @unfocused_borders_breeze; }
@@ -4958,13 +4959,13 @@ assistant .sidebar label {
 
 assistant .sidebar label.highlight {
   /*background-color: @theme_selected_bg_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   color: @theme_fg_color_breeze; }
 
 .floating-bar {
   /*background-color: @tooltip_background_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   color: @tooltip_text_breeze;
   border: 1px solid @tooltip_border_breeze;
@@ -4973,7 +4974,7 @@ assistant .sidebar label.highlight {
 
 window.background.chromium {
   /*background-color: @theme_base_color_breeze;*/
-  background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+  background: @foreground;
 	background-color: alpha(@background, 0.3);
   border-color: @borders_breeze; }
   window.background.chromium menubar,
@@ -4986,19 +4987,19 @@ window.background.chromium {
     window.background.chromium label:backdrop selection.menubar,
     label:backdrop window.background.chromium selection.menubar {
       /*background-color: @theme_unfocused_bg_color_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       color: @theme_unfocused_fg_color_breeze; }
   window.background.chromium entry {
     /*background-color: @theme_base_color_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
   window.background.chromium.csd menubar,
   window.background.chromium.csd .menubar {
     color: @theme_titlebar_foreground_breeze;
     /*background-color: @theme_titlebar_background_breeze;*/
-		background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+		background: @foreground;
 		background-color: alpha(@background, 0.3);
 	}
     window.background.chromium.csd menubar:backdrop,
@@ -5006,7 +5007,7 @@ window.background.chromium {
     window.background.chromium.csd label:backdrop selection.menubar,
     label:backdrop window.background.chromium.csd selection.menubar {
       /*background-color: @theme_titlebar_background_backdrop_breeze;*/
-			background: linear-gradient(alpha(@foreground, 0.5), alpha(mix(@color4, @background, 0.6), 0.3), alpha(@foreground, 0.5));
+			background: @foreground;
 			background-color: alpha(@background, 0.3);
       color: @theme_titlebar_foreground_backdrop_breeze; }
   window.background.chromium headerbar button.titlebutton.close,
