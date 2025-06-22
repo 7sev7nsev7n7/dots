@@ -26,7 +26,7 @@ set showbreak=│
 set showcmdloc=statusline
 set noshowmode
 set smartcase
-set statuscolumn=%l\ %=\│\ 
+set statuscolumn=%l\ %=\│
 set statusline=%#StatusLineNC#%(%w%m%r%)%*\ %f\ %{GetMode()}%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
@@ -36,6 +36,8 @@ set nowrap
 " mapping commands
 map <C-C> :set cursorcolumn! 
 map <A-w> :set wrap! 
+map <A-o> o<Esc>
+map <A-O> O<Esc>
 
 " functions
 func! FileType() abort
@@ -48,6 +50,6 @@ endfunc
 
 func! GetMode() abort
   let current_mode = nvim_get_mode().mode
-  let modes = { "n": "NORMAL", "no": "NORMAL", "v": "VISUAL", "V": "VISUAL LINE", "": "VISUAL BLOCK", "s": "SELECT", "S": "SELECT BLOCK", "i": "INSERT", "ic": "INSERT", "R": "REPLACE", "Rv": "VIRTUAL REPLACE", "c": "COMMAND", "cv": "VIM EX", "ce": "EX", "r": "PROMPT", "rm": "MOAR", "r?": "CONFIRM", "!": "SHELL", "t": "TERMINAL" }
+  let modes = { "n": "NORMAL", "no": "NORMAL", "v": "VISUAL", "V": "VISUAL LINE", "": "VISUAL BLOCK", "s": "SELECT", "S": "SELECT BLOCK", "i": "INSERT", "ic": "INSERT", "niI": "insert",  "R": "REPLACE", "Rv": "VIRTUAL REPLACE", "c": "COMMAND", "cv": "VIM EX", "ce": "EX", "r": "PROMPT", "rm": "MOAR", "r?": "CONFIRM", "!": "SHELL", "t": "TERMINAL" }
   return "[".modes[current_mode]."]"
 endfunc
