@@ -27,7 +27,7 @@ set showcmdloc=statusline
 set noshowmode
 set smartcase
 set statuscolumn=%l\ %=\│
-set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %f\ %{GetMode()}%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
+set statusline=%#ErrorMsg#%(%w%m%r%)%*%.20f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
 set titlestring=%t\ %m
@@ -41,12 +41,12 @@ map <A-O> O<Esc>
 map <A-Space> i <Esc>l
 
 " functions
-func! FileType() abort
-  return (&filetype=="") ? "" : " [%Y]"
+func! GetFiletype() abort
+  return (&filetype=="") ? "" : "[%Y]"
 endfunc
 
-func! Wrap() abort
-  return (&wrap) ? " [WRAP]" : ""
+func! GetWrap() abort
+  return (&wrap==0) ? "" : "[WRAP]"
 endfunc
 
 func! GetMode() abort
