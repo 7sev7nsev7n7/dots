@@ -27,17 +27,18 @@ set showcmdloc=statusline
 set noshowmode
 set smartcase
 set statuscolumn=%l\ %=\│
-set statusline=%#StatusLineNC#%(%w%m%r%)%*\ %f\ %{GetMode()}%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
+set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %f\ %{GetMode()}%{%FileType()%}%{Wrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
 set titlestring=%t\ %m
 set nowrap
 
 " mapping commands
-map <C-C> :set cursorcolumn! 
+map <C-c> :set cursorcolumn! 
 map <A-w> :set wrap! 
 map <A-o> o<Esc>
 map <A-O> O<Esc>
+map <A-Space> i <Esc>l
 
 " functions
 func! FileType() abort
