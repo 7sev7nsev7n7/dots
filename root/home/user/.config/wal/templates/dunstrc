@@ -24,7 +24,7 @@
     ### Geometry ###
 
     # dynamic width from 0 to 300
-    # width = (0, 300)
+    width = (0, 300)
     # constant width of 300
     # width = 300
 
@@ -165,15 +165,15 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b><big>%a</big></b>\n<u>%s</u>\n%b"
+    format = "<b><big>%a</big></b>\n<u>%s</u>\n%b\n%p"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
-    alignment = left
+    alignment = right
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".
-    vertical_alignment = center
+    vertical_alignment = top
 
     # Show age of message if message is older than show_age_threshold
     # seconds.
@@ -188,7 +188,7 @@
     ignore_newline = no
 
     # Stack together notifications with the same content
-    stack_duplicates = false
+    stack_duplicates = true
 
     # Hide the count of stacked notifications with the same content
     hide_duplicate_count = false
@@ -203,7 +203,7 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = Adwaita
+    icon_theme = "Oxygen, Adawaita"
     # You can also set multiple icon themes, with the leftmost one being used first.
     # icon_theme = "Adwaita, breeze"
 
@@ -213,13 +213,13 @@
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
     # max_icon_size takes precedence over this.
-    min_icon_size = 64
+    min_icon_size = 56
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 64
+    max_icon_size = 56
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    # icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
     ### History ###
 
@@ -319,16 +319,16 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "{background}30"
     foreground = "{foreground}"
-    frame_color = "{color6}a0"
-    timeout = 10
+    frame_color = "{foreground}a0"
+    timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
     background = "{background}d0"
     foreground = "{foreground}"
-    frame_color = "{color6}a0"
-    timeout = 10
+    frame_color = "{foreground}a0"
+    timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -341,10 +341,10 @@
     #default_icon = /path/to/icon
  
 [discord]
-    appname = discord
+    desktop_entry = discord
     background = "{color4}d0"
-    foreground = "{foreground}"
-    frame_color = "{background}a0"
+    foreground = "{background}"
+    frame_color = "{color4}a0"
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
