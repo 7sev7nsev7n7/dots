@@ -30,7 +30,7 @@ set statuscolumn=%l\ %=\│
 set statusline=%#ErrorMsg#%(%w%m%r%)%*%.20f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
-set titlestring=%t\ %m
+set titlestring=nvim\ %t\ %m
 set nowrap
 
 " mapping commands

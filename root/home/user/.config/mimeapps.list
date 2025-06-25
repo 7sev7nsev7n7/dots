@@ -1,0 +1,8 @@
+[Default Applications]
+modrinth=modrinth-app-handler.desktop
+x-scheme-handler/betterdiscord=discord.desktop
+; allow images to be opened with nsxiv by default
+image/png=nsxiv.desktop
+image/jpg=nsxiv.desktop
+image/jpeg=nsxiv.desktop
+image/webp=nsxiv.desktop
