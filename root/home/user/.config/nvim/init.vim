@@ -6,7 +6,7 @@ source /usr/share/nvim/archlinux.lua
 
 " setting options
 set breakindent
-set breakindentopt+=list:1
+set breakindentopt+=list:3,shift:-1
 set clipboard+=unnamedplus
 set cursorline
 set cursorlineopt=number
@@ -39,6 +39,7 @@ map <A-w> :set wrap!
 map <A-o> o<Esc>
 map <A-O> O<Esc>
 map <A-Space> i <Esc>l
+map <A-Enter> i<Esc>
 
 " functions
 func! GetFiletype() abort
