@@ -27,7 +27,7 @@ set showcmdloc=statusline
 set noshowmode
 set smartcase
 set statuscolumn=%l\ %=\│
-set statusline=%#ErrorMsg#%(%w%m%r%)%*%.20f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
+set statusline=%#ErrorMsg#%(%w%m%r%)%*%.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
 set titlestring=nvim\ %t\ %m
