@@ -61,7 +61,7 @@ button:hover {
 #custom-volume,
 #custom-nowplaying {
   background: none;
-	background-color: mix(@color3, alpha(@background, 0.2), 0.6);
+	background-color: mix(@color3, alpha(@background, 0.6), 0.4);
   border-radius: 4px;
   margin: 8px 2px;
   padding: 0px 4px;
