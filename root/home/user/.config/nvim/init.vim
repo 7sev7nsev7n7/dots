@@ -43,16 +43,16 @@ map <A-Enter> i<Esc>
 
 " functions
 func! GetFiletype() abort
-  return (&filetype=="") ? "" : "[%Y]"
+  return (&filetype=="") ? "" : "%y"
 endfunc
 
 func! GetWrap() abort
-  return (&wrap==0) ? "" : "[WRAP]"
+  return (&wrap==0) ? "" : "[wrap]"
 endfunc
 
 func! GetMode() abort
   let current_mode = nvim_get_mode().mode
-  let modes = { "n": "NORMAL", "no": "NORMAL", "v": "VISUAL", "V": "VISUAL LINE", "": "VISUAL BLOCK", "s": "SELECT", "S": "SELECT BLOCK", "i": "INSERT", "ic": "INSERT", "niI": "insert",  "R": "REPLACE", "Rv": "VIRTUAL REPLACE", "c": "COMMAND", "cv": "VIM EX", "ce": "EX", "r": "PROMPT", "rm": "MOAR", "r?": "CONFIRM", "!": "SHELL", "t": "TERMINAL" }
+  let modes = { "n": "normal", "no": "operation pending", "v": "visual", "V": "visual line", "": "visual block", "s": "select", "S": "select block", "i": "insert", "ic": "insert", "nii": "insert",  "r": "replace", "rv": "virtual replace", "c": "command", "cv": "vim ex", "ce": "ex", "R": "prompt", "rm": "moar", "r?": "confirm", "!": "shell", "t": "terminal" }
   if (current_mode == 'n')
     return "[".modes[current_mode]."]"
   else
