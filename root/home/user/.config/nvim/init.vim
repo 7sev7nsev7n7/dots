@@ -27,7 +27,7 @@ set showcmdloc=statusline
 set noshowmode
 set smartcase
 set statuscolumn=%l\ %=\│
-set statusline=%#ErrorMsg#%(%w%m%r%)%*%.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
+set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
 set tabstop=2
 set title
 set titlestring=nvim\ %t\ %m
@@ -43,7 +43,7 @@ map <A-Enter> i<Esc>
 
 " functions
 func! GetFiletype() abort
-  return (&filetype=="") ? "" : "%y"
+  return (&filetype=="") ? "" : "%y "
 endfunc
 
 func! GetWrap() abort
@@ -52,10 +52,10 @@ endfunc
 
 func! GetMode() abort
   let current_mode = nvim_get_mode().mode
-  let modes = { "n": "normal", "no": "operation pending", "v": "visual", "V": "visual line", "": "visual block", "s": "select", "S": "select block", "i": "insert", "ic": "insert", "nii": "insert",  "r": "replace", "rv": "virtual replace", "c": "command", "cv": "vim ex", "ce": "ex", "R": "prompt", "rm": "moar", "r?": "confirm", "!": "shell", "t": "terminal" }
+  let modes = { "n": "normal", "no": "op. pending", "v": "visual", "V": "visual line", "": "visual block", "s": "select", "S": "select block", "i": "insert", "ic": "insert", "nii": "insert",  "r": "replace", "rv": "virtual replace", "c": "command", "cv": "vim ex", "ce": "ex", "R": "prompt", "rm": "moar", "r?": "confirm", "!": "shell", "t": "terminal" }
   if (current_mode == 'n')
-    return "[".modes[current_mode]."]"
+    return "[".modes[current_mode]."] "
   else
-    return "%#StatusLineNC#[".modes[current_mode]."]%*"
+    return "%#StatusLineNC#[".modes[current_mode]."]%* "
   endif
 endfunc
