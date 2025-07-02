@@ -52,7 +52,7 @@ endfunc
 
 func! GetMode() abort
   let current_mode = nvim_get_mode().mode
-  let modes = { "n": "normal", "no": "op. pending", "v": "visual", "V": "visual line", "": "visual block", "s": "select", "S": "select block", "i": "insert", "ic": "insert", "nii": "insert",  "r": "replace", "rv": "virtual replace", "c": "command", "cv": "vim ex", "ce": "ex", "R": "prompt", "rm": "moar", "r?": "confirm", "!": "shell", "t": "terminal" }
+  let modes = { "n": "normal", "no": "op. pending", "v": "visual", "V": "visual line", "": "visual block", "s": "select", "S": "select block", "i": "insert", "ic": "insert", "nii": "insert",  "R": "replace", "rv": "virtual replace", "c": "command", "cv": "vim ex", "ce": "ex", "r": "prompt", "rm": "moar", "r?": "confirm", "!": "shell", "t": "terminal", "nt": "terminal" }
   if (current_mode == 'n')
     return "[".modes[current_mode]."] "
   else
