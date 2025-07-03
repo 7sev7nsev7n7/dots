@@ -3,15 +3,15 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: "Noto Sans", "Font Awesome 6 Free"; 
-	font-style: normal;
-	font-weight: bold;
+  font-style: normal;
+  font-weight: bold;
   font-size: 10pt;
 }
 
 window#waybar {
   color: mix(@foreground, @color3, 0.2);
   background: none;
-	background-color: alpha(mix(@background, @color3, 0.3), 0.3);
+  background-color: alpha(mix(@background, @color3, 0.3), 0.3);
 }
 
 button {
@@ -20,7 +20,7 @@ button {
 
 button:hover {
   background: inherit;
-	border: 1px solid @color4;
+  border: 1px solid @color4;
 }
 
 #workspaces button {
@@ -61,7 +61,7 @@ button:hover {
 #custom-volume,
 #custom-nowplaying {
   background: none;
-	background-color: mix(@color3, alpha(@background, 0.6), 0.4);
+  background-color: mix(@color3, alpha(@background, 0.6), 0.4);
   border-radius: 4px;
   margin: 8px 2px;
   padding: 0px 4px;
@@ -87,20 +87,20 @@ tooltip label {
 }
 
 #workspaces button.active {
-	transition: all 0.3s cubic-bezier(0.10,0.5,0.075,1.00);
-	min-width: 1rem;
+  transition: all 0.1s cubic-bezier(0.10,0.5,0.075,1.00);
+  min-width: 1rem;
 }
 
 #custom-notifications.0,
 window#waybar.empty #window {
-	opacity: 0;
-	margin: 0px;
-	padding: 0px;
+  opacity: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 #battery.charging {
   color: mix(mix(@color4, #00ff00, 0.4), black, 0.6);
-	background-color: mix(@color4, alpha(#00ff00, 0.8), 0.7);
+  background-color: mix(@color4, alpha(#00ff00, 0.8), 0.7);
 }
 
 #battery.warning:not(.charging) {
