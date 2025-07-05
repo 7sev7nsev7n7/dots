@@ -239,6 +239,6 @@ hi('Special',      { fg = 'Yellow',                             ctermfg = 'Yello
 hi('Identifier',   { fg = 'Cyan',                            ctermfg = 'Cyan', cterm = { bold = true } })
 hi('Statement',    { fg = 'DarkRed', bold = true,               ctermfg = 'DarkRed' })
 hi('PreProc',      { fg = 'DarkGray',                            ctermfg = 'DarkGray' })
-hi('Type',         { fg = 'DarkYellow', bold = true,               ctermfg = 'DarkYellow' })
+hi('Type',         { fg = 'Cyan', bold = true,               ctermfg = 'Cyan' })
 hi('Underlined',   { fg = 'Blue', underline = true,          ctermfg = 'LightBlue', cterm = { underline = true } })
 hi('Ignore',       {                                            ctermfg = 'Black' })
