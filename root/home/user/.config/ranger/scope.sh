@@ -44,7 +44,7 @@ HIGHLIGHT_TABWIDTH=${HIGHLIGHT_TABWIDTH:-8}
 HIGHLIGHT_STYLE=${HIGHLIGHT_STYLE:-pablo}
 HIGHLIGHT_OPTIONS="--replace-tabs=${HIGHLIGHT_TABWIDTH} --style=${HIGHLIGHT_STYLE} ${HIGHLIGHT_OPTIONS:-}"
 PYGMENTIZE_STYLE=${PYGMENTIZE_STYLE:-autumn}
-OPENSCAD_IMGSIZE=${RNGR_OPENSCAD_IMGSIZE:-1000,1000}
+OPENSCAD_IMGSIZE=${RNGR_OPENSCAD_IMGSIZE:-150,150}
 OPENSCAD_COLORSCHEME=${RNGR_OPENSCAD_COLORSCHEME:-Tomorrow Night}
 
 handle_extension() {
@@ -169,7 +169,7 @@ handle_image() {
 #                      -singlefile \
 #                      -jpeg -tiffcompression jpeg \
 #                      -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \
-
+#
 
         ## ePub, MOBI, FB2 (using Calibre)
         # application/epub+zip|application/x-mobipocket-ebook|\
@@ -240,27 +240,27 @@ handle_image() {
         #     ;;
     esac
 
-    # openscad_image() {
-    #     TMPPNG="$(mktemp -t XXXXXX.png)"
-    #     openscad --colorscheme="${OPENSCAD_COLORSCHEME}" \
-    #         --imgsize="${OPENSCAD_IMGSIZE/x/,}" \
-    #         -o "${TMPPNG}" "${1}"
-    #     mv "${TMPPNG}" "${IMAGE_CACHE_PATH}"
-    # }
+     openscad_image() {
+         TMPPNG="$(mktemp -t XXXXXX.png)"
+         openscad --colorscheme="${OPENSCAD_COLORSCHEME}" \
+             --imgsize="${OPENSCAD_IMGSIZE/x/,}" \
+             -o "${TMPPNG}" "${1}"
+         mv "${TMPPNG}" "${IMAGE_CACHE_PATH}"
+     }
 
-    # case "${FILE_EXTENSION_LOWER}" in
-    #     ## 3D models
-    #     ## OpenSCAD only supports png image output, and ${IMAGE_CACHE_PATH}
-    #     ## is hardcoded as jpeg. So we make a tempfile.png and just
-    #     ## move/rename it to jpg. This works because image libraries are
-    #     ## smart enough to handle it.
-    #     csg|scad)
-    #         openscad_image "${FILE_PATH}" && exit 6
-    #         ;;
-    #     3mf|amf|dxf|off|stl)
-    #         openscad_image <(echo "import(\"${FILE_PATH}\");") && exit 6
-    #         ;;
-    # esac
+     case "${FILE_EXTENSION_LOWER}" in
+         ## 3D models
+         ## OpenSCAD only supports png image output, and ${IMAGE_CACHE_PATH}
+         ## is hardcoded as jpeg. So we make a tempfile.png and just
+         ## move/rename it to jpg. This works because image libraries are
+         ## smart enough to handle it.
+         csg|scad)
+             openscad_image "${FILE_PATH}" && exit 6
+             ;;
+         3mf|amf|dxf|off|stl)
+             openscad_image <(echo "import(\"${FILE_PATH}\");") && exit 6
+             ;;
+     esac
 }
 
 handle_mime() {
