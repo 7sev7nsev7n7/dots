@@ -16,21 +16,17 @@ set guicursor=a:blinkwait0-blinkoff200-blinkon200
 set ignorecase
 set linebreak
 set matchpairs+=<:>
-set number
 set notermguicolors
+set number
 set relativenumber
 set shiftround
 set shiftwidth=2
 set shortmess+=I
-set showbreak=│
 set showcmdloc=statusline
 set noshowmode
 set smartcase
-set statuscolumn=%l\ %=\│
-set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)
+set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)%*
 set tabstop=2
-set title
-set titlestring=nvim\ %t\ %m
 set nowrap
 
 " mapping commands
@@ -52,10 +48,23 @@ endfunc
 
 func! GetMode() abort
   let current_mode = nvim_get_mode().mode
-  let modes = { "n": "normal", "no": "op. pending", "v": "visual", "V": "visual line", "": "visual block", "s": "select", "S": "select block", "i": "insert", "ic": "insert", "nii": "insert",  "R": "replace", "rv": "virtual replace", "c": "command", "cv": "vim ex", "ce": "ex", "r": "prompt", "rm": "moar", "r?": "confirm", "!": "shell", "t": "terminal", "nt": "terminal" }
+  let modes = { "niI": "insert normal", "n": "normal", "no": "op. pending", "v": "visual", "V": "visual line", "": "visual block", "s": "select", "S": "select block", "i": "insert", "ic": "insert", "nii": "insert",  "R": "replace", "rv": "virtual replace", "c": "command", "cv": "vim ex", "ce": "ex", "r": "prompt", "rm": "moar", "r?": "confirm", "!": "shell", "t": "terminal", "nt": "terminal" }
   if (current_mode == 'n')
     return "[".modes[current_mode]."] "
   else
     return "%#StatusLineNC#[".modes[current_mode]."]%* "
   endif
 endfunc
+
+" getting terminal-specific options
+if system('echo -n $TERM')=="linux"
+  set termguicolors
+  set showbreak=|
+  set statuscolumn=%l\ %=\|
+else
+  set title
+  set titlestring=nvim\ %t\ %m
+  set notermguicolors
+  set showbreak=│
+  set statuscolumn=%l\ %=\│
+endif
