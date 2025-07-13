@@ -1,5 +1,20 @@
+" getting terminal-specific options
+"if system('echo -n $TERM')=="linux"
+if ($COLORTERM=="truecolor")
+  colorscheme vimper
+  set title
+  set titlestring=nvim\ %t\ %m
+  set notermguicolors
+  set showbreak=│
+  set statuscolumn=%l\ %=\│
+else
+  colorscheme default
+  set termguicolors
+  set showbreak=\|
+  set statuscolumn=%l\ %=\|
+endif
+
 " color scheme
-colorscheme vimper
 
 " source main configurations
 source /usr/share/nvim/archlinux.lua
@@ -55,16 +70,3 @@ func! GetMode() abort
     return "%#StatusLineNC#[".modes[current_mode]."]%* "
   endif
 endfunc
-
-" getting terminal-specific options
-if system('echo -n $TERM')=="linux"
-  set termguicolors
-  set showbreak=|
-  set statuscolumn=%l\ %=\|
-else
-  set title
-  set titlestring=nvim\ %t\ %m
-  set notermguicolors
-  set showbreak=│
-  set statuscolumn=%l\ %=\│
-endif
