@@ -40,7 +40,7 @@ set shortmess+=I
 set showcmdloc=statusline
 set noshowmode
 set smartcase
-set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%LL)%*
+set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ (%LL)%*
 set tabstop=2
 set nowrap
 
