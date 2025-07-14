@@ -40,7 +40,7 @@ set shortmess+=I
 set showcmdloc=statusline
 set noshowmode
 set smartcase
-set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%LL,\ %{FileSize(line2byte('$')+len(getline('$')))})%*
+set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ \|\ %P\ (%L)%*
 set tabstop=2
 set nowrap
 
@@ -70,11 +70,3 @@ func! GetMode() abort
     return "%#StatusLineNC#[".modes[current_mode]."]%* "
   endif
 endfunc
-
-set statusline+=
-
-function! FileSize(bytes)
-  let l:bytes = a:bytes | let l:sizes = ['B', 'KB', 'MB', 'GB'] | let l:i = 0
-  while l:bytes >= 1024 | let l:bytes = l:bytes / 1024.0 | let l:i += 1 | endwhile
-  return l:bytes > 0 ? printf('%.1f%s', l:bytes, l:sizes[l:i]) : '0B'
-endfunction
