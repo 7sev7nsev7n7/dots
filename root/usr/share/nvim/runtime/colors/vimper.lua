@@ -1,6 +1,6 @@
 -- Name:         vimper
 -- Description:  Customized vim colorscheme
--- Author:       Sev7nSev7n7
+-- Author:       7sev7nsev7n7
 -- License:      Same as Vim
 
 -- This is Vim's default color scheme, improved. It doesn't define the Normal
@@ -24,7 +24,7 @@ end
 -- General
 hi('Normal', {})
 
-hi('Conceal',      { fg = 'LightGrey', bg = 'DarkGrey', ctermfg = 'LightGrey', ctermbg = 'DarkGrey' })
+hi('Conceal',      { fg = 'LightGrey', bg = 8, ctermfg = 'LightGrey', ctermbg = 8 })
 hi('Cursor',       {})
 hi('lCursor',      {})
 hi('DiffText',     { bg = 'Blue', bold = true,           ctermbg = 'Blue', cterm = { bold = true } })
@@ -213,32 +213,32 @@ hi('DiffAdd',      { bg = 'DarkBlue',                           ctermbg = 'DarkB
 hi('DiffChange',   { bg = 'DarkMagenta',                        ctermbg = 'DarkMagenta' })
 hi('DiffDelete',   { fg = 'Blue', bg = 8, bold = true, ctermfg = 'Blue', ctermbg = 8 })
 hi('Directory',    { fg = 'Cyan',                               ctermfg = 'LightCyan' })
-hi('FoldColumn',   { fg = 'Cyan', bg = 'Grey',                  ctermfg = 'Cyan', ctermbg = 'DarkGrey' })
-hi('Folded',       { fg = 'Cyan', bg = 'DarkGrey',              ctermfg = 'Cyan', ctermbg = 'DarkGrey' })
-hi('LineNr',       { fg = 'DarkGrey',                             ctermfg = 'DarkGrey' })
+hi('FoldColumn',   { fg = 'Cyan', bg = 'Grey',                  ctermfg = 'Cyan', ctermbg = 8 })
+hi('Folded',       { fg = 'Cyan', bg = 8,              ctermfg = 'Cyan', ctermbg = 8 })
+hi('LineNr',       { fg = 8,                             ctermfg = 8 })
 hi('MatchParen',   { bg = 'Yellow',                           ctermbg = 'Yellow' })
 hi('MoreMsg',      { fg = 'Red', bold = true,              ctermfg = 'Red' })
 hi('Pmenu',        { bg = 'Magenta',                            ctermfg = 'Black', ctermbg = 'Magenta' })
-hi('PmenuSel',     { bg = 'DarkGrey',                           ctermfg = 'DarkGrey', ctermbg = 'Black' })
+hi('PmenuSel',     { bg = 8,                           ctermfg = 8, ctermbg = 'Black' })
 hi('PmenuThumb',   { bg = 'White', fg = 'Black',                ctermbg = 'White', ctermfg = 'Black'})
 hi('Question',     { fg = 'Grey40', bold = true,                 ctermfg = 'Cyan' })
 hi('Search',       { fg = 'Black', bg = 'Yellow',               ctermfg = 'Black', ctermbg = 'Yellow' })
-hi('SignColumn',   { fg = 'Cyan', bg = 'Grey',                  ctermfg = 'Cyan', ctermbg = 'DarkGrey' })
+hi('SignColumn',   { fg = 'Cyan', bg = 'Grey',                  ctermfg = 'Cyan', ctermbg = 8 })
 hi('SpecialKey',   { fg = 'Cyan',                               ctermfg = 'LightBlue' })
 hi('SpellBad',     { sp = 'Red', undercurl = true,              ctermbg = 'Red' })
 hi('SpellCap',     { sp = 'Blue', undercurl = true,             ctermbg = 'Blue' })
 hi('SpellLocal',   { sp = 'Cyan', undercurl = true,             ctermbg = 'Cyan' })
 hi('SpellRare',    { sp = 'Magenta', undercurl = true,          ctermbg = 'Magenta' })
-hi('TabLine',      { bg = 'DarkGrey', underline = true,         ctermfg = 'White', ctermbg = 'DarkGrey', cterm = { underline = true } })
+hi('TabLine',      { bg = 8, underline = true,         ctermfg = 'White', ctermbg = 8, cterm = { underline = true } })
 hi('Title',        { fg = 'DarkYellow', bold = true,               ctermfg = 'DarkYellow' })
-hi('Visual',       { fg = 'LightGrey', bg = 'DarkGrey',          ctermfg = 'Black', ctermbg = 'DarkGrey' })
+hi('Visual',       { fg = 'Black', bg = 8,          ctermfg = 'Black', ctermbg = 8 })
 hi('WarningMsg',   { fg = 'Red',                                ctermfg = 'Red' })
-hi('Comment',      { fg = 'DarkGrey',                            ctermfg = 'DarkGrey' })
+hi('Comment',      { fg = 8,                            ctermfg = 8 })
 hi('Constant',     { fg = 'DarkMagenta',                            ctermfg = 'DarkMagenta' })
 hi('Special',      { fg = 'Yellow',                             ctermfg = 'Yellow' })
 hi('Identifier',   { fg = 'Cyan',                            ctermfg = 'Cyan', cterm = { bold = true } })
 hi('Statement',    { fg = 'DarkRed', bold = true,               ctermfg = 'DarkRed' })
-hi('PreProc',      { fg = 'DarkGray',                            ctermfg = 'DarkGray' })
+hi('PreProc',      { fg = 8,                            ctermfg = 8 })
 hi('Type',         { fg = 'Cyan', bold = true,               ctermfg = 'Cyan' })
 hi('Underlined',   { fg = 'Blue', underline = true,          ctermfg = 'LightBlue', cterm = { underline = true } })
 hi('Ignore',       {                                            ctermfg = 'Black' })
