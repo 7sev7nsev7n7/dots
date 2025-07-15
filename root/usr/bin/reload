@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 clear
-tput setaf 6
-cat /usr/share/ascii/smallarch
+tput setaf 14
+cat "$(cat ~/.config/ascii 2>/dev/null || echo '/usr/share/ascii/arch')"
 tput sgr0
