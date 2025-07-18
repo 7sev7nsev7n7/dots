@@ -1,28 +1,27 @@
 # REMEMBER THIS FILE GETS OVERWRITTEN
 # change config over at ~/.config/wal/templates
 
-indicator
-clock
-show-failed-attempts
 ignore-empty-password
+show-failed-attempts
+image=$(sed '2!d' ~/.cache/swww/eDP-1)
 font=Noto Sans
-fade-in=5
-indicator-x-position=1720
-indicator-y-position=880
+indicator-idle-visible
 indicator-radius=100
 indicator-thickness=20
-color={background.strip}00
-key-hl-color={foreground.strip}33
+indicator-x-position=1720
+indicator-y-position=880
 inside-color={background.strip}88
-ring-color={background.strip}aa
-text-color={foreground.strip}ff
-inside-ver-color=00000000
-ring-ver-color={color1.strip}da
-text-ver-color={color1.strip}ff
-ring-clear-color={foreground.strip}da
 inside-clear-color={background.strip}dd
-text-clear-color={color5.strip}ff
-ring-wrong-color=bb0000ff
+inside-ver-color=00000000
 inside-wrong-color=00000000
-text-wrong-color=bb0000ff
+key-hl-color={foreground.strip}33
+layout-bg-color={background.strip}88
 line-color=00000000
+ring-color={background.strip}aa
+ring-clear-color={foreground.strip}da
+ring-ver-color={color1.strip}da
+text-color={foreground.strip}ff
+text-clear-color={color5.strip}ff
+text-ver-color={color1.strip}ff
+ring-wrong-color=bb0000ff
+text-wrong-color=bb0000ff
