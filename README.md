@@ -16,7 +16,7 @@ necessary dependancies for complete setup
 - wofi (application launcher)
 - nsxiv (image viewer)
 - kitty (terminal emulator)
-- swaylock-effects (lock screen)
+- swaylock (lock screen)
 - dunst (notifications daemon)
 - pywal16 (wallpaper color palette generator)
 - pywal-fox (for firefox browser)
