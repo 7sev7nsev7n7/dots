@@ -1,11 +1,11 @@
 {
 	"name": "Vimium C",
-	"@time": "7/22/2025, 1:29:06 PM",
-	"time": 1753212546923,
+	"@time": "7/30/2025, 8:55:09 AM",
+	"time": 1753887309561,
 	"environment": {
 		"extension": "2.12.3",
 		"platform": "linux",
-		"firefox": 140
+		"firefox": 141
 	},
 	"clipSub": "",
 	"exclusionRules": [
@@ -62,19 +62,20 @@
 	"keyupTime": 60,
 	"localeEncoding": "",
 	"searchEngines": [
-		"a|Arch Wiki: https://wiki.archlinux.org/index.php?search=%s",
-		"ap|Arch Package Search: https://archlinux.org/packages/?sort=&q=%s",
-		"aur| AUR Search: https://aur.archlinux.org/packages?K=%s",
-		"w|Wikipedia: https://en.wikipedia.org/wiki/Special:Search?go=Go&search=%s",
-		"y|Youtube: https://www.youtube.com/results?search_query=%s",
-		"gh|Github: https://github.com/search?q=%s",
-		"img|Google Images: https://www.google.com/search?udm=2&q=%s",
-		"r/|Subreddit: https://reddit.com/r/%s",
-		"ud|Urban Dictionary: https://www.urbandictionary.com/define.php?term=%s",
-		"man|Arch Man Pages: https://man.archlinux.org/search?q=%s",
-		"mc|Minecraft Wiki: https://minecraft.wiki/w/Special:Search?search=%s",
-		"d|Dictionary: https://en.wiktionary.org/wiki/%s",
-		"wh|Wallhaven: https://wallhaven.cc/search?q=%s&categories=100",
+		"a\\:|Arch Wiki: https://wiki.archlinux.org/index.php?search=%s",
+		"ap\\:|Arch Package Search: https://archlinux.org/packages/?sort=&q=%s",
+		"aur\\:| AUR Search: https://aur.archlinux.org/packages?K=%s",
+		"w\\:|Wikipedia: https://en.wikipedia.org/wiki/Special:Search?go=Go&search=%s",
+		"y\\:|Youtube: https://www.youtube.com/results?search_query=%s",
+		"gh\\:|Github: https://github.com/search?q=%s",
+		"img\\:|Google Images: https://www.google.com/search?udm=2&q=%s",
+		"r/\\:|Subreddit: https://reddit.com/r/%s",
+		"u/\\:|Reddit User: https://reddit.com/u/%s",
+		"ud\\:|Urban Dictionary: https://www.urbandictionary.com/define.php?term=%s",
+		"man\\:|Arch Man Pages: https://man.archlinux.org/search?q=%s",
+		"mc\\:|Minecraft Wiki: https://minecraft.wiki/w/Special:Search?search=%s",
+		"d\\:|Dictionary: https://en.wiktionary.org/wiki/%s",
+		"wh\\:|Wallhaven: https://wallhaven.cc/search?q=%s&categories=100",
 		""
 	],
 	"searchUrl": "https://www.google.com/search?q=$s Google",
