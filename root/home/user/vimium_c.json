@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "7/30/2025, 8:55:09 AM",
-	"time": 1753887309561,
+	"@time": "7/31/2025, 1:05:38 PM",
+	"time": 1753988738032,
 	"environment": {
 		"extension": "2.12.3",
 		"platform": "linux",
@@ -69,7 +69,7 @@
 		"y\\:|Youtube: https://www.youtube.com/results?search_query=%s",
 		"gh\\:|Github: https://github.com/search?q=%s",
 		"img\\:|Google Images: https://www.google.com/search?udm=2&q=%s",
-		"r/\\:|Subreddit: https://reddit.com/r/%s",
+		"r/|Subreddit: https://reddit.com/r/%s",
 		"u/\\:|Reddit User: https://reddit.com/u/%s",
 		"ud\\:|Urban Dictionary: https://www.urbandictionary.com/define.php?term=%s",
 		"man\\:|Arch Man Pages: https://man.archlinux.org/search?q=%s",
