@@ -25,6 +25,7 @@ necessary dependancies for complete setup
 - backlight_control (self-explanatory)
 - pipewire/pipewire-pulse + wireplumber 
 - lsd (ls extension that includes icons and glyphs)
+- flameshot (screenshot utility)
 - gtk3/4
 - Iosevka fonts
 
