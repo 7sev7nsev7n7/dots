@@ -1,7 +1,6 @@
 #!/bin/bash
-# this is a replacement for the existing script, since it is very unintuitive
-# let's make it so that only selecting a file works, having to shuffle through them is a PITA
 
+# initialize variables
 path=$(cd "$(dirname "$0")" && pwd) # script path
 file=$1
 
