@@ -4,7 +4,7 @@ simple dotfiles for hyprland setup. i refuse to make an installation script (for
 
 just make sure to copy the files to their appropriate directories and you should be good to go. consider 'root' to be the root mountpoint
 
-<img src="/assets/demo.gif" width=960>
+<img src="/assets/demo.webp" width=960>
 <sub>Demo shown here may be out of date with most recent commits due to laziness</sub>
 
 ## NOTE
