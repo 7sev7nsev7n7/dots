@@ -7,7 +7,7 @@
 	"reload_style_on_change": true,
   "modules-left": ["custom/greet","hyprland/language","hyprland/submap", "custom/volume", "custom/nowplaying", ], 
   "modules-center": ["custom/notifications","hyprland/workspaces","hyprland/window"],
-  "modules-right": ["network","group/hardware","clock"],
+  "modules-right": ["custom/turbo", "network","group/hardware","clock"],
   /* # Groups */
   "group/hardware": {
     "orientation": "inherit",
@@ -15,7 +15,7 @@
       "transition-duration": 100,
       "transition-left-to-right": false,
     },
-    "modules": ["battery","temperature","custom/turbo","cpu","memory","backlight",]
+    "modules": ["battery","temperature","cpu","memory","backlight",]
   },
   /* # Modules */
   "custom/greet": {
