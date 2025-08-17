@@ -1,6 +1,8 @@
-# Dotfiles for Hyprland
+# Dotfiles for Hyprland - Aero configurations
 
 simple dotfiles for hyprland setup. i refuse to make an installation script (for the time being)
+
+this branch contains previously used aero-inspired configurations, however these are out of date and unmaintained.
 
 just make sure to copy the files to their appropriate directories and you should be good to go. consider 'root' to be the root mountpoint
 
