@@ -7,9 +7,11 @@ just make sure to copy the files to their appropriate directories and you should
 <img src="/assets/demo.webp" width=960>
 <sub>Demo shown here may be out of date with most recent commits due to laziness</sub>
 
-## NOTE
+#### NOTE
 
 some configuration files (specifically `dunst` and `swaylock`) will only work after an initial loading of said configurations via `wal`
+
+# Dependancies
 
 necessary dependancies for complete setup
 
