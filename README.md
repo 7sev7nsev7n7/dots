@@ -21,7 +21,7 @@ after an initial loading of said configurations via `wal`
 
 # Dependencies
 
-necessary dependancies for complete setup
+necessary dependencies for complete setup
 
 - wofi (application launcher)
 - nsxiv (image viewer)
