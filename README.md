@@ -16,7 +16,8 @@ should be good to go. consider 'root' to be the root mountpoint
 
 #### NOTE
 
-some configuration files (specifically `dunst` and `swaylock`) will only work after an initial loading of said configurations via `wal`
+some configuration files (specifically `dunst` and `swaylock`) will only work
+after an initial loading of said configurations via `wal`
 
 # Dependencies
 
