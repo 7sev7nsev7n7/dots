@@ -11,7 +11,7 @@ just make sure to copy the files to their appropriate directories and you should
 
 some configuration files (specifically `dunst` and `swaylock`) will only work after an initial loading of said configurations via `wal`
 
-# Dependancies
+# Dependencies
 
 necessary dependancies for complete setup
 
