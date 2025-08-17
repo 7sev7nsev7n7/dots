@@ -1,8 +1,15 @@
 # Dotfiles for Hyprland
 
-simple dotfiles for hyprland setup. i refuse to make an installation script (for the time being)
+simple dotfiles for hyprland setup. i refuse to make an installation script
+(for the time being)
 
-just make sure to copy the files to their appropriate directories and you should be good to go. consider 'root' to be the root mountpoint
+dotfiles are intended to unify themes and colors among all graphical components
+(where applicable). this includes firefox, discord, the terminal/neovim, etc.,
+as well as setting up keybinds to allow easy access to everything through
+keyboard, minimizing mouse usage.
+
+just make sure to copy the files to their appropriate directories and you
+should be good to go. consider 'root' to be the root mountpoint
 
 <img src="/assets/demo.webp" width=960>
 <sub>Demo shown here may be out of date with most recent commits due to laziness</sub>
