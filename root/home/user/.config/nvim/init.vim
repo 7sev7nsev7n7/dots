@@ -1,20 +1,17 @@
 " getting terminal-specific options
-"if system('echo -n $TERM')=="linux"
 if ($COLORTERM=="truecolor")
   colorscheme vimper
   set title
-  set titlestring=nvim\ %t\ %m
+  set titlestring=neovim\ -\ %t\ %m
   set notermguicolors
   set showbreak=│
   set statuscolumn=%l\ %=\│
 else
   colorscheme default
   set termguicolors
-  set showbreak=\|
-  set statuscolumn=%l\ %=\|
+  set showbreak=\| 
+  set statuscolumn=%l\ %=\| 
 endif
-
-" color scheme
 
 " source main configurations
 source /usr/share/nvim/archlinux.lua
@@ -31,6 +28,7 @@ set guicursor=a:blinkwait0-blinkoff200-blinkon200
 set ignorecase
 set linebreak
 set matchpairs+=<:>
+set nrformats+=alpha
 set notermguicolors
 set number
 set relativenumber
@@ -70,3 +68,5 @@ func! GetMode() abort
     return "%#StatusLineNC#[".modes[current_mode]."]%* "
   endif
 endfunc
+
+" vim:wrap
