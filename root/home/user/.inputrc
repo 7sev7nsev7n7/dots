@@ -13,8 +13,9 @@ $if mode=vi
   # Keymaps for when in insert mode
   set keymap vi-insert
   "\C-l": clear-screen
+  "\C-e": shell-expand-line
 
   # Keymaps for when in command mode
   set keymap vi-command
-  "!": shell-expand-line
+  "\C-e": shell-expand-line
 $endif
