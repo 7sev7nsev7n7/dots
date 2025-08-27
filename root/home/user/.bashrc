@@ -5,6 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# vi mode
+set -o vi
+
 # environment variables
 export QT_QPA_PLATFORMTHEME=qt5ct
 export EDITOR=vim
