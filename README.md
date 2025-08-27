@@ -21,6 +21,12 @@ root mountpoint.
 some configuration files (specifically `dunst` and `swaylock`) will only work
 after an initial loading of said configurations via `wal`.
 
+#### NOTE
+
+some configurations will NOT work under while logged in as `root` (such as
+`vim` configurations). in order to allow this, symlinking the configs from
+their origins into their respective targets for `root` is necessary.
+
 # Dependencies
 
 necessary dependencies for complete setup. all packages listed here are in the
