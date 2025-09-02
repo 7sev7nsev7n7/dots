@@ -23,8 +23,8 @@ alias wl-copy='2>/dev/null wl-copy'
 alias sudo='sudo -E'
 alias less='less --use-color'
 alias o='xdg-open'
-alias todo='vim .todo'
-alias diary='vim .diary'
+alias todo='vim ~/.todo'
+alias diary='vim ~/.diary'
 
 # Functions (are better than aliases ngl)
 wallpaper() { ~/.scripts/colors/cwall.sh "$@";}
