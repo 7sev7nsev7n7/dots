@@ -12,7 +12,7 @@
   "group/hardware": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 100,
+      "transition-duration": 0,
       "transition-left-to-right": false,
     },
     "modules": ["battery","temperature","cpu","memory","backlight",]
@@ -87,7 +87,7 @@
   "clock": {
 		"timezone": "Mexico/General",
     "tooltip-format": "<span><big><b>{:%A %d}</b></big><small>\n{calendar}</small></span>",
-    "format": "{:%Y-%m-%d, %H:%M}",
+    "format": "{:%a %F, %H:%M}",
     "actions":{
       "on-click": "mode",
     },
