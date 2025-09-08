@@ -87,7 +87,6 @@ tooltip label {
 }
 
 #workspaces button.active {
-  transition: all 0.1s cubic-bezier(0.10,0.5,0.075,1.00);
   min-width: 1rem;
 }
 
