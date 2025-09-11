@@ -1,11 +1,11 @@
 {
 	"name": "Vimium C",
-	"@time": "7/31/2025, 1:05:38 PM",
-	"time": 1753988738032,
+	"@time": "9/11/2025, 11:36:22 AM",
+	"time": 1757612182307,
 	"environment": {
 		"extension": "2.12.3",
 		"platform": "linux",
-		"firefox": 141
+		"firefox": 142
 	},
 	"clipSub": "",
 	"exclusionRules": [
@@ -53,6 +53,8 @@
 		"unmap <a-n>",
 		"map * findSelected",
 		"map # findSelectedBackwards",
+		"map o Vomnibar.activate engines=\"search,bookmark\"",
+		"map O Vomnibar.activateInNewTab engines=\"search,bookmark\"",
 		""
 	],
 	"keyboard": [
@@ -64,21 +66,22 @@
 	"searchEngines": [
 		"a\\:|Arch Wiki: https://wiki.archlinux.org/index.php?search=%s",
 		"ap\\:|Arch Package Search: https://archlinux.org/packages/?sort=&q=%s",
-		"aur\\:| AUR Search: https://aur.archlinux.org/packages?K=%s",
+		"aur\\:|AUR Search: https://aur.archlinux.org/packages?K=%s",
 		"w\\:|Wikipedia: https://en.wikipedia.org/wiki/Special:Search?go=Go&search=%s",
 		"y\\:|Youtube: https://www.youtube.com/results?search_query=%s",
 		"gh\\:|Github: https://github.com/search?q=%s",
-		"img\\:|Google Images: https://www.google.com/search?udm=2&q=%s",
+		"img\\:|Startpage Images: https://www.startpage.com/do/dsearch?cat=images&q=%s",
 		"r/|Subreddit: https://reddit.com/r/%s",
-		"u/\\:|Reddit User: https://reddit.com/u/%s",
+		"u/|Reddit User: https://reddit.com/u/%s",
 		"ud\\:|Urban Dictionary: https://www.urbandictionary.com/define.php?term=%s",
 		"man\\:|Arch Man Pages: https://man.archlinux.org/search?q=%s",
 		"mc\\:|Minecraft Wiki: https://minecraft.wiki/w/Special:Search?search=%s",
 		"d\\:|Dictionary: https://en.wiktionary.org/wiki/%s",
 		"wh\\:|Wallhaven: https://wallhaven.cc/search?q=%s&categories=100",
+		"tr\\:|Translator: https://translate.google.com/?sl=auto&tl=en&op=translate&text=%s",
 		""
 	],
-	"searchUrl": "https://www.google.com/search?q=$s Google",
+	"searchUrl": "https://www.startpage.com/sp/search?q=$s Startpage",
 	"showInIncognito": true,
 	"userDefinedCss": [
 		"/* #ui */",
