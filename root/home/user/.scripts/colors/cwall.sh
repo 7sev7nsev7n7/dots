@@ -6,7 +6,7 @@ file=$1
 
 # set wallpaper and color scheme
 wal -nstei "$file" --cols16 darken --contrast 2
-swww img "$file" --fill-color $(sed '1!d' ~/.cache/wal/colors) --transition-type none
+swww img "$file" --transition-type none # --fill-color $(sed '1!d' ~/.cache/wal/colors)
 
 # reload multiple items that require config updates
 $path/keyboard.sh 0
