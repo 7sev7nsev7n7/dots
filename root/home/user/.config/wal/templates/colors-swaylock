@@ -3,7 +3,7 @@
 
 ignore-empty-password
 show-failed-attempts
-image=$(sed '2!d' ~/.cache/swww/eDP-1)
+image=$(cat .cache/swww/eDP-1 | sed -e 's/Lanczos3//')
 font=Noto Sans
 indicator-idle-visible
 indicator-radius=100
