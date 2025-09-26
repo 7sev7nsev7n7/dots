@@ -1,11 +1,11 @@
 {
 	"name": "Vimium C",
-	"@time": "9/11/2025, 11:36:22 AM",
-	"time": 1757612182307,
+	"@time": "9/26/2025, 11:50:24 AM",
+	"time": 1758909024809,
 	"environment": {
 		"extension": "2.12.3",
 		"platform": "linux",
-		"firefox": 142
+		"firefox": 143
 	},
 	"clipSub": "",
 	"exclusionRules": [
@@ -35,6 +35,7 @@
 	"keyLayout": 58,
 	"keyMappings": [
 		"#!no-check",
+		"map <a-f> LinkHints.activate button=\"right\"",
 		"map : passNextKey",
 		"map M Marks.activate",
 		"map gI LinkHints.activateEdit",
@@ -46,15 +47,17 @@
 		"map <a-s-i> LinkHints.activateDownloadImage",
 		"map <a-j> scrollPxDown",
 		"map <a-k> scrollPxUp",
+		"map <a-h> scrollPxLeft",
+		"map <a-l> scrollPxRight",
 		"map <s-esc> LinkHints.unhoverLast",
 		"map Yy copyCurrentTitle",
-		"map <a-f> LinkHints.activateDownloadLink",
 		"map gh openUrl url=\"https://github.com/7sev7nsev7n7\" reuse=\"current\"",
 		"unmap <a-n>",
 		"map * findSelected",
 		"map # findSelectedBackwards",
-		"map o Vomnibar.activate engines=\"search,bookmark\"",
-		"map O Vomnibar.activateInNewTab engines=\"search,bookmark\"",
+		"map o Vomnibar.activate engines=\"search\"",
+		"map O Vomnibar.activateInNewTab engines=\"search\"",
+		"map F LinkHints.activateOpenInNewForegroundTab",
 		""
 	],
 	"keyboard": [
@@ -78,7 +81,6 @@
 		"mc\\:|Minecraft Wiki: https://minecraft.wiki/w/Special:Search?search=%s",
 		"d\\:|Dictionary: https://en.wiktionary.org/wiki/%s",
 		"wh\\:|Wallhaven: https://wallhaven.cc/search?q=%s&categories=100",
-		"tr\\:|Translator: https://translate.google.com/?sl=auto&tl=en&op=translate&text=%s",
 		""
 	],
 	"searchUrl": "https://www.startpage.com/sp/search?q=$s Startpage",
@@ -87,7 +89,18 @@
 		"/* #ui */",
 		"* {",
 		"font-family: Noto Sans;",
-		"font-size: 16px;",
+		"font-size: 14px;",
+		"}",
+		"",
+		".MC, .MH {",
+		"  color: #222 !important;",
+		"  background-color: #ccc !important;",
+		"}",
+		"",
+		".D>.LH{",
+		"  background: #222;",
+		"  color: #ccc;",
+		"  border-color: transparent;",
 		"}",
 		"",
 		"/* #omni */",
@@ -106,9 +119,9 @@
 	"vomnibarOptions": {
 		"actions": "",
 		"maxMatches": 10,
-		"queryInterval": 333,
+		"queryInterval": 0,
 		"sizes": "77,3,44,0.8",
-		"styles": "time"
+		"styles": "time dark"
 	},
 	"ignoreKeyboardLayout": 1,
 	"ignoreCapsLock": 2
