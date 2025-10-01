@@ -75,7 +75,7 @@ tooltip {
 }
 
 tooltip label {
-  font-family: "Iosevka Term";
+  font-family: "Iosevka Slab";
   font-size: 12pt;
   color: mix(@foreground, @color3, 0.2);
 }
