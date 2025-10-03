@@ -11,6 +11,7 @@ set -o vi
 # environment variables
 export QT_QPA_PLATFORMTHEME=qt5ct
 export EDITOR=vim
+export MANPAGER='vim +Man! -c "set statuscolumn=\"\""'
 export PATH="$PATH:/home/7sev7nsev7n7/.dotnet/tools"
 
 # Aliases
