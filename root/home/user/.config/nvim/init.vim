@@ -38,9 +38,11 @@ set shortmess+=I
 set showcmdloc=statusline
 set noshowmode
 set smartcase
-set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ (%LL)%*
+set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ (%LL,\ %{GetByteSize()}B)%*
 set tabstop=2
 set nowrap
+" language remap relevant for latinamerican keyboard layout
+set langmap=Ñ\\:
 
 " mapping commands
 map <C-c> :set cursorcolumn! 
@@ -51,7 +53,7 @@ map <A-Space> i <Esc>l
 map <A-Enter> i<Esc>
 
 " functions
-func! GetFiletype() abort
+  func! GetFiletype() abort
   return (&filetype=="") ? "" : "%y "
 endfunc
 
@@ -69,4 +71,9 @@ func! GetMode() abort
   endif
 endfunc
 
-" vim:wrap
+func! GetByteSize() abort
+  return wordcount().bytes
+endfunc
+
+" custom commands
+com! FormatJSON %!python -m json.tool
