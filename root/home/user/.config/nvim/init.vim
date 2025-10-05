@@ -41,7 +41,6 @@ set smartcase
 set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ (%LL,\ %{wordcount().bytes}B)%*
 set tabstop=2
 set nowrap
-" language remap relevant for latinamerican keyboard layout
 set langmap=Ñ\\:
 
 " mapping commands
