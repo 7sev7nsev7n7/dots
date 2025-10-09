@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  color: mix(@foreground, @color14, 0.6);
+  color: @color14;
   background: none;
   background-color: alpha(@background, 0.8);
 }
