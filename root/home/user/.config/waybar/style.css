@@ -11,7 +11,7 @@
 window#waybar {
   color: mix(@foreground, @color3, 0.2);
   background: none;
-  background-color: alpha(mix(@background, @color3, 0.3), 0.3);
+  background-color: alpha(@background, 0.8);
 }
 
 button {
