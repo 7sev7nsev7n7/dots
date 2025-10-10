@@ -1,24 +1,20 @@
-" getting terminal-specific options
-if ($COLORTERM=="truecolor")
-  colorscheme vimper
-  set title
-  set titlestring=neovim\ -\ %t\ %m
-  set notermguicolors
-  set showbreak=│
-  set statuscolumn=%l\ %=\│
-else
-  colorscheme default
-  set termguicolors
-  set showbreak=\| 
-  set statuscolumn=%l\ %=\| 
-endif
-
 " source main configurations
 source /usr/share/nvim/archlinux.lua
 
+" getting terminal-specific options
+if ($COLORTERM=="truecolor")
+  colorscheme vimper
+  set notermguicolors
+  set title
+  set titlestring=neovim\ -\ %t\ %m
+else
+  colorscheme default
+  set termguicolors
+endif
+
 " setting options
 set breakindent
-set breakindentopt+=list:3,shift:-1
+set breakindentopt+=list:3
 set clipboard+=unnamedplus
 set cursorline
 set cursorlineopt=number
@@ -26,22 +22,21 @@ set expandtab
 set fillchars=eob:\ 
 set guicursor=a:blinkwait0-blinkoff200-blinkon200
 set ignorecase
+set langmap=Ñ\\:
 set linebreak
 set matchpairs+=<:>
+set noshowmode
+set nowrap
 set nrformats+=alpha
-set notermguicolors
 set number
 set relativenumber
 set shiftround
 set shiftwidth=2
 set shortmess+=I
 set showcmdloc=statusline
-set noshowmode
 set smartcase
 set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ (%LL,\ %{wordcount().bytes}B)%*
 set tabstop=2
-set nowrap
-set langmap=Ñ\\:
 
 " mapping commands
 map <C-c> :set cursorcolumn! 
@@ -52,7 +47,7 @@ map <A-Space> i <Esc>l
 map <A-Enter> i<Esc>
 
 " functions
-  func! GetFiletype() abort
+func! GetFiletype() abort
   return (&filetype=="") ? "" : "%y "
 endfunc
 
