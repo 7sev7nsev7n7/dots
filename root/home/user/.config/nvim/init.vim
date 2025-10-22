@@ -13,11 +13,12 @@ else
 endif
 
 " setting options
+let g:markdown_fenced_languages = ['c', 'python', 'bash', 'sh']
 set breakindent
 set breakindentopt+=list:3
 set clipboard+=unnamedplus
 set cursorline
-set cursorlineopt=number
+set cursorlineopt=screenline
 set expandtab
 set fillchars=eob:\ 
 set guicursor=a:blinkwait0-blinkoff200-blinkon200
@@ -39,12 +40,13 @@ set statusline=%#ErrorMsg#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%
 set tabstop=2
 
 " mapping commands
-map <C-c> :set cursorcolumn! 
-map <A-w> :set wrap! 
+imap <C-Backspace> <C-w>
+map <A-Enter> i<Esc>
 map <A-o> o<Esc>
 map <A-O> O<Esc>
 map <A-Space> i <Esc>l
-map <A-Enter> i<Esc>
+map <A-w> :set wrap! 
+map <C-c> :set cursorcolumn! 
 
 " functions
 func! GetFiletype() abort
