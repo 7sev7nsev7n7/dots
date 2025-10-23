@@ -18,7 +18,7 @@ set breakindent
 set breakindentopt+=list:3
 set clipboard+=unnamedplus
 set cursorline
-set cursorlineopt=screenline
+set cursorlineopt=both
 set expandtab
 set fillchars=eob:\ 
 set guicursor=a:blinkwait0-blinkoff200-blinkon200
