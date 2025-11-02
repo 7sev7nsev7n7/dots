@@ -8,7 +8,7 @@ if ($COLORTERM=="truecolor")
   set title
   set titlestring=neovim\ -\ %t\ %m
 else
-  colorscheme default
+  colorscheme vim
   set termguicolors
 endif
 
@@ -36,14 +36,12 @@ set shiftwidth=2
 set shortmess+=I
 set showcmdloc=statusline
 set smartcase
-set statusline=%#StatusLineNc#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%.(%l,%c%)\ (%LL,\ %{wordcount().bytes}B)%*
+set statusline=%#StatusLineNc#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%l/%LL,%c\ %{wordcount().bytes}B%*
 set tabstop=2
 
 " mapping commands
 imap <C-Backspace> <C-w>
 map <A-Enter> i<Esc>
-map <A-o> o<Esc>
-map <A-O> O<Esc>
 map <A-Space> i <Esc>l
 map <A-w> :set wrap! 
 map <C-c> :set cursorcolumn! 
