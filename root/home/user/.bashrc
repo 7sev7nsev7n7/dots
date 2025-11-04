@@ -27,6 +27,7 @@ alias pandoc='pandoc --highlight-style zenburn'
 alias sudo='sudo -E'
 alias todo='vim ~/.todo'
 alias wl-copy='2>/dev/null wl-copy'
+alias dunstlog='vim -R ~/.cache/dunstlog'
 
 # Functions (are better than aliases ngl)
 wallpaper() { # change wallpaper to file
