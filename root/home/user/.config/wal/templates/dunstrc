@@ -4,53 +4,52 @@
 
 [global]
   # general
-  format = "<b><big>%a</big></b>\n%s\n%b\n%p"
+  # format = "<b><big>%a</big></b>\n%s\n%b\n%n"
+  format = "&lt;</b>%s&gt; %b"
   follow = keyboard
-  sort = true
-  notification_limit = 8
+  sort = update
+  notification_limit = 32
   history_length = 50
   idle_threshold = 5m
   sticky_history = yes
   indicate_hidden = yes
   stack_duplicates = false
   enable_posix_regex = true
-  ignore_dbusclose = false
+  ignore_dbusclose = true
+  show_indicators = false
   # icons
-  icon_theme = "breeze-dark"
-  icon_position = left
-  min_icon_size = 64
-  max_icon_size = 64
-  enable_recursive_icon_lookup = true
-  # mouse
+  icon_position = off
+  # actions
   mouse_left_click = do_action
   mouse_middle_click = do_action, close_current
   mouse_right_click = close_all
   # appearance
-  width = (0, 300)
-  height = (64,300)
-  origin = top-right
-  offset = 0x0
-  font = Noto Sans 11
+  width = (0, 900)
+  height = (0,300)
+  origin = bottom-left
+  offset = 0x72
+  font = Monocraft 12
+  padding = 0
+  horizontal-padding = 0
   vertical_alignment = top
-  separator_color = frame
-  frame_width = 2
-  background = "{background}cc"
-  foreground = "{foreground}"
-  frame_color = "{color6}"
-  timeout = 5
+  frame_width = 0
+  separator_height = 0
+  background = "#000000bb"
+  foreground = "#ffffff"
+  timeout = 10
   ellipsize = end
   markup = full
+  script = ~/.scripts/dunstlog.sh
 
 [urgency_critical]
   background = "{color4}"
   foreground = "{background}"
-  frame_color = "{background}"
   timeout = 30
 
 [discord]
   desktop_entry = discord
-  background = "#5964F1"
-  foreground = "{background}"
+  urgency = critical
+  frame_width = 4
   frame_color = "#5964F1"
 
 # vim: set filetype=confini:
