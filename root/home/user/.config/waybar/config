@@ -1,7 +1,8 @@
 {    
   /* # General */
-  "layer": "top",
+  "layer": "bottom",
 	"position": "top",
+  "height": 40,
 	"exclusive": true,
   "fixed-center": false,
 	"reload_style_on_change": true,
@@ -34,9 +35,9 @@
     "tooltip": true,
     "interval": 1,
     "format-icons": {
-      "Balanced": "",
-      "Performance": "",
-      "Quiet": "",
+      "balanced": "",
+      "performance": "",
+      "quiet": "",
     },
   },
   "custom/notifications": {
@@ -143,3 +144,4 @@
     "format-alt": " {ifname}: {ipaddr}/{cidr}"
   },
 }
+/* vim: set filetype=json: */

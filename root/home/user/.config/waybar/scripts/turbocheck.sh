@@ -1,6 +1,5 @@
 #~/bin/bash
-turbo=$(asusctl profile -p | tail -n 1 | sed -e "s/Active profile is //")
-curfile=$( cd $(dirname $0) && pwd)/current
+# path should be changed depending on system
+turbo=$(cat /sys/devices/platform/asus-nb-wmi/platform-profile/platform-profile-0/profile)
 
-echo $turbo > $curfile
 echo {\"alt\": \"$turbo\", \"tooltip\": \"$turbo mode\",}
