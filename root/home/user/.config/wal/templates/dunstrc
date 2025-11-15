@@ -24,7 +24,7 @@
   mouse_middle_click = do_action, close_current
   mouse_right_click = close_all
   # appearance
-  width = (0, 900)
+  width = (660,660)
   height = (0,300)
   origin = bottom-left
   offset = 0x72
@@ -49,7 +49,6 @@
 [discord]
   desktop_entry = discord
   urgency = critical
-  frame_width = 4
-  frame_color = "#5964F1"
+  foreground = "#5964F1"
 
 # vim: set filetype=confini:
