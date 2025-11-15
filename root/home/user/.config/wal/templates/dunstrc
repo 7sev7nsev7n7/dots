@@ -36,7 +36,7 @@
   separator_height = 0
   background = "#000000bb"
   foreground = "#ffffff"
-  timeout = 20
+  timeout = 10
   ellipsize = end
   markup = full
 
