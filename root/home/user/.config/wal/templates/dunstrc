@@ -39,7 +39,6 @@
   timeout = 10
   ellipsize = end
   markup = full
-  script = ~/.scripts/dunstlog.sh
 
 [urgency_critical]
   background = "{color4}"
