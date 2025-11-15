@@ -15,7 +15,6 @@
   indicate_hidden = yes
   stack_duplicates = false
   enable_posix_regex = true
-  ignore_dbusclose = true
   show_indicators = false
   # icons
   icon_position = off
