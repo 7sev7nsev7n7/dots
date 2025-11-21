@@ -251,8 +251,15 @@ element {
   border-radius: 8px !important;
 }
 
+/* reply bar above text input */
 .replyLabel__841c8 {
   color: var(--background-primary) !important;
+}
+
+/* code blocks and inline code */
+.inlineCode_ada32f,
+.codeLine_ada32f {
+  font-family: "Iosevka" !important;
 }
 
 /* end of settings */
