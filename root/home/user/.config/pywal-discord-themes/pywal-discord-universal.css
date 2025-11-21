@@ -5,6 +5,7 @@
 * {
 	font-family: "Noto Sans";
 	font-weight: normal;
+  border-radius: 0px !important;
 }
 
 /* friends page */
@@ -22,46 +23,13 @@ element {
 
 /* end element */
 :root {
-  /* --darkbg: linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1)),color-mix(in srgb, var(--background) 70%, var(--color3)); */
   --bdfdb-blurple: var(--color2);
   --brand-500: color-mix(in srgb, var(--background) 70%, var(--color3)); /* replace blurple */
 }
 
-html.newBrand {
-	/*
-  --brand-experiment: var(--color1);
-  --brand-experiment-100: var(--text);
-  --brand-experiment-130: var(--text);
-  --brand-experiment-160: var(--text);
-  --brand-experiment-200: var(--text);
-  --brand-experiment-230: var(--text);
-  --brand-experiment-260: var(--text);
-  --brand-experiment-300: var(--color1);
-  --brand-experiment-330: var(--color1);
-  --brand-experiment-360: var(--color1);
-  --brand-experiment-400: var(--color1);
-  --brand-experiment-430: var(--color1);
-  --brand-experiment-460: var(--color1);
-  --brand-experiment-500: var(--color1);
-  --brand-experiment-530: var(--color1);
-  --brand-experiment-560: var(--color1);
-  --brand-experiment-600: var(--color1);
-  --brand-experiment-630: var(--color1);
-  --brand-experiment-660: var(--color8);
-  --brand-experiment-700: var(--color8);
-  --brand-experiment-730: var(--color8);
-  --brand-experiment-760: var(--color8);
-  --brand-experiment-800: color-mix(in srgb, var(--background) 70%, var(--color3));
-  --brand-experiment-830: color-mix(in srgb, var(--background) 70%, var(--color3));
-  --brand-experiment-860: color-mix(in srgb, var(--background) 70%, var(--color3));
-  --brand-experiment-900: color-mix(in srgb, var(--background) 70%, var(--color3));
-	*/
-}
-
 .theme-dark {
 	--bg-brand: var(--color3) !important; /* Discord logo at top left while active */
-	/* --background-surface-higher: color-mix(in srgb, var(--color4) 50%, transparent) !important; /* Discord logo at top left */ */
-  --background-surface-higher: red !important;
+  --background-surface-higher: var(--color4) !important;
   --focus-primary: color-mix(in srgb, var(--foreground) 50%, transparent); /* Focused areas like messages */
   --brand-experiment: blue; /* Unknown */
   --text-positive: blue; /* Unknown */
@@ -276,6 +244,15 @@ html.newBrand {
 .scroller-2FKFPG.sidebarRegionScroller-3MXcoP {
   /* Settings */
   background: var(--darkbg);
+}
+
+/* re-introduce rounding for some elements */
+.iconBadge__650eb.isCurrentUserConnected__650eb {
+  border-radius: 8px !important;
+}
+
+.replyLabel__841c8 {
+  color: var(--background-primary) !important;
 }
 
 /* end of settings */
