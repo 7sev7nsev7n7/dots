@@ -36,7 +36,7 @@ set shiftwidth=2
 set shortmess+=I
 set showcmdloc=statusline
 set smartcase
-set statusline=%#StatusLineNc#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%l/%LL,%c\ %{wordcount().bytes}B%*
+set statusline=%#StatusLineNc#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%l/%LL,%c\ %{wordcount().bytes}B
 set tabstop=2
 
 " mapping commands
