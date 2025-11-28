@@ -228,7 +228,6 @@ element {
 
 /* End rebranding gross yuck */
 
-
 /* Tab underneath users in the Active Now tab on the friends page */
 .theme-dark .inset-3sAvek {
   background-color: rgba(255, 255, 255, 0.06);
@@ -240,9 +239,8 @@ element {
   background-color: var(--color1);
 }
 
-
+/* Settings */
 .scroller-2FKFPG.sidebarRegionScroller-3MXcoP {
-  /* Settings */
   background: var(--darkbg);
 }
 
@@ -253,13 +251,22 @@ element {
 
 /* reply bar above text input */
 .replyLabel__841c8 {
-  color: var(--background-primary) !important;
+  color: var(--foreground) !important;
+}
+.replyBar__841c8,
+.stackedBars__74017 {
+  background-color: var(--background) !important;
 }
 
 /* code blocks and inline code */
 .inlineCode_ada32f,
 .codeLine_ada32f {
   font-family: "Iosevka" !important;
+}
+
+/* popup menu when right clicked */
+.menu_c1e9c4 {
+  background-color: var(--background);
 }
 
 /* end of settings */
