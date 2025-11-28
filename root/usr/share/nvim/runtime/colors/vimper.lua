@@ -47,7 +47,7 @@ hi('RedrawDebugRecompose',  {ctermbg=12})
 hi('Error',                 {ctermfg=7,ctermbg=52})
 hi('Todo',                  {ctermbg=11})
 
-hi('VertSplit',       {link='Normal'})
+hi('VertSplit',       {ctermfg=6})
 hi('WinSeparator',    {link='VertSplit'})
 hi('WinBarNC',        {link='WinBar'})
 hi('EndOfBuffer',     {link='NonText'})
