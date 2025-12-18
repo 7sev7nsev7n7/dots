@@ -1,12 +1,12 @@
 # get window position and dimensions
 raw="$(hyprctl activewindow)"
 pos=(
-  $((-4+"$(sed -e '1,3d;5,$d;s/\s*at: //;s/,.*//' <<<$raw )"))
-  $((-4+"$(sed -e '1,3d;5,$d;s/.*,//' <<<$raw )"))
+  $((-4+"$(sed -e '1,3d;s/\s*at: //;s/,.*//;q' <<<$raw )"))
+  $((-4+"$(sed -e '1,3d;s/.*,//;q' <<<$raw )"))
 )
 size=(
-  $((8+"$(sed -e '1,4d;6,$d;s/\s*size: //;s/,.*//' <<<$raw )"))
-  $((8+"$(sed -e '1,4d;6,$d;s/.*,//' <<<$raw )"))
+  $((8+"$(sed -e '1,4d;s/\s*size: //;s/,.*//;q' <<<$raw )"))
+  $((8+"$(sed -e '1,4d;s/.*,//;q' <<<$raw )"))
 )
 region="${size[0]}x${size[1]}+${pos[0]}+${pos[1]}"
 
