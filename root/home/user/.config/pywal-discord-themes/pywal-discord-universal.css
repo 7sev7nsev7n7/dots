@@ -29,7 +29,7 @@ element {
 
 .theme-dark {
 	--bg-brand: var(--color3) !important; /* Discord logo at top left while active */
-  --background-surface-higher: var(--color4) !important;
+  --background-surface-higher: var(--color8) !important; /* background for floating right click menu */
   --focus-primary: color-mix(in srgb, var(--foreground) 50%, transparent); /* Focused areas like messages */
   --brand-experiment: blue; /* Unknown */
   --text-positive: blue; /* Unknown */
@@ -54,17 +54,13 @@ element {
   --background-tertiary: color-mix(in srgb, var(--background) 30%, transparent) !important; /* Color used as background at back of everything */
   --bg-base-tertiary: var(--background-tertiary) !important; /* Color used as background at back of everything */
   --background-accent: var(--foreground); /* Small accents like bot data access icons */
-  --background-floating: color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)) 80%, transparent); /* Background of floating items, such as dialog for reacting */
+  --background-floating: blue; /* ??? */
   --background-mobile-primary: blue; /* Unknown */
   --background-mobile-secondary: blue; /* Unknown */
-  --background-modifier-hover: color-mix(in srgb, var(--foreground) 20%, transparent) !important; /* Hovered direct message channel modifier */
   --background-modifier-active: color-mix(in srgb, var(--foreground) 40%, transparent) !important; /* Clicked direct message channel */
   --background-modifier-selected: color-mix(in srgb, var(--foreground) 10%, transparent) !important; /* Active direct message channel */
   --background-modifier-accent: color-mix(in srgb, color-mix(in srgb, var(--background) 70%, var(--color3)), transparent) !important; /* Separators at top and side, and mod view header */
-  --background-surface-high: color-mix(in srgb, color-mix(in srgb, var(--background) 85%, var(--foreground)) 70%, transparent) !important; /* Highlights for mentions */
-  --background-mentioned: color-mix(in srgb, color-mix(in srgb, var(--background) 50%, var(--color3)) 80%, transparent); /* highlights for mentions */
-  --background-mentioned-hover: color-mix(in srgb, color-mix(in srgb, var(--background) 30%, var(--color3)) 90%, transparent); /* highlights for mentions while hovered */
-  --background-message-hover: color-mix(in srgb, color-mix(in srgb, var(--background) 10%, var(--color3)) 40%, transparent); /* Background for hovered message */
+  --background-message-hover: color-mix(in srgb, var(--foreground) 10%, transparent) !important; /* Background for hovered message */
   --elevation-stroke: 0 0 0 1px color-mix(in srgb, var(--background) 70%, var(--color3)); /* Outline for items in front of overs, such as quick emojis */
   --elevation-low: 0 1px 0 color-mix(in srgb, var(--background) 70%, var(--color3)); /* Separator for find and direct message sections */
   --elevation-medium: 0 4px 4px color-mix(in srgb, var(--background) 70%, var(--color3)); /* Shadow for elevated buttons in already elevated items */
@@ -87,12 +83,16 @@ element {
   --text-positive: var(--foreground); /* Timers for activity statuses */
   --text-warning: var(--color6); /* Chat or server owner crown icon */
   --text-danger: var(--color6); /* Text for "dangerous" buttons like delete message */
+  --message-mentioned-background-default: color-mix(in srgb, var(--icon-feedback-warning), transparent); /* Background for mentioned messages */
+  --message-mentioned-background-hover: var(--icon-feedback-warning);
+  --icon-feedback-warning: var(--color6); /* Color for mentions */
   --info-positive-background: blue; /* Unknown */
   --info-positive-foreground: blue; /* Unknown */
   --info-warning-background: blue; /* Unknown */
   --info-warning-foreground: var(--color6); /* Mention side bar highlight */
   --info-danger-background: blue; /* Unknown */
   --info-danger-foreground: blue; /* Unknown */
+  --spoiler-hidden-background: var(--color8); /* Spoilered content */
   --status-positive-background: var(--foreground); /* Add friend background */
   --status-positive-text: color-mix(in srgb, var(--background) 70%, var(--color3)); /* Add friend text */
   --status-warning-background: blue; /* Unknown */
@@ -110,6 +110,11 @@ element {
 }
 
 /* end .theme-dark */
+
+/* Hovered messages */
+._5126c0cd07f243a0-message:hover {
+  background-color: var(--background-message-hover);
+}
 
 /* End cap for new message divider */
 .endCap__908e2 {
@@ -152,13 +157,6 @@ element {
 /* Unread Message Bubble */
 .base__2b1f5 {
 	color: color-mix(in srgb, var(--foreground) 90%, transparent) !important;
-}
-.numberBadge__2b1f5 {
-	background: var(--background-mentioned-hover) !important;
-}
-
-._299eb87491f4b6d1-spoilerMarkdownContent {
-  background-color: var(--background-mentioned);
 }
 
 /* User popout header when playing a game */
