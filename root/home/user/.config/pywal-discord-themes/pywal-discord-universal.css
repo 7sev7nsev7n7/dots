@@ -157,6 +157,10 @@ element {
 	background: var(--background-mentioned-hover) !important;
 }
 
+._299eb87491f4b6d1-spoilerMarkdownContent {
+  background-color: var(--background-mentioned);
+}
+
 /* User popout header when playing a game */
 .headerPlaying-j0WQBV,
 .headerFill-adLl4x,
