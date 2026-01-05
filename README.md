@@ -42,6 +42,7 @@ official arch repositories.
 - waybar (top/status bar)
 - asusctl (hardware-specific)
 - backlight_control (self-explanatory)
+- rose-pine-hyprcursor (hyprcursor theme)
 - pipewire/pipewire-pulse + wireplumber 
 - lsd (ls extension that includes icons and glyphs)
 - flameshot (screenshot utility)
