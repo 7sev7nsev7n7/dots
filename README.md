@@ -43,6 +43,7 @@ official arch repositories.
 - asusctl (hardware-specific)
 - backlight_control (self-explanatory)
 - rose-pine-hyprcursor (hyprcursor theme)
+- rose-pine-cursor (GTK/Qt cursor theme)
 - pipewire/pipewire-pulse + wireplumber 
 - lsd (ls extension that includes icons and glyphs)
 - flameshot (screenshot utility)
