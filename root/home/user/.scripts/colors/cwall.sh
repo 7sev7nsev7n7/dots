@@ -6,14 +6,14 @@ file=$1
 
 # set wallpaper and color scheme
 wal -nstei "$file" --cols16 darken --contrast 2 --backend colorthief
-swww img "$file" --transition-type none # --fill-color $(sed '1!d' ~/.cache/wal/colors) &
+swww img "$file" --transition-type none
 
 # reload multiple items that require config updates
 $path/keyboard.sh 0
-pkill -SIGUSR1 kitty &
-pywal-discord -t universal &
-pywalfox update &
-gsettings set org.gnome.desktop.interface gtk-theme Adawaita && gsettings set org.gnome.desktop.interface gtk-theme Universal &
+pkill -SIGUSR1 kitty
+pywal-discord -t universal
+pywalfox update
+gsettings set org.gnome.desktop.interface gtk-theme Adawaita && gsettings set org.gnome.desktop.interface gtk-theme Universal
 
 # check if files are softlinked, create softlinks otherwise
 sources=(~/.cache/wal/colors-swaylock ~/.cache/wal/dunstrc ~/.cache/wal/Xresources) # source configuration file
