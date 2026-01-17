@@ -10,7 +10,7 @@ if [[ -z "${BASHRCSOURCED}" ]] ; then
   BASHRCSOURCED="Y"
   # the check is bash's default value
   # [[ "$PS1" = '\s-\v\$ ' ]] && PS1='[\u@\h \W]\$ ' // original
-  [[ "$PS1" = '\s-\v\$ ' ]] && PS1='\[\e[36m\]\u@\h \[\e[90m\]\w\[\e[0m\] \$ '
+  [[ "$PS1" = '\s-\v\$ ' ]] && PS1='\[\e[31m\]\u@\h \[\e[90m\]\w\[\e[0m\] \$ '
   case ${TERM} in
     Eterm*|alacritty*|aterm*|foot*|gnome*|konsole*|kterm*|putty*|rxvt*|tmux*|xterm*)
       PROMPT_COMMAND+=('printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/\~}"')

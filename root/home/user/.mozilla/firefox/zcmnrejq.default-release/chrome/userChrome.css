@@ -11,15 +11,7 @@
   --pywalfox-padding: 4px 8px;
 	font-family: "Noto Sans" !important;
   font-size: var(--pywalfox-font-size) !important;
-	background: transparent !important;
-}
-
-/* Main browser content background */
-#browser, #tabbrowser-tabpanels {
-  :root[lwtheme] & {
-		background-image: none !important;
-		background: color-mix(in srgb, var(--toolbar-field-background-color), transparent) !important;
-	}
+  background-color: var(--pywalfox-background) !important;
 }
 
 /* Main browser toolbox colors */
@@ -34,16 +26,15 @@
 }
 
 /* URL Bar Background colors */
-#urlbar-background {
-  background: none;
-	background-color: color-mix(in srgb, color-mix(var(--toolbar-field-background-color), var(--toolbar-field-focus-color)) 80%, transparent) !important;
+.urlbar-background {
 	border: 1px solid color-mix(in srgb, color-mix(in srgb, var(--sidebar-background-color), var(--toolbar-field-focus-color)) 30%, transparent) !important;
 }
 
-/* Selected tab */
+/* Tab */
 .tab-background {
   border-radius: 4px !important;
-	background-color: color-mix(in srgb, color-mix(in srgb, var(--tab-selected-bgcolor) 20%, var(--tabpanel-background-color)) 80%, transparent) !important;
+	background-color: var(--pywalfox-background) !important;
+  /* Selected tab */
   &:is([selected], [multiselected]) {
     background: none;
 		background-color: color-mix(in srgb, var(--tab-selected-bgcolor) 80%, transparent) !important;

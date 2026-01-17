@@ -10,12 +10,11 @@
 
 window#waybar {
   color: @color14;
-  background: none;
-  background-color: alpha(@background, 0.8);
+  background-color: @color0;
 }
 
 button {
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
 button:hover {
@@ -24,7 +23,7 @@ button:hover {
 }
 
 #workspaces button {
-  padding: 0 0.2rem;
+  padding: 0.2rem;
   background: transparent;
   color: mix(@foreground, @color3, 0.5);
 }
@@ -60,9 +59,7 @@ button:hover {
 #custom-notifications,
 #custom-volume,
 #custom-nowplaying {
-  background: none;
-  background-color: mix(@color3, alpha(@background, 0.1), 0.5);
-  border-radius: 4px;
+  border-radius: 0px;
   margin: 8px 2px;
   padding: 0px 4px;
 }
@@ -70,7 +67,7 @@ button:hover {
 /* per-module configurations */
 tooltip {
   background: none;
-  background-color: alpha(mix(@background, @color3, 0.2), 0.8);
+  background-color: @background;
   border-radius: 8px;
 }
 
