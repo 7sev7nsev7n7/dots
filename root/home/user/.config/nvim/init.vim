@@ -21,7 +21,6 @@ set cursorline
 set cursorlineopt=both
 set expandtab
 set fillchars=eob:\ 
-set guicursor=a:blinkwait0-blinkoff200-blinkon200
 set ignorecase
 set langmap=Ñ\\:
 set linebreak
@@ -36,7 +35,7 @@ set shiftwidth=2
 set shortmess+=I
 set showcmdloc=statusline
 set smartcase
-set statusline=%#StatusLineNc#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%S%=%l/%LL,%c\ %{wordcount().bytes}B
+set statusline=%#StatusLineNc#%(%w%m%r%)%*\ %.40f\ %{%GetMode()%}%{%GetFiletype()%}%{GetWrap()}%=%#StatusLineNc#%S%*%=%l/%LL,%c\ %{wordcount().bytes}B
 set tabstop=2
 
 " mapping commands
@@ -44,6 +43,8 @@ imap <C-Backspace> <C-w>
 map <A-Enter> i<Esc>
 map <A-Space> i <Esc>l
 map <A-w> :set wrap! 
+map <A-k> <C-y>
+map <A-j> <C-e>
 map <C-c> :set cursorcolumn! 
 
 " functions
