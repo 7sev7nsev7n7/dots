@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  color: @color14;
+  color: @color1;
   background-color: @color0;
 }
 
@@ -19,13 +19,13 @@ button {
 
 button:hover {
   background: inherit;
-  border: 1px solid @color4;
+  border: 1px solid @color1;
 }
 
 #workspaces button {
   padding: 0.2rem;
   background: transparent;
-  color: mix(@foreground, @color3, 0.5);
+  color: @color1;
 }
 
 #workspaces button.urgent {
@@ -80,7 +80,7 @@ tooltip label {
 #custom-notifications,
 #workspaces button.active {
   color: alpha(@background, 0.8);
-  background: mix(alpha(@color3, 0.8), @foreground, 0.3);
+  background: @color1;
 }
 
 #workspaces button.active {
