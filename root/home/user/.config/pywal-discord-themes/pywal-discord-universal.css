@@ -87,8 +87,8 @@ element {
 
 /* Unread Message Bubble */
 .numberBadge__2b1f5 {
-  color: var(--background) !important;
-  background-color: var(--foreground) !important;
+  color: var(--foreground) !important;
+  background-color: var(--color1) !important;
 }
 
 /* User popout header when playing a game */
