@@ -86,8 +86,9 @@ element {
 }
 
 /* Unread Message Bubble */
-.base__2b1f5 {
-	color: green !important;
+.numberBadge__2b1f5 {
+  color: var(--background) !important;
+  background-color: var(--foreground) !important;
 }
 
 /* User popout header when playing a game */
