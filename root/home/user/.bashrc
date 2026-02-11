@@ -14,7 +14,7 @@ export EDITOR=vim
 export MANPAGER='vim +Man!'
 
 # Aliases
-alias bd='cd ~/.programs/BetterDiscord; bun install; bun run build; bun inject; cd'
+alias bd='cd ~/.programs/BetterDiscord; bun install; bun run build; bun inject; cd -'
 alias colors='wal --preview'
 alias grep='grep --color=auto'
 alias ls='lsd --color=auto -F --group-dirs first'
