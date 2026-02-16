@@ -5,7 +5,7 @@ path=$(cd "$(dirname "$0")" && pwd) # script path
 file=$1
 
 # set wallpaper and color scheme
-wal -nstei "$file" --cols16 lighten --backend colorthief 
+wal -nstei "$file" --cols16 lighten --contrast 1.5 --backend colorthief 
 swww img "$file" --transition-type none
 
 # reload multiple items that require config updates
