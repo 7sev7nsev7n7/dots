@@ -11,7 +11,7 @@
   --pywalfox-padding: 4px 8px;
 	font-family: "Noto Sans" !important;
   font-size: var(--pywalfox-font-size) !important;
-  background-color: var(--pywalfox-background) !important;
+  background-color: transparent !important;
 }
 
 /* Main browser toolbox colors */
