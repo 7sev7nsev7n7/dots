@@ -29,8 +29,13 @@ button:hover {
 }
 
 #workspaces button.urgent {
-  background: mix(@color4, @background, 0.5);
-  color: @background
+  background: @color1;
+  color: @background;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #custom-drawer,
@@ -81,7 +86,7 @@ tooltip label {
 #custom-notifications,
 #workspaces button.active {
   color: alpha(@background, 0.8);
-  background: @color9;
+  background: @color1;
 }
 
 #workspaces button.active {
@@ -112,9 +117,9 @@ window#waybar.empty #window {
 
 #battery.critical:not(.charging) {
   background: #f53c3c;
-  color: #ffffff;
+  color: transparent;
   animation-name: blink;
-  animation-duration: 0.5s;
+  animation-duration: 0.1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -122,7 +127,7 @@ window#waybar.empty #window {
 
 @keyframes blink {
   to {
-    background-color: #ffffff;
+    background-color: transparent;
     color: #000000;
   }
 }
