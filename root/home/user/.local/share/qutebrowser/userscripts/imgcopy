@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+curl "$QUTE_URL" | wl-copy ; sleep 0.1 ; copyq select 0
