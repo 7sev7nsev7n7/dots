@@ -4,18 +4,19 @@
 
 [global]
   # general
-  # format = "<b><big>%a</big></b>\n%s\n%b\n%n"
-  format = "&lt;</b>%s&gt; %b"
+  format = "<big><b>%a - </b>%s</big>\n%b\n%n"
   follow = keyboard
   sort = update
   notification_limit = 32
   history_length = 50
+  show_age_threshold = -1
   idle_threshold = 5m
   sticky_history = yes
   indicate_hidden = yes
   stack_duplicates = false
   enable_posix_regex = true
   show_indicators = false
+  ignore_dbusclose = true
   # icons
   icon_position = off
   # actions
@@ -23,24 +24,24 @@
   mouse_middle_click = do_action, close_current
   mouse_right_click = close_all
   # appearance
-  width = (660,660)
-  height = (0,300)
-  origin = bottom-left
-  offset = 0x72
-  font = Monocraft 12
-  padding = 0
-  horizontal-padding = 0
-  vertical_alignment = top
-  frame_width = 0
-  separator_height = 0
-  background = "#000000bb"
-  foreground = "#ffffff"
+  origin = top-right
+  offset = 0x0
+  font = Noto Sans 12
+  padding = 8
+  vertical_alignment = center
+  corner_radius = 8
+  frame_width = 3
+  frame_color = "{color1}"
+  separator_height = 1.5
+  separator_color = "{color1}"
+  background = "{background}bb"
+  foreground = "{foreground}"
   timeout = 10
   ellipsize = end
   markup = full
 
 [urgency_critical]
-  background = "{color4}"
+  background = "{color1}"
   foreground = "{background}"
   timeout = 30
 
