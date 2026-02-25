@@ -4,6 +4,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+PS1='\[\e[31m\]\u@\h \[\e[90m\]\w\[\e[0m\] \$ '
 
 # vi mode
 set -o vi
@@ -14,7 +15,7 @@ export EDITOR=vim
 export MANPAGER='vim +Man!'
 
 # Aliases
-alias bd='cd ~/.programs/BetterDiscord; bun install; bun run build; bun inject; cd -'
+alias bd='cd ~/.programs/BetterDiscord; git pull; bun install; bun run build; bun inject; cd -'
 alias colors='wal --preview'
 alias grep='grep --color=auto'
 alias ls='lsd --color=auto -F --group-dirs first'
