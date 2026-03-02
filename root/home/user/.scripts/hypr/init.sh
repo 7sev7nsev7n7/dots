@@ -7,12 +7,11 @@
 # can be fixed.
 
 # first workspace
-sleep 1
 hyprctl dispatch exec kitty btop
-sleep 0.3
-hyprctl dispatch exec kitty ranger
-sleep 0.3
 hyprctl dispatch exec kitty
 
 # second workspace
-hyprctl dispatch exec [workspace 2] firefox
+hyprctl dispatch exec [workspace 2] qutebrowser
+
+# third workspace
+hyprctl dispatch exec [workspace 3] discord
