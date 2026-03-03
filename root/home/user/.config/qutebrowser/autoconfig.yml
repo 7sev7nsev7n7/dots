@@ -20,6 +20,7 @@ settings:
   bindings.commands:
     global:
       normal:
+        ch: history-clear
         gc: open qute://help/commands.html
         gn: open -t
         yi: hint images userscript imgcopy
@@ -41,7 +42,7 @@ settings:
   colors.tabs.even.bg:
     global: black
   colors.tabs.even.fg:
-    global: darkgrey
+    global: white
   colors.tabs.indicator.error:
     global: '#ff0000'
   colors.tabs.indicator.start:
@@ -87,9 +88,6 @@ settings:
     global: 20%
   completion.open_categories:
     global:
-    - bookmarks
-    - quickmarks
-    - filesystem
     - searchengines
   completion.web_history.max_items:
     global: 0
@@ -106,14 +104,38 @@ settings:
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
     https://mail.proton.me#mailto=%25s: true
+  fonts.default_family:
+    global: bold Noto Sans
+  fonts.default_size:
+    global: 12pt
+  fonts.hints:
+    global: bold default_size default_family
+  fonts.messages.warning:
+    global: default_size default_family
+  fonts.prompts:
+    global: default_size sans-serif
+  fonts.statusbar:
+    global: default_size default_family
+  fonts.tabs.selected:
+    global: bold default_size default_family
+  fonts.tabs.unselected:
+    global: light default_size default_family
+  fonts.web.family.fixed:
+    global: Iosevka
+  fonts.web.size.default_fixed:
+    global: 14
+  hints.mode:
+    global: number
   input.insert_mode.auto_enter:
     global: true
+  input.insert_mode.auto_leave:
+    global: false
   input.insert_mode.auto_load:
     global: true
   input.insert_mode.leave_on_load:
     global: true
   scrolling.smooth:
-    global: false
+    global: true
   statusbar.widgets:
     global:
     - keypress
@@ -123,10 +145,18 @@ settings:
     - history
     - tabs
     - progress
+  tabs.new_position.unrelated:
+    global: next
   tabs.title.format:
     global: '{audio}{index}: {current_title}'
   tabs.wrap:
     global: true
+  url.default_page:
+    global: about:blank
+  url.incdec_segments:
+    global:
+    - path
+    - query
   url.open_base_url:
     global: true
   url.searchengines:
@@ -151,4 +181,4 @@ settings:
     - utm_content
     - utm_name
   zoom.default:
-    global: 110%
+    global: 100%
