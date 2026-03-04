@@ -81,7 +81,7 @@ settings:
     global: black
   colors.webpage.darkmode.enabled:
     global: true
-    pony.town: false
+    https://pony.town: false
   completion.favorite_paths:
     global: null
   completion.height:
@@ -95,6 +95,8 @@ settings:
     global: all
   content.cookies.store:
     global: true
+  content.fullscreen.window:
+    global: false
   content.headers.user_agent:
     https://accounts.google.com/*: Mozilla/5.0 ({os_info}; rv:135.0) Gecko/20100101
       Firefox/135
@@ -104,6 +106,25 @@ settings:
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
     https://mail.proton.me#mailto=%25s: true
+  downloads.location.suggestion:
+    global: both
+  downloads.position:
+    global: bottom
+  fileselect.folder.command:
+    global:
+    - zenity
+    - --file-selection
+    - --directory
+  fileselect.multiple_files.command:
+    global:
+    - zenity
+    - --file-selection
+    - --directory
+    - --multiple
+  fileselect.single_file.command:
+    global:
+    - zenity
+    - --file-selection
   fonts.default_family:
     global: bold Noto Sans
   fonts.default_size:
@@ -131,9 +152,15 @@ settings:
   input.insert_mode.auto_leave:
     global: false
   input.insert_mode.auto_load:
-    global: true
+    global: false
   input.insert_mode.leave_on_load:
     global: true
+  qt.force_platformtheme:
+    global: qt5ct
+  qt.force_software_rendering:
+    global: software-opengl
+  qt.workarounds.disable_accelerated_2d_canvas:
+    global: auto
   scrolling.smooth:
     global: true
   statusbar.widgets:
@@ -163,6 +190,7 @@ settings:
     global:
       DEFAULT: https://duckduckgo.com/?q={}
       'a:': https://wiki.archlinux.org/index.php?search={}
+      'aur:': https://aur.archlinux.org/packages?O=0&K={}
       'img:': https://duckduckgo.com/?q={}&ia=images&iax=images
       'mc:': https://minecraft.wiki/?search={}
       r/: reddit.com/r/{}
