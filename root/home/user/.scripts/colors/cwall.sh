@@ -5,7 +5,7 @@ path=$(cd "$(dirname "$0")" && pwd) # script path
 file=$1
 
 # set wallpaper and color scheme
-wal -nstei "$file" --cols16 lighten --contrast 1.5 --backend colorthief 
+wal -nstei "$file" --cols16 lighten --contrast 1 --backend colorthief 
 swww img "$file" --transition-type none
 
 # reload multiple items that require config updates
@@ -18,8 +18,8 @@ pkill dunst
 $(xrdb -load  ~/.Xresources)
 
 # check if files are softlinked, create softlinks otherwise
-sources=(~/.cache/wal/colors-swaylock ~/.cache/wal/dunstrc ~/.cache/wal/Xresources) # source configuration file
-destinations=(~/.config/swaylock/config ~/.config/dunst/dunstrc ~/.Xresources) # destination configuration file
+sources=(~/.cache/wal/dunstrc ~/.cache/wal/Xresources $file) # source configuration file
+destinations=(~/.config/dunst/dunstrc ~/.Xresources ~/.cache/wal/image) # destination configuration file
 
 for i in $(seq 0 $((${#sources[@]}-1))); do
 	if [ -h ${destinations[$i]} ]; then 
