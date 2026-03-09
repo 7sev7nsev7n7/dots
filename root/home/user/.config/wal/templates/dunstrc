@@ -4,7 +4,7 @@
 
 [global]
   # general
-  format = "<big><b>%a - </b>%s</big>\n%b\n%n"
+  format = "<big><b>%a - </b>%s</big>\n%b\n%p"
   follow = keyboard
   sort = update
   notification_limit = 32
@@ -34,7 +34,7 @@
   frame_color = "{color1}"
   separator_height = 1.5
   separator_color = "{color1}"
-  background = "{background}bb"
+  background = "{background}dd"
   foreground = "{foreground}"
   timeout = 10
   ellipsize = end
