@@ -18,7 +18,7 @@ pkill dunst
 $(xrdb -load  ~/.Xresources)
 
 # check if files are softlinked, create softlinks otherwise
-sources=(~/.cache/wal/dunstrc ~/.cache/wal/Xresources $file) # source configuration file
+sources=(~/.cache/wal/dunstrc ~/.cache/wal/Xresources $(realpath $file)) # source configuration file
 destinations=(~/.config/dunst/dunstrc ~/.Xresources ~/.cache/wal/image) # destination configuration file
 
 for i in $(seq 0 $((${#sources[@]}-1))); do
