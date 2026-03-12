@@ -10,7 +10,7 @@
 
 window#waybar {
   color: @color9;
-  background-color: mix(@background, transparent, 0.4);
+  background-color: mix(@background, transparent, 0.2);
 }
 
 button {
