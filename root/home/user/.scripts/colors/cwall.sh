@@ -6,7 +6,7 @@ file=$1
 
 # set wallpaper and color scheme
 wal -nstei "$file" --cols16 lighten --contrast 1 --backend colorthief 
-swww img "$file" --transition-type none
+swww img "$file" --transition-type fade --transition-duration 0.2
 
 # reload multiple items that require config updates
 $path/keyboard.sh 0
