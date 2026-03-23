@@ -38,7 +38,7 @@ element {
   --channels-default: var(--color6); /* General channels text color */
   --channel-icon: var(--color1); /* Channel hashtag color */
   --background-base-lower: color-mix(in srgb, var(--background) 5%, transparent); /* Main background color, used in main chat */
-  --background-base-lowest: color-mix(in srgb, var(--background) 20%, transparent); /* Main window background color */
+  --background-base-lowest: color-mix(in srgb, var(--background) 30%, transparent); /* Main window background color */
   --background-base-low: color-mix(in srgb, var(--background) 80%, transparent); /* User panel at bottom left */
   --background-modifier-accent: green; /* Separators at top and side, and mod view header */
   --chat-background-default: color-mix(in srgb, var(--background) 20%, transparent); /* Background for text input area */
