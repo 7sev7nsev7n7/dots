@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  color: @color9;
+  color: @color6;
   background-color: mix(@background, transparent, 0.2);
 }
 
@@ -19,7 +19,7 @@ button {
 
 button:hover {
   background: inherit;
-  border: 1px solid @color9;
+  border: 1px solid @color6;
 }
 
 #workspaces button {
@@ -29,7 +29,7 @@ button:hover {
 }
 
 #workspaces button.urgent {
-  background: @color1;
+  background: @color6;
   color: @background;
   animation-name: blink;
   animation-duration: 0.5s;
@@ -64,7 +64,7 @@ button:hover {
 #custom-notifications,
 #custom-volume,
 #custom-nowplaying {
-  background: mix(@color0,transparent,0.4);
+  background: mix(@color6,transparent,0.7);
   border-radius: 4px;
   margin: 8px 2px;
   padding: 0px 4px;
@@ -72,21 +72,21 @@ button:hover {
 
 /* per-module configurations */
 tooltip {
-  background: none;
-  background-color: @background;
+  background: transparent;
+  background-color: mix(@color0, transparent, 0.2);
   border-radius: 8px;
 }
 
 tooltip label {
   font-family: "Iosevka";
   font-size: 12pt;
-  color: mix(@foreground, @color3, 0.2);
+  color: @color6;
 }
 
 #custom-notifications,
 #workspaces button.active {
   color: alpha(@background, 0.8);
-  background: @color1;
+  background: @color6;
 }
 
 #workspaces button.active {
@@ -101,8 +101,8 @@ window#waybar.empty #window {
 }
 
 #battery.charging {
-  color: mix(mix(@color4, #00ff00, 0.4), black, 0.6);
-  background-color: mix(@color4, alpha(#00ff00, 0.8), 0.7);
+  color: mix(mix(@color6, #00ff00, 0.4), black, 0.6);
+  background-color: mix(@color6, alpha(#00ff00, 0.8), 0.7);
 }
 
 #battery.warning:not(.charging) {
@@ -133,7 +133,7 @@ window#waybar.empty #window {
 }
 
 #network.disconnected {
-  background: mix(@color4, red, 0.6);
+  background: mix(@color6, red, 0.6);
 }
 
 #temperature.critical {
@@ -146,5 +146,5 @@ window#waybar.empty #window {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background: @color4;
+  background: @color6;
 }

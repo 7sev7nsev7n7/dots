@@ -4,7 +4,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-PS1='\[\e[31m\]\u@\h \[\e[90m\]\w\[\e[0m\] \$ '
+PS1='\[\e[36m\]\u@\h \[\e[90m\]\w\[\e[0m\] \$ '
 
 # vi mode
 set -o vi
