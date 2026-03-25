@@ -31,9 +31,9 @@
   vertical_alignment = center
   corner_radius = 8
   frame_width = 3
-  frame_color = "{color1}"
+  frame_color = "{color6}"
   separator_height = 1.5
-  separator_color = "{color1}"
+  separator_color = "{color6}"
   background = "{background}dd"
   foreground = "{foreground}"
   timeout = 10
@@ -41,7 +41,7 @@
   markup = full
 
 [urgency_critical]
-  background = "{color1}"
+  background = "{color6}"
   foreground = "{background}"
   timeout = 30
 
